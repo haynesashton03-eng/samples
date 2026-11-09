@@ -1,0 +1,11 @@
+Subject: A sample website for R's Creative Learning
+
+Hi,
+
+I searched online for R's Creative Learning and couldn't find a website. The directory listings that do come up show different hours from one another.
+
+I'm Ashton Haynes, a web developer based in Manassas Park, Virginia. I build websites for small businesses across the US, and my background is in IT security (B.A.S. in Information Management, Security & Network Assurance (IT forensics), Palm Beach State College).
+
+I put together a free sample homepage for you: {{PREVIEW_URL}}. It has your North 40th Street address and a tap-to-call phone number, plus clear spots for your hours, ages served and parent reviews. No obligation at all.
+
+Would you like a quick call to talk it over?
