@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Acorn Community Childcare | Home Daycare in Omaha, NE 68104</title>
+<meta name="description" content="Acorn Community Childcare is a small, home-based daycare at 6665 Ohio St in Omaha, NE. Monday to Friday care in a small group. Call (402) 312-3158.">
+<style>
+:root{
+  --oak:#5b3a1e; --oak-dark:#3f2814; --leaf:#3f6b3a; --leaf-light:#e6efe2;
+  --cream:#fbf6ec; --sun:#f2b84b; --ink:#2a2118; --muted:#5e5246; --white:#fff;
+  --radius:18px; --max:1080px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;font-size:1.0625rem}
+a{color:var(--leaf)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:0;background:var(--white);padding:10px 14px;z-index:20}
+.skip:focus{left:10px;top:10px}
+.ph{background:#fff3c4;border:1px dashed #b8860b;border-radius:6px;padding:0 6px;font-size:.92em;color:#5a4300;white-space:nowrap}
+
+/* Header */
+header{background:var(--white);border-bottom:1px solid #eadfcd;position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--oak-dark);font-weight:800;font-size:1.1rem;line-height:1.2}
+.brand svg{flex:none}
+.nav ul{display:none;list-style:none;gap:22px}
+.nav ul a{color:var(--ink);text-decoration:none;font-weight:600}
+.nav ul a:hover{color:var(--leaf)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--leaf);color:var(--white);text-decoration:none;font-weight:700;padding:12px 20px;border-radius:999px;min-height:48px;border:2px solid var(--leaf)}
+.btn:hover{background:#335830}
+.btn.alt{background:transparent;color:var(--oak-dark);border-color:var(--oak)}
+.btn.alt:hover{background:var(--oak);color:var(--white)}
+.btn.sm{padding:8px 16px;min-height:44px;font-size:.95rem}
+@media(min-width:820px){.nav ul{display:flex}}
+
+/* Hero */
+.hero{background:linear-gradient(160deg,var(--leaf-light),var(--cream) 70%);padding:56px 0 64px;overflow:hidden}
+.hero .wrap{display:grid;gap:36px;align-items:center}
+.eyebrow{display:inline-block;background:var(--white);color:var(--leaf);font-weight:700;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.1;color:var(--oak-dark);margin-bottom:16px}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin-bottom:26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:26px;list-style:none;color:var(--muted);font-weight:600;font-size:.98rem}
+.facts li::before{content:"";display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--sun);margin-right:8px;vertical-align:middle}
+.art{justify-self:center;width:min(320px,80%)}
+@media(min-width:820px){.hero .wrap{grid-template-columns:1.3fr 1fr}.art{width:100%;max-width:360px}}
+
+/* Sections */
+section{padding:64px 0}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);color:var(--oak-dark);line-height:1.2;margin-bottom:12px}
+.intro{color:var(--muted);max-width:40em;margin-bottom:32px}
+.grid{display:grid;gap:18px}
+@media(min-width:640px){.grid.two{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.grid.four{grid-template-columns:repeat(4,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:640px) and (max-width:899px){.grid.four,.grid.three{grid-template-columns:1fr 1fr}}
+.card{background:var(--white);border-radius:var(--radius);padding:24px;border:1px solid #eadfcd}
+.card h3{color:var(--oak-dark);font-size:1.15rem;margin:12px 0 6px}
+.card p{color:var(--muted);font-size:1rem}
+.icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--leaf-light)}
+.icon.sun{background:#fdf0d2}
+.alt-bg{background:var(--white)}
+.alt-bg .card{background:var(--cream)}
+
+.why li{list-style:none;display:flex;gap:14px;align-items:flex-start;margin-bottom:18px}
+.why li svg{flex:none;margin-top:3px}
+.why strong{color:var(--oak-dark)}
+
+/* Reviews placeholder */
+.reviews{border:2px dashed #c9b9a0;border-radius:var(--radius);padding:32px;text-align:center;color:var(--muted);background:var(--white)}
+
+/* Visit / contact */
+.visit{background:var(--oak-dark);color:#f6eee1}
+.visit h2{color:var(--white)}
+.visit .intro{color:#e3d6c3}
+.visit .card{background:#4d321b;border-color:#6b4a2c;color:#f6eee1}
+.visit .card h3{color:var(--sun);margin-top:0}
+.visit .card p,.visit .card dd{color:#f6eee1}
+.visit a{color:var(--white)}
+.visit .ph{color:#5a4300}
+dl.hours{display:grid;grid-template-columns:auto 1fr;gap:6px 16px}
+dl.hours dt{font-weight:700}
+.big-tel{font-size:1.5rem;font-weight:800;text-decoration:none;display:inline-block;margin:4px 0 12px}
+.visit .btn{background:var(--sun);border-color:var(--sun);color:var(--oak-dark)}
+.visit .btn:hover{background:#ffd47c}
+.visit .btn.alt{background:transparent;color:var(--white);border-color:#e3d6c3}
+.visit .btn.alt:hover{background:#6b4a2c}
+
+footer{background:#2e1d0e;color:#d9cbb6;padding:28px 0 96px;font-size:.92rem}
+footer a{color:#fff}
+@media(min-width:820px){footer{padding-bottom:28px}}
+
+/* Mobile call bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--white);border-top:1px solid #eadfcd;box-shadow:0 -4px 16px rgba(0,0,0,.08);z-index:15}
+.callbar .btn{flex:1}
+@media(min-width:820px){.callbar{display:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Acorn Community Childcare. This is not Acorn Community Childcare's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=acorn-community-childcare" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top">
+      <svg width="34" height="38" viewBox="0 0 34 38" aria-hidden="true"><path d="M4 14c0-6 6-10 13-10s13 4 13 10z" fill="#5b3a1e"/><rect x="15" y="0" width="4" height="6" rx="2" fill="#5b3a1e"/><path d="M6 14h22c0 12-5 22-11 22S6 26 6 14z" fill="#c98a3f"/></svg>
+      <span>Acorn Community<br>Childcare</span>
+    </a>
+    <ul>
+      <li><a href="#care">Our care</a></li>
+      <li><a href="#why">Why Acorn</a></li>
+      <li><a href="#visit">Hours &amp; contact</a></li>
+    </ul>
+    <a class="btn sm" href="tel:+14023123158" aria-label="Call Acorn Community Childcare at 402-312-3158">Call (402) 312-3158</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Home daycare &middot; Omaha, NE 68104</span>
+        <h1 id="hero-title">Small-group childcare that feels like home.</h1>
+        <p class="lead">Acorn Community Childcare is a family child care home on Ohio Street in Omaha. With room for no more than nine children, every child gets real attention, a familiar routine, and a caregiver who knows them by name.</p>
+        <div class="cta">
+          <a class="btn" href="tel:+14023123158">Call to ask about openings</a>
+          <a class="btn alt" href="#visit">See hours &amp; location</a>
+        </div>
+        <ul class="facts">
+          <li>Up to 9 children</li>
+          <li>Monday&ndash;Friday</li>
+          <li>Opens 7:00 AM</li>
+        </ul>
+      </div>
+      <svg class="art" viewBox="0 0 300 300" role="img" aria-label="Illustration of an oak tree with acorns">
+        <circle cx="150" cy="150" r="140" fill="#fff"/>
+        <rect x="138" y="160" width="24" height="90" rx="8" fill="#7a4f2a"/>
+        <circle cx="150" cy="120" r="70" fill="#3f6b3a"/>
+        <circle cx="100" cy="150" r="45" fill="#4f8248"/>
+        <circle cx="200" cy="150" r="45" fill="#4f8248"/>
+        <circle cx="150" cy="80" r="45" fill="#5c9455"/>
+        <g><path d="M95 205h22c0 12-5 20-11 20s-11-8-11-20z" fill="#c98a3f"/><path d="M93 206c0-6 6-9 13-9s13 3 13 9z" fill="#5b3a1e"/></g>
+        <g><path d="M185 215h22c0 12-5 20-11 20s-11-8-11-20z" fill="#c98a3f"/><path d="M183 216c0-6 6-9 13-9s13 3 13 9z" fill="#5b3a1e"/></g>
+        <circle cx="240" cy="62" r="18" fill="#f2b84b"/>
+        <rect x="40" y="250" width="220" height="10" rx="5" fill="#e6efe2"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="care" aria-labelledby="care-title">
+    <div class="wrap">
+      <h2 id="care-title">Care for little ones and growing kids</h2>
+      <p class="intro">Tell families at a glance who you care for. <span class="ph">[Confirm the ages you accept &mdash; public listings differ]</span></p>
+      <div class="grid four">
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3f6b3a" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M6 21c0-4 3-6 6-6s6 2 6 6"/></svg></div>
+          <h3>Infants</h3>
+          <p>Gentle, one-on-one routines for feeding, naps and cuddles. <span class="ph">[Starting age]</span></p>
+        </article>
+        <article class="card">
+          <div class="icon sun" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a86b12" stroke-width="2" stroke-linecap="round"><path d="M4 20h16M7 20V10l5-5 5 5v10"/></svg></div>
+          <h3>Toddlers</h3>
+          <p>Play, songs and simple activities that build language and independence.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3f6b3a" stroke-width="2" stroke-linecap="round"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div>
+          <h3>Preschoolers</h3>
+          <p>Getting ready for school through stories, crafts and learning through play.</p>
+        </article>
+        <article class="card">
+          <div class="icon sun" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#a86b12" stroke-width="2" stroke-linecap="round"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11v5c0 1 2 3 5 3s5-2 5-3v-5"/></svg></div>
+          <h3>School-age</h3>
+          <p>A calm place before and after school. <span class="ph">[Confirm if offered]</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="why" class="alt-bg" aria-labelledby="why-title">
+    <div class="wrap grid two">
+      <div>
+        <h2 id="why-title">Why families choose a home daycare</h2>
+        <p class="intro">A small group in a real home gives children consistency that bigger centers can find hard to match.</p>
+        <p class="ph" style="white-space:normal;display:inline-block">[Add a few sentences in your own words: your approach, a typical day, meals, and what makes Acorn special.]</p>
+      </div>
+      <ul class="why">
+        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#e6efe2"/><path d="M7 12l3 3 7-7" stroke="#3f6b3a" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><div><strong>Small group.</strong> Room for no more than nine children, so no one gets lost in the crowd.</div></li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#e6efe2"/><path d="M7 12l3 3 7-7" stroke="#3f6b3a" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><div><strong>One familiar face.</strong> Your child sees the same caregiver every day, run by Amanda Huckins.</div></li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#e6efe2"/><path d="M7 12l3 3 7-7" stroke="#3f6b3a" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><div><strong>Close to home.</strong> In the 68104 neighborhood on Ohio Street, easy for local families.</div></li>
+        <li><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#e6efe2"/><path d="M7 12l3 3 7-7" stroke="#3f6b3a" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg><div><strong>Licensing details.</strong> <span class="ph">[Add your license info, worded the way you prefer]</span></div></li>
+      </ul>
+    </div>
+  </section>
+
+  <section aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title">What parents say</h2>
+      <div class="reviews">
+        <p><strong>[Your reviews here]</strong></p>
+        <p>Real quotes from families (with their permission) go in this space.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" class="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <h2 id="visit-title">Hours, location &amp; openings</h2>
+      <p class="intro">Spots are limited in a small home daycare. The quickest way to ask about openings or set up a visit is to call.</p>
+      <div class="grid three">
+        <div class="card">
+          <h3>Call or email</h3>
+          <a class="big-tel" href="tel:+14023123158">(402) 312-3158</a>
+          <p><a href="mailto:acorncommunitychildcare@gmail.com">acorncommunitychildcare@gmail.com</a></p>
+        </div>
+        <div class="card">
+          <h3>Hours</h3>
+          <dl class="hours">
+            <dt>Mon&ndash;Fri</dt><dd>7:00 AM &ndash; <span class="ph">[closing time]</span></dd>
+            <dt>Sat&ndash;Sun</dt><dd>Closed</dd>
+          </dl>
+        </div>
+        <div class="card">
+          <h3>Location</h3>
+          <address style="font-style:normal">6665 Ohio St<br>Omaha, NE 68104</address>
+          <p style="margin-top:12px"><a class="btn alt sm" href="https://maps.google.com/?q=6665+Ohio+St,+Omaha,+NE+68104" rel="noopener">Get directions</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; Acorn Community Childcare &middot; 6665 Ohio St, Omaha, NE 68104 &middot; <a href="tel:+14023123158">(402) 312-3158</a></p>
+    <p style="margin-top:6px">Sample homepage concept. Highlighted items are placeholders to confirm before publishing.</p>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick contact">
+  <a class="btn" href="tel:+14023123158">Call now</a>
+  <a class="btn alt" href="https://maps.google.com/?q=6665+Ohio+St,+Omaha,+NE+68104" rel="noopener">Directions</a>
+</div>
+</body>
+</html>
