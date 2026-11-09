@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Toby's Plumbing, LLC | Plumber in Manassas Park, VA</title>
+<meta name="description" content="Toby's Plumbing, LLC — local plumbing service at 151 Martin Dr, Manassas Park, VA 20111. Call (703) 936-3797.">
+<meta name="theme-color" content="#0b3a5b">
+<style>
+  :root{
+    --navy:#0b3a5b; --navy-2:#0f4c75; --blue:#1b6fa8; --sky:#e8f2f9;
+    --accent:#f2a516; --accent-dark:#b36f00;
+    --ink:#1b2430; --muted:#4a5868; --line:#d9e2ea; --bg:#ffffff;
+    --ph-bg:#fff7e0; --ph-line:#e0b33a; --ph-ink:#6b4e00;
+    --radius:12px; --max:1100px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:72px}
+  img,svg{display:block}
+  a{color:var(--blue)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+  .skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:100}
+  .skip:focus{left:8px;top:8px}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+  /* Placeholder marker — client must replace */
+  .ph{background:var(--ph-bg);border:2px dashed var(--ph-line);color:var(--ph-ink);border-radius:8px;padding:2px 8px;font-weight:600}
+  .ph-block{background:var(--ph-bg);border:2px dashed var(--ph-line);color:var(--ph-ink);border-radius:var(--radius);padding:20px;text-align:center;font-weight:600}
+
+  /* Header */
+  header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;font-size:1.15rem;line-height:1.1}
+  .brand small{display:block;font-weight:500;font-size:.78rem;color:var(--muted)}
+  .mark{width:38px;height:38px;border-radius:10px;background:var(--navy);display:grid;place-items:center;flex:none}
+  nav ul{list-style:none;margin:0;padding:0;display:none;gap:22px}
+  nav a{text-decoration:none;color:var(--ink);font-weight:600}
+  nav a:hover{color:var(--blue)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;min-height:48px}
+  .btn-call{background:var(--accent);color:#1b1300}
+  .btn-call:hover{background:#ffb935}
+  .btn-ghost{border-color:#fff;color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.12)}
+  .head-call{display:none}
+
+  /* Hero */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 60%,var(--blue) 100%);color:#fff;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-120px;bottom:-120px;width:360px;height:360px;border-radius:50%;border:40px solid rgba(255,255,255,.06)}
+  .hero .wrap{padding-top:48px;padding-bottom:56px;position:relative;z-index:1}
+  .eyebrow{display:inline-block;background:rgba(255,255,255,.14);padding:4px 12px;border-radius:999px;font-size:.85rem;font-weight:600;margin-bottom:14px}
+  .hero h1{font-size:clamp(1.9rem,6vw,3.1rem);line-height:1.12;margin:0 0 14px;max-width:16ch}
+  .hero p.lead{font-size:1.1rem;max-width:52ch;margin:0 0 26px;color:#e6eef5}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .hero .ph{color:var(--ph-ink)}
+
+  /* Quick facts strip */
+  .facts{background:var(--sky)}
+  .facts ul{list-style:none;margin:0;padding:18px 0;display:grid;gap:14px;grid-template-columns:1fr}
+  .facts li{display:flex;gap:12px;align-items:flex-start}
+  .facts strong{display:block;color:var(--navy)}
+  .facts span{color:var(--muted);font-size:.95rem}
+  .ico{width:40px;height:40px;border-radius:10px;background:#fff;display:grid;place-items:center;flex:none;border:1px solid var(--line)}
+
+  section{padding:56px 0}
+  h2{font-size:clamp(1.5rem,4vw,2.1rem);color:var(--navy);margin:0 0 8px;line-height:1.2}
+  .sub{color:var(--muted);margin:0 0 28px;max-width:60ch}
+
+  /* Services */
+  .grid{display:grid;gap:16px;grid-template-columns:1fr}
+  .card{border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:#fff;display:flex;gap:16px;align-items:flex-start}
+  .card h3{margin:0 0 4px;font-size:1.1rem;color:var(--ink)}
+  .card p{margin:0;color:var(--muted);font-size:.95rem}
+  .card .ico{background:var(--sky);border:0}
+  .note{margin-top:18px;font-size:.9rem}
+
+  /* Why / area */
+  .split{display:grid;gap:28px;grid-template-columns:1fr}
+  .checks{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  .checks li{display:flex;gap:10px;align-items:flex-start}
+  .checks svg{flex:none;margin-top:3px}
+  .area{background:var(--sky);border-radius:var(--radius);padding:24px}
+  .area h3{margin:0 0 8px;color:var(--navy)}
+
+  /* Reviews placeholder */
+  .alt{background:#f6f9fb}
+
+  /* Contact */
+  .contact{background:var(--navy);color:#fff}
+  .contact h2{color:#fff}
+  .contact .sub{color:#d6e3ee}
+  .contact-grid{display:grid;gap:24px;grid-template-columns:1fr}
+  .info{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+  .info li{display:flex;gap:12px;align-items:flex-start}
+  .info .ico{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
+  .info a{color:#fff;font-weight:700}
+  .info .label{display:block;font-size:.85rem;color:#b9cddd}
+  form{background:#fff;color:var(--ink);border-radius:var(--radius);padding:22px;display:grid;gap:14px}
+  form h3{margin:0;color:var(--navy)}
+  label{font-weight:600;font-size:.95rem;display:block;margin-bottom:4px}
+  input,select,textarea{width:100%;font:inherit;padding:12px;border:1px solid #9fb0c0;border-radius:8px;background:#fff;color:var(--ink)}
+  textarea{min-height:110px;resize:vertical}
+  form button{border:0;cursor:pointer;background:var(--accent);color:#1b1300;font:inherit;font-weight:700;padding:14px;border-radius:999px;min-height:48px}
+  form .small{font-size:.85rem;color:var(--muted);margin:0}
+
+  footer{background:#071f31;color:#b9cddd;font-size:.9rem;padding:28px 0}
+  footer a{color:#fff}
+  .foot{display:grid;gap:8px}
+
+  /* Mobile sticky tap-to-call */
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--navy);padding:10px 16px;box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+  .callbar a{width:100%;font-size:1.05rem}
+
+  @media (min-width:700px){
+    .facts ul{grid-template-columns:repeat(3,1fr)}
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .contact-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (min-width:960px){
+    body{padding-bottom:0}
+    .callbar{display:none}
+    nav ul{display:flex}
+    .head-call{display:inline-flex}
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .split{grid-template-columns:1.3fr 1fr;align-items:start}
+    .hero .wrap{padding-top:80px;padding-bottom:88px}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Toby's Plumbing, LLC. This is not Toby's Plumbing, LLC's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=toby-s-plumbing-llc" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Toby's Plumbing, LLC home">
+      <span class="mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#f2a516" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5c-3.5 4.6-6 8-6 11a6 6 0 0 0 12 0c0-3-2.5-6.4-6-11z"/></svg>
+      </span>
+      <span>Toby's Plumbing<small>Manassas Park, VA</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-call head-call" href="tel:+17039363797">Call (703) 936-3797</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <span class="eyebrow">Local plumber · Manassas Park, Virginia</span>
+      <h1 id="hero-title">Plumbing help from your neighbors in Manassas Park</h1>
+      <p class="lead">Toby's Plumbing, LLC is based at 151 Martin Dr in Manassas Park. Call to talk through the problem and set up a visit.</p>
+      <div class="cta-row">
+        <a class="btn btn-call" href="tel:+17039363797">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call (703) 936-3797
+        </a>
+        <a class="btn btn-ghost" href="#contact">Request service</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="facts">
+    <ul class="wrap">
+      <li>
+        <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b3a5b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+        <div><strong>Call</strong><span><a href="tel:+17039363797">(703) 936-3797</a></span></div>
+      </li>
+      <li>
+        <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b3a5b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+        <div><strong>Hours</strong><span class="ph">[Your business hours]</span></div>
+      </li>
+      <li>
+        <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0b3a5b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+        <div><strong>Based in Manassas Park</strong><span>151 Martin Dr, Manassas Park, VA 20111</span></div>
+      </li>
+    </ul>
+  </div>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">Plumbing services</h2>
+      <p class="sub">Each service is one tap away on a phone. <span class="ph">[Confirm this list against the services you offer]</span></p>
+      <div class="grid">
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1b6fa8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 14c0-1.5 2-3.5 2-3.5s2 2 2 3.5a2 2 0 0 1-4 0z"/></svg></span>
+          <div><h3>Water heaters</h3><p>Repair and replacement of tank water heaters. <span class="ph">[Add details]</span></p></div>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1b6fa8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h6m6 0h6M9 9v6h6V9z"/><path d="M12 15v3"/><path d="M11 20.5c0-.7 1-2 1-2s1 1.3 1 2a1 1 0 0 1-2 0z"/></svg></span>
+          <div><h3>Leaks &amp; pipe repair</h3><p>Finding and fixing leaking pipes, fittings and valves. <span class="ph">[Add details]</span></p></div>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1b6fa8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 4v5M12 15v5"/></svg></span>
+          <div><h3>Drains &amp; clogs</h3><p>Clearing slow or blocked sinks, tubs and drain lines. <span class="ph">[Add details]</span></p></div>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1b6fa8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h6v6H5z"/><path d="M5 10c0 4 2 6 5 7v3h5v-3c3-1 4-3 4-7z"/></svg></span>
+          <div><h3>Toilets</h3><p>Running, leaking or clogged toilets repaired or replaced. <span class="ph">[Add details]</span></p></div>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1b6fa8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16v2a6 6 0 0 1-6 6h-4a6 6 0 0 1-6-6z"/><path d="M14 11V5a2 2 0 0 1 4 0"/></svg></span>
+          <div><h3>Faucets &amp; fixtures</h3><p>Installing and repairing kitchen and bath faucets, sinks and fixtures. <span class="ph">[Add details]</span></p></div>
+        </article>
+        <article class="card">
+          <span class="ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1b6fa8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V8l6-5 6 5v13"/><path d="M10 21v-6h4v6"/></svg></span>
+          <div><h3>Remodels &amp; new lines</h3><p>Plumbing for kitchen and bathroom updates. <span class="ph">[Add details]</span></p></div>
+        </article>
+      </div>
+      <p class="note"><a href="tel:+17039363797">Don't see your problem? Call (703) 936-3797.</a></p>
+    </div>
+  </section>
+
+  <section id="about" class="alt" aria-labelledby="about-title">
+    <div class="wrap split">
+      <div>
+        <h2 id="about-title">About Toby's Plumbing</h2>
+        <p class="sub">Toby's Plumbing, LLC is a local plumbing company based in Manassas Park, Virginia.</p>
+        <p class="ph-block">[Your story here: who you are, how you work, and what customers can expect when they call.]</p>
+      </div>
+      <aside class="area" aria-labelledby="area-title">
+        <h3 id="area-title">Service area</h3>
+        <p>Based in Manassas Park, VA 20111.</p>
+        <p><span class="ph">[List the towns and neighborhoods you serve]</span></p>
+      </aside>
+    </div>
+  </section>
+
+  <section aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title">What customers say</h2>
+      <p class="ph-block">[Your reviews here: real customer reviews, quoted with permission or embedded from your review profile]</p>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 id="contact-title">Get in touch</h2>
+        <p class="sub">Calling is the fastest way to reach us.</p>
+        <ul class="info">
+          <li>
+            <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f2a516" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <div><span class="label">Phone</span><a href="tel:+17039363797">(703) 936-3797</a></div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f2a516" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+            <div><span class="label">Address</span><address style="font-style:normal">151 Martin Dr<br>Manassas Park, VA 20111</address></div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#f2a516" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <div><span class="label">Hours</span><span class="ph">[Your business hours]</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <form action="#" method="post" aria-labelledby="form-title" onsubmit="event.preventDefault();this.querySelector('[role=status]').textContent='Sample form: in the live site this sends your request to Toby\'s Plumbing.';">
+        <h3 id="form-title">Request service</h3>
+        <div><label for="name">Name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        <div>
+          <label for="service">What do you need help with?</label>
+          <select id="service" name="service">
+            <option>Water heater</option>
+            <option>Leak or pipe repair</option>
+            <option>Drain or clog</option>
+            <option>Toilet</option>
+            <option>Faucet or fixture</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div><label for="msg">Details</label><textarea id="msg" name="message"></textarea></div>
+        <button type="submit">Send request</button>
+        <p class="small" role="status" aria-live="polite">For anything urgent, please call (703) 936-3797.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p style="margin:0"><strong style="color:#fff">Toby's Plumbing, LLC</strong> · 151 Martin Dr, Manassas Park, VA 20111 · <a href="tel:+17039363797">(703) 936-3797</a></p>
+    <p style="margin:0">Sample homepage design. Items marked with a dashed yellow box are placeholders to confirm or replace.</p>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-call" href="tel:+17039363797">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+    Tap to call (703) 936-3797
+  </a>
+</div>
+</body>
+</html>

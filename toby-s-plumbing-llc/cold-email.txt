@@ -1,0 +1,11 @@
+Subject: A free sample homepage for Toby's Plumbing
+
+Hi there,
+
+I'm Ashton Haynes, a web developer serving Manassas Park, Manassas and Prince William County, with a background in IT security (B.A.S. in Information Management, Security & Network Assurance, Palm Beach State College).
+
+I made a free sample homepage for Toby's Plumbing: {{PREVIEW_URL}}. On a phone, a "Tap to call (703) 936-3797" button stays on screen, so customers can reach you in one tap. No obligation.
+
+One thing I noticed: browsers show a "Not secure" warning on your current site.
+
+Would you be open to a quick call this week?
