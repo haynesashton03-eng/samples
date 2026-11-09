@@ -1,0 +1,11 @@
+Subject: A sample website for Cleaning Services Spokane
+
+Hi there,
+
+When I searched for Cleaning Services Spokane, I found your Facebook page but no website, so people in Spokane looking online for a cleaning company may not find you.
+
+I'm Ashton Haynes, a web developer based in Manassas Park, Virginia. I build websites for small businesses across the US, and my background is in IT security (B.A.S. in Information Management, Security & Network Assurance, focused on IT forensics, from Palm Beach State College).
+
+I put together a free sample homepage for you: {{PREVIEW_URL}}. It puts your phone number up front with a tap-to-call button for phone visitors and includes a simple quote request form. There's no obligation, and the highlighted spots are placeholders for your own details.
+
+Would you be open to a quick call to talk it over?
