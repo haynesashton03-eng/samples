@@ -1,0 +1,11 @@
+Subject: A sample homepage for Chip's Lawn Service
+
+Hi,
+
+I'm Ashton Haynes, a local web developer serving Manassas Park, Manassas and Prince William County, with a background in IT security (B.A.S. in Information Management, Security & Network Assurance, IT forensics, Palm Beach State College).
+
+A quick check of chipslawnservice.com showed that browsers display a "Not secure" warning to visitors, and the site isn't set up for phones, where most local searches happen.
+
+I made a free sample homepage for you: {{PREVIEW_URL}}. It features your commercial and residential lawn and landscape maintenance, installation and design, with a tap-to-call button on phones. There's no obligation.
+
+Would you be open to a quick call to talk it over?

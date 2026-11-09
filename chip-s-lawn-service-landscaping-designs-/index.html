@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chip's Lawn Service &amp; Landscaping Designs | Manassas, VA</title>
+<meta name="description" content="Commercial and residential lawn and landscape maintenance, installation and design in the Manassas, Virginia area. Call (703) 361-8971.">
+<meta name="theme-color" content="#1f4d2b">
+<style>
+  :root{
+    --green-900:#163a20; --green-800:#1f4d2b; --green-600:#2f7a43; --green-100:#e7f2e9;
+    --sand:#f6f3ea; --ink:#1c241e; --muted:#4a564d; --white:#fff; --accent:#e0b44a;
+    --radius:14px; --max:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white)}
+  a{color:var(--green-800)}
+  img,svg{display:block}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--ink);padding:8px 12px;z-index:10}
+  .skip:focus{left:8px}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+  /* Header */
+  header{background:var(--green-900);color:var(--white);position:sticky;top:0;z-index:5}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;color:var(--white);text-decoration:none;font-weight:700;line-height:1.15}
+  .brand small{display:block;font-weight:400;font-size:.78rem;opacity:.85}
+  .mark{width:38px;height:38px;flex:none}
+  nav ul{display:none;list-style:none;margin:0;padding:0;gap:22px}
+  nav a{color:var(--white);text-decoration:none;font-size:.95rem}
+  nav a:hover{text-decoration:underline}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;min-height:48px}
+  .btn-call{background:var(--accent);color:var(--ink)}
+  .btn-call:hover{background:#ecc565}
+  .btn-ghost{border-color:var(--white);color:var(--white)}
+  .btn-ghost:hover{background:rgba(255,255,255,.12)}
+  .bar .btn{padding:8px 14px;min-height:44px;font-size:.95rem}
+  @media (min-width:860px){nav ul{display:flex}}
+
+  /* Hero */
+  .hero{background:
+      radial-gradient(circle at 85% 20%, rgba(224,180,74,.18) 0 140px, transparent 141px),
+      linear-gradient(160deg,var(--green-800),var(--green-900));
+    color:var(--white);padding:56px 0 64px;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:48px;background:var(--white);
+    clip-path:ellipse(70% 100% at 50% 100%)}
+  .hero h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.1;margin:0 0 16px;max-width:16ch}
+  .hero p{font-size:1.15rem;max-width:56ch;margin:0 0 28px;opacity:.95}
+  .cta{display:flex;flex-wrap:wrap;gap:12px}
+  .eyebrow{display:inline-block;background:rgba(255,255,255,.12);padding:4px 12px;border-radius:999px;font-size:.85rem;margin-bottom:16px}
+
+  section{padding:64px 0}
+  h2{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.2;margin:0 0 12px;color:var(--green-900)}
+  .lead{color:var(--muted);max-width:60ch;margin:0 0 32px}
+
+  /* Services */
+  .grid{display:grid;gap:18px;grid-template-columns:1fr}
+  @media (min-width:600px){.grid{grid-template-columns:repeat(2,1fr)}}
+  @media (min-width:960px){.grid{grid-template-columns:repeat(3,1fr)}}
+  .card{background:var(--sand);border-radius:var(--radius);padding:24px}
+  .card h3{margin:12px 0 6px;font-size:1.15rem;color:var(--green-900)}
+  .card p{margin:0;color:var(--muted)}
+  .icon{width:48px;height:48px;border-radius:12px;background:var(--green-800);display:grid;place-items:center}
+  .icon svg{width:26px;height:26px;stroke:var(--white);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+  /* Split */
+  .split{background:var(--green-100)}
+  .two{display:grid;gap:18px;grid-template-columns:1fr}
+  @media (min-width:760px){.two{grid-template-columns:1fr 1fr}}
+  .panel{background:var(--white);border-radius:var(--radius);padding:28px;border-top:6px solid var(--green-600)}
+  .panel h3{margin:0 0 8px;color:var(--green-900)}
+  .panel ul{margin:0;padding-left:20px;color:var(--muted)}
+
+  /* Placeholder blocks */
+  .ph{border:2px dashed #9aa79d;border-radius:var(--radius);padding:24px;color:var(--muted);background:#fbfbf8}
+  .ph strong{color:var(--ink)}
+  .tag{display:inline-block;background:#fff4d6;color:#6b4e00;border:1px solid #e7cf86;border-radius:6px;font-size:.78rem;font-weight:700;padding:1px 8px;vertical-align:middle}
+
+  /* Contact */
+  .contact{background:var(--green-900);color:var(--white)}
+  .contact h2{color:var(--white)}
+  .contact .lead{color:#d6e4d9}
+  .info{display:grid;gap:18px;grid-template-columns:1fr}
+  @media (min-width:760px){.info{grid-template-columns:repeat(3,1fr)}}
+  .info div{background:rgba(255,255,255,.07);border-radius:var(--radius);padding:22px}
+  .info h3{margin:0 0 6px;font-size:1rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent)}
+  .info p{margin:0}
+  .info a{color:var(--white)}
+  .contact .tag{background:#fff4d6}
+
+  footer{background:#0f2915;color:#c4d3c7;font-size:.9rem;padding:24px 0}
+  footer p{margin:4px 0}
+
+  /* Mobile sticky call bar */
+  .callbar{position:fixed;left:0;right:0;bottom:0;background:var(--accent);text-align:center;z-index:6}
+  .callbar a{display:block;padding:14px;color:var(--ink);font-weight:800;text-decoration:none}
+  body{padding-bottom:52px}
+  @media (min-width:860px){.callbar{display:none}body{padding-bottom:0}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Chip's Lawn Service &amp; Landscaping Designs Inc. This is not Chip's Lawn Service &amp; Landscaping Designs Inc.'s official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=chip-s-lawn-service-landscaping-designs-" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Chip's Lawn Service and Landscaping Designs, home">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#2f7a43"/><path d="M20 31V15M20 22c-6 0-9-4-9-9 6 0 9 4 9 9zm0-3c5 0 8-3 8-8-5 0-8 3-8 8z" fill="#e7f2e9"/></svg>
+      <span>Chip's Lawn Service<small>&amp; Landscaping Designs Inc.</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#who">Residential &amp; Commercial</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-call" href="tel:+17033618971">Call (703) 361-8971</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap">
+      <span class="eyebrow">Serving the Manassas area</span>
+      <h1>Lawn &amp; landscape care, from first design to weekly upkeep.</h1>
+      <p>Commercial and residential lawn and landscape maintenance and installation, plus landscape design, from Business Center Court in Manassas.</p>
+      <div class="cta">
+        <a class="btn btn-call" href="tel:+17033618971">Call (703) 361-8971</a>
+        <a class="btn btn-ghost" href="#services">See our services</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-h">
+    <div class="wrap">
+      <h2 id="services-h">What we do</h2>
+      <p class="lead">From keeping a lawn healthy to planning and installing a new landscape, one team handles it.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M5 20c0-4 1-7 2-9M9 20c0-5 1-8 3-11M14 20c0-4 1-6 3-8M18 20c0-3 0-5 1-6"/></svg></div>
+          <h3>Lawn maintenance</h3>
+          <p>Regular care that keeps your lawn looking sharp all season, including dethatching and organic lawn care options.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M6 21V10l6-6 6 6v11"/><path d="M10 21v-5h4v5"/></svg></div>
+          <h3>Landscape design</h3>
+          <p>A plan for your property that fits how you use it, drawn up before any digging starts.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20l4-4M8 16l8-8 3 3-8 8zM16 8l2-2"/><path d="M3 21l1-1"/></svg></div>
+          <h3>Landscape installation</h3>
+          <p>Planting beds, shrubs and new landscape features, planned and installed to suit your property.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22V12M12 12C7 12 5 9 5 5c4 0 7 2 7 7zm0 0c5 0 7-3 7-7-4 0-7 2-7 7z"/></svg></div>
+          <h3>Gardening</h3>
+          <p>Bed care, seasonal plantings and upkeep that keeps gardens tidy and growing well.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="6" cy="18" r="3"/><circle cx="18" cy="18" r="3"/><path d="M8.5 16.5L18 4M15.5 16.5L6 4"/></svg></div>
+          <h3>Tree pruning &amp; trimming</h3>
+          <p>Shaping and trimming that keeps trees healthy, tidy and clear of walkways and roofs.</p>
+        </article>
+        <article class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg></div>
+          <h3>Poison ivy removal</h3>
+          <p>Clearing poison ivy from yards, fence lines and garden beds so your outdoor space is safe to use again.</p>
+        </article>
+      </div>
+      <p class="lead" style="margin:24px 0 0;font-size:.9rem"><span class="tag">Placeholder</span> Service list is taken from Chip's public directory listings. Add, remove or reword to match the full service menu.</p>
+    </div>
+  </section>
+
+  <section class="split" id="who" aria-labelledby="who-h">
+    <div class="wrap">
+      <h2 id="who-h">Residential and commercial</h2>
+      <p class="lead">Lawn and landscape maintenance and installation for homes and businesses alike.</p>
+      <div class="two">
+        <div class="panel">
+          <h3>For homeowners</h3>
+          <ul>
+            <li>Ongoing lawn and bed maintenance</li>
+            <li>New landscape design and installation</li>
+            <li>Seasonal clean-ups <span class="tag">confirm</span></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h3>For businesses &amp; properties</h3>
+          <ul>
+            <li>Scheduled grounds maintenance</li>
+            <li>Landscape installation for commercial sites</li>
+            <li>One local point of contact <span class="tag">confirm</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="reviews-h">
+    <div class="wrap">
+      <h2 id="reviews-h">What customers say</h2>
+      <div class="ph">
+        <p><strong>[Your reviews here]</strong></p>
+        <p>Placeholder: add real customer reviews (with permission), or link to your Google or Yelp page.</p>
+      </div>
+      <div class="ph" style="margin-top:18px">
+        <p><strong>[Your licenses, insurance and memberships here]</strong></p>
+        <p>Placeholder: list only credentials you hold and can document, worded the way you state them.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <h2 id="contact-h">Get in touch</h2>
+      <p class="lead">Call to talk about your lawn or a new landscape project.</p>
+      <div class="info">
+        <div>
+          <h3>Phone</h3>
+          <p><a href="tel:+17033618971">(703) 361-8971</a></p>
+        </div>
+        <div>
+          <h3>Office</h3>
+          <p>10434 Business Center Ct<br>Manassas, VA 20110</p>
+          <p style="margin-top:8px"><a href="https://maps.google.com/?q=10434+Business+Center+Ct,+Manassas,+VA+20110" rel="noopener">Get directions</a></p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>[Your business hours] <span class="tag">Placeholder</span></p>
+          <p style="margin-top:8px">Email: [your email] <span class="tag">Placeholder</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; Chip's Lawn Service &amp; Landscaping Designs Inc. &middot; 10434 Business Center Ct, Manassas, VA 20110 &middot; (703) 361-8971</p>
+    <p>Sample homepage concept. Not the official website. Items marked “Placeholder” or “confirm” need to be checked by the business.</p>
+  </div>
+</footer>
+
+<div class="callbar"><a href="tel:+17033618971">Tap to call (703) 361-8971</a></div>
+</body>
+</html>
