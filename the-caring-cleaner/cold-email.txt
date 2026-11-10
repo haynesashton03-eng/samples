@@ -1,0 +1,11 @@
+Subject: A sample homepage for The Caring Cleaner
+
+Hi,
+
+Your website's line about treating every home "as if it were my own" really stands out. One thing I noticed: the homepage tells your story well but doesn't list the specific cleanings you offer, so visitors have to ask.
+
+I'm Ashton Haynes, a web developer based in Manassas Park, Virginia, working with small businesses across the US. My background is in IT security (B.A.S. in Information Management, Security & Network Assurance, Palm Beach State College).
+
+I made a free sample homepage for you that keeps your own wording, puts your services and free quote up front, and adds a tap-to-call button on phones: {{PREVIEW_URL}}. No obligation.
+
+Would you be open to a quick call to hear what you think?
