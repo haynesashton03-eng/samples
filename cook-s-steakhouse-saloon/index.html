@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cook's Steakhouse &amp; Saloon | Elko, NV</title>
+<meta name="description" content="Cook's Steakhouse & Saloon in downtown Elko, Nevada. Steaks, seafood, pasta, burgers and a full bar at 245 3rd St. Catering and patio rentals available.">
+<meta name="theme-color" content="#1c1410">
+<style>
+  :root{
+    --bg:#1c1410; --bg2:#271c16; --panel:#31241c; --line:#4a382b;
+    --text:#f4ebe1; --muted:#cdbcaa; --accent:#d9a441; --accent-ink:#1c1410;
+    --rust:#a8452a; --cream:#f6efe4; --cream-ink:#2a1e17;
+    --radius:10px; --max:1100px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font:17px/1.6 Georgia,"Times New Roman",serif;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:"Rockwell","Roboto Slab","Courier New",Georgia,serif;line-height:1.15;margin:0 0 .5em;letter-spacing:.01em}
+  p{margin:0 0 1em}
+  a{color:var(--accent)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--accent-ink);padding:8px 14px;z-index:20}
+  .skip:focus{left:8px;top:8px}
+
+  /* sample banner */
+  .sample{background:var(--accent);color:var(--accent-ink);font:600 14px/1.4 system-ui,sans-serif;text-align:center;padding:8px 16px}
+
+  /* header */
+  header{position:sticky;top:0;z-index:10;background:rgba(28,20,16,.96);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;color:var(--text);text-decoration:none;font:700 18px/1.1 "Rockwell","Roboto Slab",Georgia,serif}
+  .brand svg{flex:none}
+  .brand small{display:block;font:500 11px/1.2 system-ui,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font:500 15px system-ui,sans-serif}
+  nav a{color:var(--text);text-decoration:none}
+  nav a:hover{color:var(--accent)}
+  .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font:700 16px/1 system-ui,sans-serif;
+    padding:14px 22px;border-radius:999px;text-decoration:none;border:2px solid var(--accent);text-align:center}
+  .btn:hover{background:#e8b552}
+  .btn.ghost{background:transparent;color:var(--text);border-color:var(--muted)}
+  .btn.ghost:hover{border-color:var(--accent);color:var(--accent)}
+  .call-sm{padding:10px 16px;font-size:15px;white-space:nowrap}
+  @media (max-width:760px){ nav ul{display:none} }
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;padding:72px 0 80px;
+    background:
+      repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 2px,transparent 2px 120px),
+      repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 1px,transparent 1px 46px),
+      radial-gradient(ellipse at 70% 20%,#4a2f1f 0%,var(--bg) 65%)}
+  .hero .beam{position:absolute;left:0;right:0;height:18px;background:linear-gradient(#5a3f2c,#3a291d);box-shadow:0 4px 10px rgba(0,0,0,.4)}
+  .hero .beam.t{top:0}
+  .eyebrow{font:600 13px/1 system-ui,sans-serif;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+  .hero h1{font-size:clamp(38px,8vw,72px);max-width:13ch}
+  .hero p.lead{font-size:clamp(18px,2.4vw,21px);color:var(--muted);max-width:40ch}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+  .quick{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:36px;font:500 15px system-ui,sans-serif;color:var(--muted);padding:0;list-style:none}
+  .quick li{display:flex;align-items:center;gap:8px}
+  .quick svg{color:var(--accent)}
+
+  section{padding:72px 0}
+  .alt{background:var(--bg2)}
+  .cream{background:var(--cream);color:var(--cream-ink)}
+  .cream a{color:var(--rust)}
+  h2{font-size:clamp(30px,5vw,44px)}
+  .sub{color:var(--muted);max-width:60ch}
+  .cream .sub{color:#5b4a3d}
+
+  .grid{display:grid;gap:20px}
+  @media (min-width:700px){ .grid.c2{grid-template-columns:1fr 1fr} .grid.c3{grid-template-columns:repeat(3,1fr)} }
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .card h3{font-size:24px;color:var(--accent)}
+  .card .ico{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:rgba(217,164,65,.14);color:var(--accent);margin-bottom:14px}
+  .cream .card{background:#fff;border-color:#e3d6c4}
+  .cream .card h3{color:var(--rust)}
+  .cream .card .ico{background:rgba(168,69,42,.1);color:var(--rust)}
+
+  .menu-list{list-style:none;padding:0;margin:0}
+  .menu-list li{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line)}
+  .menu-list li span:last-child{color:var(--muted);font:italic 15px Georgia,serif;text-align:right}
+  .ph{display:inline-block;background:rgba(217,164,65,.14);border:1px dashed var(--accent);color:var(--accent);
+    font:600 13px/1.4 system-ui,sans-serif;padding:3px 8px;border-radius:6px}
+  .cream .ph{background:rgba(168,69,42,.08);border-color:var(--rust);color:var(--rust)}
+
+  .hours{width:100%;border-collapse:collapse;font:500 16px system-ui,sans-serif}
+  .hours th,.hours td{text-align:left;padding:11px 0;border-bottom:1px solid var(--line)}
+  .hours td{text-align:right;color:var(--muted)}
+  .hours tr.closed td{color:#e2876d}
+
+  .reviews{border:2px dashed var(--line);border-radius:var(--radius);padding:40px 20px;text-align:center;color:var(--muted)}
+
+  .visit p{font:500 17px/1.6 system-ui,sans-serif}
+  .map-block{border-radius:var(--radius);min-height:240px;display:grid;place-items:center;text-align:center;padding:24px;
+    background:
+      linear-gradient(0deg,transparent 48%,rgba(255,255,255,.06) 48% 52%,transparent 52%),
+      linear-gradient(90deg,transparent 30%,rgba(255,255,255,.06) 30% 33%,transparent 33%),
+      linear-gradient(90deg,transparent 70%,rgba(255,255,255,.06) 70% 73%,transparent 73%),
+      var(--panel);border:1px solid var(--line)}
+  .map-block svg{color:var(--rust)}
+
+  footer{border-top:1px solid var(--line);padding:32px 0 96px;color:var(--muted);font:14px/1.6 system-ui,sans-serif}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
+
+  /* sticky mobile call bar */
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:15;display:flex;gap:8px;padding:10px 12px;
+    background:rgba(28,20,16,.97);border-top:1px solid var(--line)}
+  .callbar .btn{flex:1;padding:13px 10px;font-size:15px}
+  @media (min-width:761px){ .callbar{display:none} footer{padding-bottom:32px} }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Cook's Steakhouse &amp; Saloon. This is not Cook's Steakhouse &amp; Saloon's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=cook-s-steakhouse-saloon" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sample" role="note">Sample homepage made for Cook's Steakhouse &amp; Saloon. Not the official site.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Cook's Steakhouse and Saloon, back to top">
+      <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="17" fill="none" stroke="#d9a441" stroke-width="2"/><path d="M18 7l3 7.5 8 .6-6.1 5.2 1.9 7.8L18 24l-6.8 4.1 1.9-7.8L7 15.1l8-.6z" fill="#d9a441"/></svg>
+      <span>Cook's<small>Steakhouse &amp; Saloon</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#bar">Saloon</a></li>
+        <li><a href="#events">Catering &amp; Events</a></li>
+        <li><a href="#visit">Hours &amp; Location</a></li>
+      </ul>
+    </nav>
+    <a class="btn call-sm" href="tel:+17757380822">(775) 738-0822</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="beam t" aria-hidden="true"></div>
+    <div class="wrap">
+      <p class="eyebrow">Downtown Elko, Nevada</p>
+      <h1 id="hero-title">Steaks, cold drinks &amp; your new hometown bar</h1>
+      <p class="lead">Contemporary dining with a western flair, rebuilt from the ground up at 245 3rd Street.</p>
+      <div class="cta-row">
+        <a class="btn" href="tel:+17757380822">Call to reserve a table</a>
+        <a class="btn ghost" href="#menu">See what we serve</a>
+      </div>
+      <ul class="quick">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Open Tue–Sun from 4 pm</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0114 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>245 3rd St, Elko</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 3h8l-1 8a3 3 0 01-6 0z"/><path d="M12 14v7M8 21h8"/></svg>Full bar</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cream" aria-labelledby="about-title">
+    <div class="wrap grid c2" style="align-items:center">
+      <div>
+        <p class="eyebrow" style="color:var(--rust)">Fresh start, same Elko spirit</p>
+        <h2 id="about-title">Remodeled from the ground up</h2>
+        <p>We completely remodeled the place from the ground up to bring a fresh and welcoming new restaurant and bar to the great city of Elko. Think log beams, reclaimed wood and a room built for good food and good company.</p>
+        <p>Whether you're in for a steak dinner, a burger at the bar or a night out with friends, we want to be your new hometown bar.</p>
+      </div>
+      <div class="card" aria-label="Photo placeholder">
+        <div style="aspect-ratio:4/3;border-radius:8px;display:grid;place-items:center;text-align:center;padding:16px;
+          background:repeating-linear-gradient(90deg,#8a5a3b 0 22px,#7a4e33 22px 44px)">
+          <span class="ph" style="background:#fff">[Your dining room photo here]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" aria-labelledby="menu-title">
+    <div class="wrap">
+      <p class="eyebrow">The menu</p>
+      <h2 id="menu-title">From burgers to a proper steak dinner</h2>
+      <p class="sub">Specialty sandwiches, burgers and salads, plus an array of steaks, seafood and pasta.</p>
+      <div class="grid c3" style="margin-top:32px">
+        <article class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10c0-3.5 3.6-6 8-6s8 2.5 8 6z"/><path d="M3 14h18M5 18h14a1 1 0 001-1v-1H4v1a1 1 0 001 1z"/></svg></div>
+          <h3>Burgers &amp; Sandwiches</h3>
+          <ul class="menu-list">
+            <li><span>[Signature burger]</span><span>[price]</span></li>
+            <li><span>[Specialty sandwich]</span><span>[price]</span></li>
+            <li><span>[Fresh salad]</span><span>[price]</span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 13c0-4 3-8 8-8 4 0 6 3 6 6 0 5-4 8-9 8-3 0-5-2-5-6z"/><circle cx="14" cy="10" r="2"/></svg></div>
+          <h3>Steaks</h3>
+          <ul class="menu-list">
+            <li><span>[Ribeye]</span><span>[price]</span></li>
+            <li><span>[New York strip]</span><span>[price]</span></li>
+            <li><span>[Filet]</span><span>[price]</span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12c3-5 9-6 14-2l4-3v10l-4-3c-5 4-11 3-14-2z"/><circle cx="8" cy="11" r="1"/></svg></div>
+          <h3>Seafood &amp; Pasta</h3>
+          <ul class="menu-list">
+            <li><span>[Seafood dish]</span><span>[price]</span></li>
+            <li><span>[Pasta dish]</span><span>[price]</span></li>
+            <li><span>[Chef's special]</span><span>[price]</span></li>
+          </ul>
+        </article>
+      </div>
+      <p style="margin-top:24px"><span class="ph">[Placeholder: dishes and prices to come from your current menu]</span></p>
+    </div>
+  </section>
+
+  <section id="bar" class="alt" aria-labelledby="bar-title">
+    <div class="wrap grid c2" style="align-items:center">
+      <div>
+        <p class="eyebrow">The saloon</p>
+        <h2 id="bar-title">A full bar in the heart of Elko</h2>
+        <p class="sub">Pull up a stool after work, meet friends for a drink before dinner, or stay for one more round. A full bar is pouring every night we're open.</p>
+        <p><span class="ph">[Your happy hour or drink specials here]</span></p>
+      </div>
+      <div class="card" style="text-align:center">
+        <svg width="120" height="120" viewBox="0 0 120 120" aria-hidden="true"><circle cx="60" cy="60" r="56" fill="#3a2a20" stroke="#d9a441" stroke-width="2"/><path d="M38 34h44l-17 30v22h12v6H43v-6h12V64z" fill="none" stroke="#d9a441" stroke-width="3" stroke-linejoin="round"/><path d="M45 40h30l-4 7H49z" fill="#a8452a"/></svg>
+        <p style="margin:12px 0 0;font:600 15px system-ui,sans-serif;color:var(--muted)">Cold drinks · Good company · Western hospitality</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="cream" aria-labelledby="events-title">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--rust)">Catering &amp; private events</p>
+      <h2 id="events-title">Let us feed your crowd</h2>
+      <p class="sub">From office lunches to family celebrations, we bring the food to you or host you here.</p>
+      <div class="grid c2" style="margin-top:28px">
+        <article class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 18h18M5 18a7 7 0 0114 0M12 8V6"/><circle cx="12" cy="5" r="1"/></svg></div>
+          <h3>Catering</h3>
+          <p>Our kitchen can cater your next event. Call us to talk through your headcount, date and menu.</p>
+          <a href="tel:+17757380822">Call about catering</a>
+        </article>
+        <article class="card">
+          <div class="ico"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 10l9-6 9 6M5 10v10h14V10M9 20v-5h6v5"/></svg></div>
+          <h3>Patio rentals</h3>
+          <p>Our patio is available to rent for events: birthdays, team get-togethers, rehearsal dinners and more.</p>
+          <a href="tel:+17757380822">Ask about availability</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="reviews-title">
+    <div class="wrap">
+      <p class="eyebrow">What guests say</p>
+      <h2 id="reviews-title">Reviews</h2>
+      <div class="reviews"><span class="ph">[Your reviews here]</span><p style="margin:12px 0 0">Real guest reviews, shared with permission, will go here.</p></div>
+    </div>
+  </section>
+
+  <section id="visit" class="alt visit" aria-labelledby="visit-title">
+    <div class="wrap grid c2">
+      <div>
+        <p class="eyebrow">Come on in</p>
+        <h2 id="visit-title">Hours &amp; location</h2>
+        <table class="hours">
+          <caption class="sr" style="text-align:left;color:var(--muted);font:14px system-ui,sans-serif;padding-bottom:6px">Dinner hours</caption>
+          <tbody>
+            <tr class="closed"><th scope="row">Monday</th><td>Closed</td></tr>
+            <tr><th scope="row">Tuesday</th><td>4 – 9 pm</td></tr>
+            <tr><th scope="row">Wednesday</th><td>4 – 9 pm</td></tr>
+            <tr><th scope="row">Thursday</th><td>4 – 9 pm</td></tr>
+            <tr><th scope="row">Friday</th><td>4 – 10 pm</td></tr>
+            <tr><th scope="row">Saturday</th><td>4 – 10 pm</td></tr>
+            <tr><th scope="row">Sunday</th><td>4 – 8 pm</td></tr>
+          </tbody>
+        </table>
+        <p style="margin-top:12px;font-size:14px;color:var(--muted)">Hours as listed publicly; <span class="ph">[please confirm]</span></p>
+      </div>
+      <div>
+        <div class="map-block">
+          <div>
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+            <address style="font-style:normal;margin:10px 0 14px;font:600 18px/1.5 system-ui,sans-serif">245 3rd St<br>Elko, NV 89801</address>
+            <a class="btn" href="https://maps.google.com/?q=245+3rd+St,+Elko,+NV+89801" rel="noopener">Get directions</a>
+          </div>
+        </div>
+        <p style="margin-top:20px">Call us: <a href="tel:+17757380822"><strong>(775) 738-0822</strong></a><br>
+          Email: <span class="ph">[your email]</span></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Cook's Steakhouse &amp; Saloon · 245 3rd St, Elko, NV 89801</span>
+    <span>Sample homepage design by Ashton Haynes</span>
+  </div>
+</footer>
+
+<div class="callbar" aria-label="Quick actions">
+  <a class="btn" href="tel:+17757380822">Call</a>
+  <a class="btn ghost" href="https://maps.google.com/?q=245+3rd+St,+Elko,+NV+89801" rel="noopener">Directions</a>
+</div>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
