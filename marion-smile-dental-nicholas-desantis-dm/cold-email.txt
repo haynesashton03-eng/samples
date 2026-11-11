@@ -1,0 +1,13 @@
+Subject: A sample homepage for Marion Smile Dental
+
+Hi Dr. DeSantis and Dr. Zhang,
+
+I'm Ashton Haynes, a web developer based in Manassas Park, Virginia. I work with small businesses across the US, and my background is in IT security (B.A.S. in Information Management, Security & Network Assurance, Palm Beach State College).
+
+I made a free sample homepage for Marion Smile Dental: {{PREVIEW_URL}}
+
+On a phone, patients can call (740) 387-5196 or get directions to Crescent Heights Rd with one tap. Your services, from cleanings to crowns, implants and whitening, are all on one page that's easy to scan.
+
+I also noticed that online directories show different office hours for the practice, so the sample has one clear hours section for you to fill in.
+
+There's no obligation. Would you be open to a quick call to hear what you think?
