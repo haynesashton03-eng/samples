@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skip and Sons Heating &amp; Air | Hays, KS</title>
+<meta name="description" content="Skip and Sons Heating & Air: heating and air conditioning service in Hays, Kansas. Call (785) 656-1539.">
+<meta name="theme-color" content="#0f2d4a">
+<style>
+  :root{
+    --navy:#0f2d4a; --navy-2:#173f66; --ink:#1b2430; --muted:#4b5868;
+    --bg:#ffffff; --soft:#f3f6f9; --line:#dde4ec;
+    --warm:#c2410c; --warm-dark:#9a3412; --cool:#0e7490;
+    --radius:14px; --max:1100px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+  a{color:var(--cool)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+  .skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:10}
+  .skip:focus{left:8px;top:8px}
+  :focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+
+  /* sample ribbon */
+  .ribbon{background:#fff7ed;border-bottom:1px solid #fed7aa;color:#7c2d12;font-size:14px}
+  .ribbon .wrap{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:center;justify-content:space-between;padding-top:8px;padding-bottom:8px}
+  .ribbon a{color:#7c2d12;font-weight:700}
+
+  /* header */
+  header.top{background:var(--navy);color:#fff;position:sticky;top:0;z-index:5}
+  header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;letter-spacing:.2px;line-height:1.15}
+  .brand small{display:block;font-weight:500;opacity:.8;font-size:13px}
+  .mark{width:38px;height:38px;flex:none}
+  nav.links{display:none;gap:22px}
+  nav.links a{color:#e6eef6;text-decoration:none;font-weight:600;font-size:15px}
+  nav.links a:hover{color:#fff;text-decoration:underline}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;min-height:48px}
+  .btn-warm{background:var(--warm);color:#fff}
+  .btn-warm:hover{background:var(--warm-dark)}
+  .btn-ghost{border-color:#fff;color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.12)}
+  .btn svg{width:20px;height:20px}
+  .call-sm{padding:9px 14px;min-height:44px;font-size:15px}
+
+  /* hero */
+  .hero{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-2) 55%,#1d5a7d 100%);color:#fff;position:relative;overflow:hidden}
+  .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;opacity:.18;pointer-events:none}
+  .hero::before{width:420px;height:420px;right:-140px;top:-120px;background:radial-gradient(circle,#fb923c,transparent 70%)}
+  .hero::after{width:380px;height:380px;right:60px;bottom:-200px;background:radial-gradient(circle,#38bdf8,transparent 70%)}
+  .hero .wrap{position:relative;padding-top:56px;padding-bottom:64px}
+  .eyebrow{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:4px 12px;border-radius:999px;font-size:14px;font-weight:600}
+  .hero h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.1;margin:16px 0 14px;max-width:16ch}
+  .hero p.lead{font-size:clamp(1.05rem,2.4vw,1.25rem);max-width:56ch;color:#dbe7f2;margin:0 0 26px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .hero-facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin:30px 0 0;padding:0;list-style:none;color:#dbe7f2;font-size:15px}
+  .hero-facts li{display:flex;align-items:center;gap:8px}
+  .hero-facts svg{width:18px;height:18px;flex:none}
+
+  /* sections */
+  section{padding:64px 0}
+  .soft{background:var(--soft)}
+  h2{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.2;margin:0 0 10px;color:var(--navy)}
+  .sub{color:var(--muted);margin:0 0 32px;max-width:60ch}
+  .grid{display:grid;gap:18px;grid-template-columns:1fr}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .card h3{margin:12px 0 6px;font-size:1.2rem;color:var(--navy)}
+  .card p{margin:0;color:var(--muted)}
+  .icon{width:52px;height:52px;border-radius:12px;display:grid;place-items:center}
+  .icon svg{width:28px;height:28px}
+  .i-warm{background:#ffedd5;color:var(--warm-dark)}
+  .i-cool{background:#cffafe;color:#155e75}
+  .i-navy{background:#e0e7ff;color:#1e3a8a}
+  .tag{display:inline-block;margin-top:12px;font-size:13px;background:#fef3c7;color:#78350f;border-radius:6px;padding:2px 8px}
+
+  .ph{background:#fef3c7;color:#78350f;border:1px dashed #d97706;border-radius:6px;padding:1px 6px;font-size:.92em}
+
+  .split{display:grid;gap:28px;grid-template-columns:1fr;align-items:start}
+  .checks{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+  .checks li{display:flex;gap:12px;align-items:flex-start}
+  .checks svg{width:22px;height:22px;flex:none;color:var(--cool);margin-top:3px}
+
+  .review-ph{border:2px dashed #cbd5e1;border-radius:var(--radius);padding:36px 20px;text-align:center;color:var(--muted);background:#fff}
+
+  /* contact */
+  .contact{background:var(--navy);color:#fff}
+  .contact h2{color:#fff}
+  .contact .sub{color:#c9d7e6}
+  .contact-list{list-style:none;padding:0;margin:0;display:grid;gap:18px}
+  .contact-list li{display:flex;gap:14px;align-items:flex-start}
+  .contact-list svg{width:24px;height:24px;flex:none;color:#fdba74;margin-top:3px}
+  .contact-list strong{display:block;color:#fff}
+  .contact-list a{color:#fff}
+  .contact-list span{color:#c9d7e6}
+  .contact .ph{color:#78350f}
+  .contact-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.18);border-radius:var(--radius);padding:24px}
+  .contact-card p{color:#dbe7f2;margin:0 0 18px}
+
+  footer{background:#0a1f33;color:#9fb3c8;font-size:14px;padding:26px 0 96px}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+
+  /* mobile sticky call bar */
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:6;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(255,255,255,.96);border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.08)}
+  .callbar .btn{width:100%}
+
+  @media (min-width:700px){
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .split{grid-template-columns:1.1fr .9fr}
+  }
+  @media (min-width:960px){
+    nav.links{display:flex}
+    .grid.four{grid-template-columns:repeat(4,1fr)}
+    .callbar{display:none}
+    footer{padding-bottom:26px}
+    .hero .wrap{padding-top:88px;padding-bottom:96px}
+    section{padding:84px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Skip and Sons Heating &amp; Air. This is not Skip and Sons Heating &amp; Air's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=skip-and-sons-heating-air" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="ribbon" role="note">
+  <div class="wrap">
+    <span><strong>Sample homepage</strong>, prepared for Skip and Sons Heating &amp; Air. It isn't their official website. Highlighted items are placeholders.</span>
+    <a href="{{GET_STARTED_URL}}">Like it? Get started &rarr;</a>
+  </div>
+</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Skip and Sons Heating and Air, home">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+        <rect width="40" height="40" rx="10" fill="#fff"/>
+        <path d="M20 7c4 5 7 8.5 7 13a7 7 0 0 1-14 0c0-2.6 1.3-4.6 3-6.3.4 2 1.5 3.3 3 3.8-.6-3.6.2-7 1-10.5z" fill="#c2410c"/>
+        <path d="M8 31h24M11 35h18" stroke="#0e7490" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span>Skip and Sons<small>Heating &amp; Air &middot; Hays, KS</small></span>
+    </a>
+    <nav class="links" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#why">Why us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-warm call-sm" href="tel:+17856561539">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>(785) 656-1539</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <span class="eyebrow">Heating &amp; air conditioning &middot; Hays, Kansas</span>
+      <h1 id="hero-title">Warm winters. Cool summers. Help that's close to home.</h1>
+      <p class="lead">Skip and Sons Heating &amp; Air keeps furnaces and air conditioners running in Hays. When your system quits, give us a call.</p>
+      <div class="cta-row">
+        <a class="btn btn-warm" href="tel:+17856561539">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call (785) 656-1539
+        </a>
+        <a class="btn btn-ghost" href="#services">See our services</a>
+      </div>
+      <ul class="hero-facts">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>400 E 13th St, Hays, KS</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Hours: <span class="ph">[Your hours here]</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">What we do</h2>
+      <p class="sub">Heating and cooling service for Hays and the surrounding area. <span class="ph">[Confirm this list and your service area]</span></p>
+      <div class="grid four">
+        <article class="card">
+          <div class="icon i-warm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3c3 4 5 6.5 5 10a5 5 0 0 1-10 0c0-2 1-3.5 2.2-4.8.3 1.5 1.1 2.4 2.2 2.8-.4-2.7.1-5.3.6-8z"/></svg></div>
+          <h3>Heating repair</h3>
+          <p>No heat on a cold Kansas night? We diagnose and fix furnaces and heating systems.</p>
+        </article>
+        <article class="card">
+          <div class="icon i-cool"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M4.9 6l14.2 12M19.1 6 4.9 18M9 3.5l3 2 3-2M9 20.5l3-2 3 2"/></svg></div>
+          <h3>Air conditioning repair</h3>
+          <p>Warm air from the vents, odd noises or a unit that won't start. We'll get your AC cooling again.</p>
+        </article>
+        <article class="card">
+          <div class="icon i-navy"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+          <h3>New system installation</h3>
+          <p>Replacing an old furnace or AC? We help you choose the right fit for your home.</p>
+          <span class="tag">Placeholder: confirm you offer this</span>
+        </article>
+        <article class="card">
+          <div class="icon i-warm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg></div>
+          <h3>Seasonal maintenance</h3>
+          <p>A check-up before winter and summer helps catch small problems before they turn into breakdowns.</p>
+          <span class="tag">Placeholder: confirm you offer this</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="soft" id="why" aria-labelledby="why-title">
+    <div class="wrap split">
+      <div>
+        <h2 id="why-title">A Hays business</h2>
+        <p class="sub">Skip and Sons Heating &amp; Air is based right here in Hays, on E 13th St.</p>
+        <p class="ph" style="display:inline-block">[Your story here: how the business started, who "the sons" are, what you're proud of]</p>
+      </div>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span><strong>Based in Hays</strong>, at 400 E 13th St.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span><strong>Heating and cooling</strong>, one call for both.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span><strong>Easy to reach</strong>: call (785) 656-1539.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7"/></svg><span class="ph">[Add another reason customers choose you]</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title">What customers say</h2>
+      <div class="review-ph">
+        <p style="margin:0;font-weight:700">[Your reviews here]</p>
+        <p style="margin:6px 0 0">We'll add real customer reviews, used with permission.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap split">
+      <div>
+        <h2 id="contact-title">Need heat or AC help?</h2>
+        <p class="sub">Calling is the fastest way to reach us.</p>
+        <ul class="contact-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            <div><strong>Phone</strong><a href="tel:+17856561539">(785) 656-1539</a></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><strong>Address</strong><span>400 E 13th St, Hays, KS 67601</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><strong>Hours</strong><span class="ph">[Your hours here]</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            <div><strong>Email</strong><span class="ph">[Your email here]</span></div></li>
+        </ul>
+      </div>
+      <div class="contact-card">
+        <p>Tell us what's going on with your furnace or AC, and we'll let you know how we can help.</p>
+        <a class="btn btn-warm" href="tel:+17856561539" style="width:100%">Call (785) 656-1539</a>
+        <p style="margin:16px 0 0;font-size:14px"><span class="ph">[Optional: online request form, added at launch]</span></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Skip and Sons Heating &amp; Air &middot; 400 E 13th St, Hays, KS 67601</span>
+    <span>Sample design. Not the official website.</span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-warm" href="tel:+17856561539">Call Skip and Sons: (785) 656-1539</a>
+</div>
+</body>
+</html>
