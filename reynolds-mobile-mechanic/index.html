@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reynolds Mobile Mechanic | Mobile Auto Repair in Bowling Green, KY</title>
+<meta name="description" content="Reynolds Mobile Mechanic brings auto repair to you in Bowling Green, KY: roadside assistance, diagnostics, brakes, oil changes, engine and transmission work, towing and small engine repair. Call or text (270) 792-0767.">
+<meta name="theme-color" content="#16181d">
+<style>
+  :root{
+    --bg:#16181d; --bg2:#1f222a; --panel:#262a33; --line:#363b46;
+    --text:#f3f4f6; --muted:#c3c8d2; --accent:#f5a524; --accent-dark:#c97f00; --ink:#16181d;
+    --light:#f6f5f2; --light-text:#1d2027; --light-muted:#4a505c;
+    --radius:14px; --max:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;font-size:17px}
+  a{color:inherit}
+  img,svg{display:block}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--ink);padding:8px 14px;z-index:100}
+  .skip:focus{left:8px;top:8px}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+  /* sample notice */
+  .notice{background:#0d0e11;color:var(--muted);font-size:14px;text-align:center;padding:8px 16px}
+  .notice a{color:var(--accent);font-weight:600}
+
+  /* header */
+  header.top{position:sticky;top:0;z-index:50;background:rgba(22,24,29,.96);border-bottom:1px solid var(--line)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.2px;line-height:1.15}
+  .brand small{display:block;font-weight:500;color:var(--muted);font-size:12px;letter-spacing:.4px;text-transform:uppercase}
+  .mark{width:38px;height:38px;border-radius:10px;background:var(--accent);display:grid;place-items:center;flex:none}
+  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+  nav a{text-decoration:none;color:var(--muted);font-weight:600;font-size:15px}
+  nav a:hover{color:var(--text)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:16px;font-family:inherit}
+  .btn-primary{background:var(--accent);color:var(--ink)}
+  .btn-primary:hover{background:#ffb83d}
+  .btn-ghost{border-color:var(--line);color:var(--text);background:transparent}
+  .btn-ghost:hover{border-color:var(--muted)}
+  .head-call{display:none}
+
+  /* hero */
+  .hero{padding:56px 0 64px;background:
+      radial-gradient(900px 400px at 85% -10%, rgba(245,165,36,.18), transparent 60%),
+      linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+  .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--accent);font-weight:700;font-size:14px;text-transform:uppercase;letter-spacing:.8px}
+  h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.1;margin:.4em 0 .35em;letter-spacing:-.5px}
+  h1 span{color:var(--accent)}
+  .lead{font-size:clamp(1.05rem,2.4vw,1.25rem);color:var(--muted);max-width:620px;margin:0 0 28px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .phone-big{font-size:clamp(1.4rem,4vw,1.8rem);font-weight:800;text-decoration:none;color:var(--text);display:inline-block;margin-top:22px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;margin:28px 0 0;padding:0;list-style:none}
+  .chips li{background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;color:var(--muted)}
+
+  /* sections */
+  section{padding:64px 0}
+  h2{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.2;margin:0 0 .4em;letter-spacing:-.3px}
+  .sub{color:var(--muted);max-width:640px;margin:0 0 32px}
+  .light{background:var(--light);color:var(--light-text)}
+  .light .sub,.light p{color:var(--light-muted)}
+
+  /* steps */
+  .steps{display:grid;gap:16px;grid-template-columns:1fr;counter-reset:s;list-style:none;padding:0;margin:0}
+  .steps li{background:#fff;border:1px solid #e3e1db;border-radius:var(--radius);padding:22px 22px 22px 70px;position:relative}
+  .steps li::before{counter-increment:s;content:counter(s);position:absolute;left:20px;top:20px;width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--accent);font-weight:800;display:grid;place-items:center}
+  .steps h3{margin:0 0 4px;font-size:1.1rem;color:var(--light-text)}
+  .steps p{margin:0}
+
+  /* services */
+  .grid{display:grid;gap:16px;grid-template-columns:1fr}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+  .card h3{margin:12px 0 6px;font-size:1.12rem}
+  .card p{margin:0;color:var(--muted);font-size:15.5px}
+  .ico{width:46px;height:46px;border-radius:12px;background:rgba(245,165,36,.14);display:grid;place-items:center}
+  .ico svg{width:26px;height:26px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+  .also{margin-top:28px;color:var(--muted)}
+  .also strong{color:var(--text)}
+
+  /* about */
+  .about{display:grid;gap:28px;grid-template-columns:1fr;align-items:center}
+  .badge-block{background:var(--ink);color:var(--text);border-radius:var(--radius);padding:28px;display:grid;gap:14px}
+  .badge-block div{display:flex;gap:12px;align-items:flex-start}
+  .badge-block svg{flex:none;width:24px;height:24px;stroke:var(--accent);fill:none;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+  .badge-block p{margin:0;color:var(--muted)}
+  .ph{background:#fff3d6;color:#5a3b00;border:1px dashed #c97f00;border-radius:6px;padding:0 6px;font-size:.9em;white-space:nowrap}
+  .dark .ph{background:#3a2f17;color:#ffd78a;border-color:#a87418}
+
+  /* reviews placeholder */
+  .placeholder-box{border:2px dashed var(--line);border-radius:var(--radius);padding:36px 20px;text-align:center;color:var(--muted)}
+
+  /* contact */
+  .contact{display:grid;gap:28px;grid-template-columns:1fr}
+  .info{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+  .info li{display:flex;gap:14px;align-items:flex-start}
+  .info .ico{flex:none}
+  .info strong{display:block}
+  .info a{color:var(--accent);font-weight:700;text-decoration:none;word-break:break-word}
+  form{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:grid;gap:16px}
+  label{font-weight:600;font-size:15px;display:block;margin-bottom:6px}
+  input,select,textarea{width:100%;font:inherit;color:var(--text);background:var(--bg);border:1px solid #4a5160;border-radius:10px;padding:12px 14px;min-height:48px}
+  textarea{min-height:110px;resize:vertical}
+  input:focus,select:focus,textarea:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px rgba(245,165,36,.3)}
+  .form-note{font-size:13.5px;color:var(--muted);margin:0}
+
+  footer{background:#0d0e11;color:var(--muted);padding:32px 0 100px;font-size:14px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between}
+
+  /* mobile sticky action bar */
+  .mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(13,14,17,.97);border-top:1px solid var(--line)}
+  .mobile-bar .btn{min-height:52px;width:100%}
+
+  @media (max-width:819px){ nav{display:none} }
+  @media (min-width:600px){
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:repeat(3,1fr)}
+  }
+  @media (min-width:820px){
+    .head-call{display:inline-flex}
+    .mobile-bar{display:none}
+    footer{padding-bottom:32px}
+    .hero{padding:88px 0 96px}
+    section{padding:88px 0}
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .about{grid-template-columns:1.2fr 1fr}
+    .contact{grid-template-columns:1fr 1.1fr}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Reynolds Mobile Mechanic. This is not Reynolds Mobile Mechanic's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=reynolds-mobile-mechanic" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="notice" role="note">
+  Sample homepage made for Reynolds Mobile Mechanic. Like it? <a href="{{GET_STARTED_URL}}">Get started with this site</a>
+</div>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Reynolds Mobile Mechanic, home">
+      <span class="mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16181d" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
+      </span>
+      <span>Reynolds Mobile Mechanic<small>Bowling Green, KY</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary head-call" href="tel:+12707920767">Call (270) 792-0767</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <span class="eyebrow">Mobile auto repair &middot; Bowling Green, KY</span>
+      <h1 id="hero-title">Car trouble? <span>We come to you.</span></h1>
+      <p class="lead">From routine maintenance to more complex repairs, Reynolds Mobile Mechanic brings convenient service right to your doorstep, whether you're at home, at work or stuck on the side of the road.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="tel:+12707920767">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Call now
+        </a>
+        <a class="btn btn-ghost" href="sms:+12707920767">Text us</a>
+        <a class="btn btn-ghost" href="#contact">Request a quote</a>
+      </div>
+      <a class="phone-big" href="tel:+12707920767">(270) 792-0767</a>
+      <ul class="chips" aria-label="Highlights">
+        <li>Roadside assistance</li>
+        <li>On-the-spot repairs</li>
+        <li>Cars, ATVs, motorcycles &amp; small engines</li>
+        <li>Towing</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="light" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">How it works</h2>
+      <p class="sub">No tow to a shop, no waiting room. Just tell us what's going on and where you are.</p>
+      <ol class="steps">
+        <li><h3>Call or text</h3><p>Reach us at (270) 792-0767 and describe the problem, or send a quote request below.</p></li>
+        <li><h3>Get a quote</h3><p>Ask for a quote and we'll talk through what your vehicle needs.</p></li>
+        <li><h3>We come to you</h3><p>We bring the tools to your driveway, workplace or roadside and get you moving again.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">Services</h2>
+      <p class="sub">On-the-spot mobile repair at your location, from quick maintenance to major work.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2 2 21h20L12 2z"/><path d="M12 9v5M12 17.5v.5"/></svg></div>
+          <h3>Roadside assistance</h3>
+          <p>Broken down? We come to where you are to diagnose and fix the problem on the spot.</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="12" rx="2"/><path d="M7 7V5h4v2M13 7V5h4v2M10 13h4M12 11v4"/></svg></div>
+          <h3>Batteries &amp; jump starts</h3>
+          <p>Dead battery in the driveway or parking lot? We'll get you started or replace it.</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h2l1.5-3 2 6 1.5-3h1"/></svg></div>
+          <h3>Complete vehicle diagnostics</h3>
+          <p>Check-engine light or a strange noise? We find out what's really wrong before we fix it.</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5 6.5 5 9.5a5 5 0 0 1-10 0C7 9.5 9 7 12 3z"/></svg></div>
+          <h3>Oil changes &amp; tune-ups</h3>
+          <p>Routine maintenance, including oil changes, tune-ups and tire rotations, done where you park.</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg></div>
+          <h3>Brake service</h3>
+          <p>Brake service and replacement, plus rotor turning, to keep you stopping safely.</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 10h3l2-3h6l2 3h3v7h-3l-2 2H9l-2-2H4z"/><path d="M10 12h4"/></svg></div>
+          <h3>Engine &amp; transmission</h3>
+          <p>Engine and transmission repair or replacement for the bigger jobs.</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 17h2l2-6h7l3 4h4v2h-2"/><circle cx="7" cy="17" r="2"/><circle cx="17" cy="17" r="2"/><path d="M14 11V6l4-2"/></svg></div>
+          <h3>Towing</h3>
+          <p>When a job can't be done on the spot, we can tow it.</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="6" cy="17" r="3"/><circle cx="18" cy="17" r="3"/><path d="M6 17l4-7h5l3 7M10 10l-1-3H7"/></svg></div>
+          <h3>ATVs, motorcycles &amp; small engines</h3>
+          <p>Lawn mowers, ATVs, motorcycles and other small engines, not just cars and trucks.</p>
+        </article>
+        <article class="card">
+          <div class="ico" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V10l7-5 7 5v10"/><path d="M9 20v-6h6v6"/></svg></div>
+          <h3>Heavy &amp; small equipment</h3>
+          <p>Repair for heavy and small equipment, plus a full automotive machine shop and restorations.</p>
+        </article>
+      </div>
+      <p class="also"><strong>Don't see your problem listed?</strong> Call or text <a href="tel:+12707920767">(270) 792-0767</a> and ask.</p>
+    </div>
+  </section>
+
+  <section class="light" id="about" aria-labelledby="about-title">
+    <div class="wrap about">
+      <div>
+        <h2 id="about-title">A family-owned mechanic business</h2>
+        <p>Reynolds Mobile Mechanic is a family-owned, fourth-generation mechanic business <span class="ph">[confirm wording]</span> serving Bowling Green, KY. Instead of making you get your vehicle to a shop, we bring on-the-spot repair to your location.</p>
+        <p>[Your story here: who you are, how you got started and what you want customers to know.]</p>
+      </div>
+      <div class="badge-block dark">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><p><strong style="color:var(--text)">Service at your location</strong><br>Home, work or roadside</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><p><strong style="color:var(--text)">Call, text or request a quote</strong><br>Whatever is easiest for you</p></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><p><strong style="color:var(--text)">Payment</strong><br>Cash, check and major credit cards <span class="ph">[confirm]</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title">What customers say</h2>
+      <div class="placeholder-box">[Your reviews here]</div>
+    </div>
+  </section>
+
+  <section class="light" id="contact" aria-labelledby="contact-title">
+    <div class="wrap contact">
+      <div>
+        <h2 id="contact-title">Get help or a quote</h2>
+        <p class="sub">The fastest way to reach us is a call or text.</p>
+        <ul class="info">
+          <li>
+            <span class="ico" aria-hidden="true" style="background:var(--ink)"><svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+            <span><strong>Call or text</strong><a href="tel:+12707920767" style="color:#8a5a00">(270) 792-0767</a></span>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true" style="background:var(--ink)"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+            <span><strong>Email</strong><a href="mailto:reynoldsmobilemechanicus@gmail.com" style="color:#8a5a00">reynoldsmobilemechanicus@gmail.com</a></span>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true" style="background:var(--ink)"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <span><strong>Service area</strong>Bowling Green, KY <span class="ph">[add nearby areas you cover]</span></span>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true" style="background:var(--ink)"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <span><strong>Hours</strong><span class="ph">[Your hours here]</span></span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="dark" id="quote-form" aria-labelledby="form-title">
+        <h3 id="form-title" style="margin:0;font-size:1.25rem;color:var(--text)">Request a quote</h3>
+        <div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required></div>
+        <div><label for="vehicle">Vehicle (year, make, model)</label><input id="vehicle" name="vehicle" placeholder="e.g. 2014 pickup"></div>
+        <div><label for="service">What do you need?</label>
+          <select id="service" name="service">
+            <option>Roadside assistance</option>
+            <option>Battery / jump start</option>
+            <option>Diagnostics</option>
+            <option>Oil change / tune-up</option>
+            <option>Brakes</option>
+            <option>Engine / transmission</option>
+            <option>Towing</option>
+            <option>ATV, motorcycle or small engine</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div><label for="details">Where are you, and what's going on?</label><textarea id="details" name="details"></textarea></div>
+        <button class="btn btn-primary" type="submit">Send request</button>
+        <p class="form-note">This opens your email app with your request filled in. Need help right now? Call <a href="tel:+12707920767" style="color:var(--accent)">(270) 792-0767</a>.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; <span id="yr">2026</span> Reynolds Mobile Mechanic &middot; Bowling Green, KY</span>
+    <a href="tel:+12707920767">(270) 792-0767</a>
+  </div>
+</footer>
+
+<div class="mobile-bar" role="region" aria-label="Quick contact">
+  <a class="btn btn-primary" href="tel:+12707920767">Call now</a>
+  <a class="btn btn-ghost" href="sms:+12707920767">Text us</a>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('quote-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!e.target.reportValidity()) return;
+    var f = e.target.elements;
+    var body = 'Name: ' + f.name.value + '\nPhone: ' + f.phone.value + '\nVehicle: ' + f.vehicle.value +
+      '\nService: ' + f.service.value + '\n\n' + f.details.value;
+    location.href = 'mailto:reynoldsmobilemechanicus@gmail.com?subject=' +
+      encodeURIComponent('Quote request: ' + f.service.value) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
