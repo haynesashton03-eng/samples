@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Angel's Child Care Center | Elizabeth City, NC</title>
+<meta name="description" content="Little Angel's Child Care Center in Elizabeth City, NC. Full-time child care for infants through school-age children, with play-based and academic learning. Call (252) 384-0222.">
+<meta name="theme-color" content="#3b5bab">
+<style>
+:root{
+  --navy:#23345f; --blue:#3b5bab; --sky:#e8f0ff; --sun:#ffd166; --peach:#fff4e6;
+  --mint:#e3f6ee; --rose:#ffe8ee; --ink:#1f2433; --muted:#4a5266; --white:#fff;
+  --radius:18px; --max:1080px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
+a{color:var(--blue)}
+img,svg{max-width:100%}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-999px;top:0;background:var(--navy);color:#fff;padding:8px 12px;z-index:100}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+
+.sample-note{background:var(--navy);color:#fff;font-size:14px;text-align:center;padding:8px 16px}
+.sample-note a{color:var(--sun)}
+
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);border-bottom:1px solid #e6e9f2}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-weight:800;font-size:18px;line-height:1.2}
+.brand small{display:block;font-weight:500;font-size:13px;color:var(--muted)}
+.nav ul{display:none;list-style:none;margin:0;padding:0;gap:22px}
+.nav ul a{text-decoration:none;color:var(--ink);font-weight:600}
+.nav ul a:hover{color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;font-size:16px}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-primary:hover{background:var(--navy)}
+.btn-ghost{background:#fff;color:var(--navy);border-color:var(--navy)}
+.btn-sun{background:var(--sun);color:var(--navy)}
+.nav .btn{min-height:44px;padding:8px 16px;font-size:15px}
+.nav .num{display:none}
+@media (min-width:520px){.nav .num{display:inline}}
+
+.hero{background:linear-gradient(180deg,var(--sky) 0%,#fff 100%);padding:48px 0 56px;overflow:hidden}
+.hero-grid{display:grid;gap:32px;align-items:center}
+.eyebrow{display:inline-block;background:#fff;color:var(--navy);font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px;border:1px solid #cdd8f3}
+h1{font-size:clamp(32px,6vw,52px);line-height:1.1;color:var(--navy);margin:16px 0}
+h2{font-size:clamp(26px,4vw,36px);line-height:1.2;color:var(--navy);margin:0 0 12px}
+h3{font-size:20px;margin:0 0 8px;color:var(--navy)}
+.lead{font-size:19px;color:var(--muted);max-width:560px}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.quick{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;padding:0;list-style:none;color:var(--muted);font-size:15px}
+.quick li::before{content:"✓ ";color:var(--blue);font-weight:800}
+.hero-art{display:flex;justify-content:center}
+
+section{padding:56px 0}
+.center{text-align:center}
+.sub{color:var(--muted);max-width:640px;margin:0 auto 32px}
+.cards{display:grid;gap:18px}
+.card{border-radius:var(--radius);padding:26px;background:var(--peach)}
+.card:nth-child(2){background:var(--mint)}
+.card:nth-child(3){background:var(--rose)}
+.card .icon{width:56px;height:56px;border-radius:16px;background:#fff;display:grid;place-items:center;margin-bottom:14px}
+.card p{margin:0;color:var(--muted)}
+
+.day{background:var(--sky)}
+.day-grid{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+.tile{background:#fff;border-radius:var(--radius);padding:20px;display:flex;flex-direction:column;gap:8px;align-items:flex-start}
+.tile strong{color:var(--navy);font-size:17px}
+.tile span{color:var(--muted);font-size:15px}
+.dot{width:40px;height:40px;border-radius:50%}
+
+.info-grid{display:grid;gap:18px}
+.info{border:2px solid #e6e9f2;border-radius:var(--radius);padding:26px}
+.info dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 18px}
+.info dt{font-weight:700;color:var(--navy)}
+.info dd{margin:0;color:var(--muted)}
+.placeholder{background:#fff7d6;border:2px dashed #c9a227;color:#5c4a00;border-radius:12px;padding:12px 14px;font-size:15px}
+.ph{background:#fff7d6;color:#5c4a00;padding:0 4px;border-radius:4px;font-weight:600}
+
+.reviews .placeholder{max-width:640px;margin:0 auto;text-align:center;padding:28px}
+
+.enroll{background:var(--navy);color:#fff;border-radius:28px;padding:40px 24px;text-align:center}
+.enroll h2{color:#fff}
+.enroll p{color:#dfe6f7;max-width:560px;margin:0 auto 22px}
+.enroll .cta-row{justify-content:center}
+.enroll .btn-ghost{background:transparent;color:#fff;border-color:#fff}
+
+footer{padding:32px 0 96px;color:var(--muted);font-size:15px;border-top:1px solid #e6e9f2}
+footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid #dfe3ee;box-shadow:0 -4px 16px rgba(0,0,0,.06)}
+.callbar .btn{flex:1;min-height:50px}
+
+@media (min-width:720px){
+  .cards{grid-template-columns:repeat(3,1fr)}
+  .day-grid{grid-template-columns:repeat(4,1fr)}
+  .info-grid{grid-template-columns:1fr 1fr}
+}
+@media (min-width:900px){
+  .nav ul{display:flex}
+  .hero{padding:72px 0 80px}
+  .hero-grid{grid-template-columns:1.15fr .85fr}
+  .callbar{display:none}
+  footer{padding-bottom:32px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Little Angels Daycare Center (Little Angel's Child Care Center). This is not Little Angels Daycare Center (Little Angel's Child Care Center)'s official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=little-angels-daycare-center-little-ange" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sample-note" role="note">
+  Sample homepage prepared for Little Angel's Child Care Center. Highlighted items are placeholders to confirm. <a href="#enroll">Like it? Get started</a>
+</div>
+
+<header>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="#top">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#e8f0ff"/><ellipse cx="20" cy="9" rx="8" ry="2.6" fill="none" stroke="#f2b632" stroke-width="2.4"/><circle cx="20" cy="20" r="6" fill="#3b5bab"/><path d="M10 33c1-6 5-9 10-9s9 3 10 9" fill="#3b5bab"/></svg>
+      <span>Little Angel's<small>Child Care Center</small></span>
+    </a>
+    <ul>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#day">A Typical Day</a></li>
+      <li><a href="#visit">Hours &amp; Location</a></li>
+      <li><a href="#enroll">Enroll</a></li>
+    </ul>
+    <a class="btn btn-primary" href="tel:+12523840222" aria-label="Call Little Angel's at (252) 384-0222">Call<span class="num">&nbsp;(252) 384-0222</span></a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Child care in Elizabeth City, NC</span>
+        <h1>Caring, playful learning for your little ones.</h1>
+        <p class="lead">Little Angel's Child Care Center offers full-time care for infants through school-age children, blending play-based fun with academic learning every day.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+12523840222">Call to schedule a visit</a>
+          <a class="btn btn-ghost" href="#programs">See our programs</a>
+        </div>
+        <ul class="quick">
+          <li>Infants to 12 years</li>
+          <li>Full-time care</li>
+          <li>Monday–Friday</li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg width="380" height="320" viewBox="0 0 380 320">
+          <circle cx="300" cy="70" r="44" fill="#ffd166"/>
+          <rect x="40" y="150" width="140" height="140" rx="22" fill="#3b5bab"/>
+          <rect x="70" y="180" width="80" height="80" rx="14" fill="#e8f0ff"/>
+          <text x="110" y="238" text-anchor="middle" font-size="54" font-weight="800" fill="#3b5bab" font-family="system-ui,sans-serif">A</text>
+          <rect x="190" y="190" width="100" height="100" rx="20" fill="#ff8fa3"/>
+          <text x="240" y="258" text-anchor="middle" font-size="50" font-weight="800" fill="#fff" font-family="system-ui,sans-serif">B</text>
+          <rect x="140" y="80" width="90" height="90" rx="18" fill="#5cc8a1"/>
+          <text x="185" y="142" text-anchor="middle" font-size="46" font-weight="800" fill="#fff" font-family="system-ui,sans-serif">C</text>
+          <rect x="300" y="230" width="60" height="60" rx="14" fill="#ffd166"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs">
+    <div class="wrap">
+      <div class="center">
+        <h2>Care for every age and stage</h2>
+        <p class="sub">Age-appropriate learning and care from the first months through the school years.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 30 30"><circle cx="15" cy="11" r="7" fill="#f2b632"/><rect x="7" y="19" width="16" height="8" rx="4" fill="#f2b632"/></svg></div>
+          <h3>Infants</h3>
+          <p>Gentle, attentive care for your baby, with a calm routine built around their needs. <span class="ph">[Add infant ages, ratios and daily routine]</span></p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 30 30"><rect x="4" y="14" width="10" height="12" rx="2" fill="#2f9c74"/><rect x="16" y="8" width="10" height="18" rx="2" fill="#2f9c74"/></svg></div>
+          <h3>Toddlers &amp; Preschool</h3>
+          <p>Reading, blocks, free play and early academic skills that get children ready for kindergarten. <span class="ph">[Add age range and curriculum details]</span></p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="30" height="30" viewBox="0 0 30 30"><path d="M4 8h10v16H4zM16 8h10v16H16z" fill="#e05575"/></svg></div>
+          <h3>School-Age</h3>
+          <p>A safe, friendly place for children up to age 12. <span class="ph">[Add before/after-school and summer details]</span></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="day" id="day">
+    <div class="wrap">
+      <div class="center">
+        <h2>A day at Little Angel's</h2>
+        <p class="sub">A balance of learning and play, indoors and out.</p>
+      </div>
+      <div class="day-grid">
+        <div class="tile"><span class="dot" style="background:#3b5bab" aria-hidden="true"></span><strong>Reading</strong><span>Stories and early literacy every day</span></div>
+        <div class="tile"><span class="dot" style="background:#5cc8a1" aria-hidden="true"></span><strong>Blocks &amp; building</strong><span>Hands-on play that builds problem-solving</span></div>
+        <div class="tile"><span class="dot" style="background:#ff8fa3" aria-hidden="true"></span><strong>Free play</strong><span>Time to explore, imagine and make friends</span></div>
+        <div class="tile"><span class="dot" style="background:#ffd166" aria-hidden="true"></span><strong>Outdoor fun</strong><span>Sandbox, water play and riding toys</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="wrap center">
+      <h2>What families say</h2>
+      <div class="placeholder">[Your reviews here] Add real quotes from parents, with their permission.</div>
+    </div>
+  </section>
+
+  <section id="visit" style="padding-top:0">
+    <div class="wrap info-grid">
+      <div class="info">
+        <h2>Hours</h2>
+        <dl>
+          <dt>Mon–Fri</dt><dd>7:00 AM – 6:00 PM <span class="ph">[please confirm]</span></dd>
+          <dt>Sat–Sun</dt><dd>Closed</dd>
+        </dl>
+        <p class="placeholder" style="margin-top:18px">[Tuition, NC license star rating and payment/subsidy options: add here if you'd like them shown]</p>
+      </div>
+      <div class="info">
+        <h2>Find us</h2>
+        <address style="font-style:normal;color:var(--muted)">
+          143 E Rich Blvd, Suite C<br>Elizabeth City, NC 27909
+        </address>
+        <p style="margin:12px 0 0">Phone: <a href="tel:+12523840222">(252) 384-0222</a></p>
+        <p style="margin:4px 0 18px">Email: <span class="ph">[your email here]</span></p>
+        <a class="btn btn-ghost" href="https://maps.google.com/?q=143+E+Rich+Blvd+Suite+C,+Elizabeth+City,+NC+27909" rel="noopener">Get directions</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="enroll" style="padding-top:0">
+    <div class="wrap">
+      <div class="enroll">
+        <h2>Come see us</h2>
+        <p>Have questions about openings or want to tour the center? Give us a call and we'll be happy to help.</p>
+        <div class="cta-row">
+          <a class="btn btn-sun" href="tel:+12523840222">Call (252) 384-0222</a>
+          <a class="btn btn-ghost" href="#visit">Hours &amp; directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Little Angel's Child Care Center · Elizabeth City, NC</span>
+    <span>143 E Rich Blvd, Suite C · <a href="tel:+12523840222">(252) 384-0222</a></span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-primary" href="tel:+12523840222">Tap to call</a>
+  <a class="btn btn-ghost" href="https://maps.google.com/?q=143+E+Rich+Blvd+Suite+C,+Elizabeth+City,+NC+27909" rel="noopener">Directions</a>
+</div>
+</body>
+</html>
