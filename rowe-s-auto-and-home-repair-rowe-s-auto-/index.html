@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rowe's Auto and Home Repair | Mobile Mechanic &amp; Handyman, Bowling Green, KY</title>
+<meta name="description" content="Rowe's Auto and Home Repair is a mobile mechanic and handyman serving the Bowling Green, KY area. Skip the tow truck: we come to you. Call (270) 202-4746.">
+<meta name="theme-color" content="#14202e">
+<style>
+  :root{
+    --ink:#14202e; --ink-2:#1e2f42; --paper:#ffffff; --soft:#f3f5f8;
+    --text:#1b2430; --muted:#4a5666; --accent:#f28c28; --accent-dark:#b85f0b;
+    --line:#dde3ea; --radius:14px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--paper);line-height:1.6;font-size:17px}
+  a{color:inherit}
+  img,svg{display:block}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .skip{position:absolute;left:-999px;top:0;background:#fff;color:#000;padding:10px;z-index:99}
+  .skip:focus{left:10px}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+  .sample-note{background:#fff4e6;color:#5a3300;font-size:14px;text-align:center;padding:8px 16px;border-bottom:1px solid #f5d2a8}
+
+  header.top{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:800;letter-spacing:.2px;line-height:1.15}
+  .brand small{display:block;font-weight:500;font-size:12px;color:#c3cfdc;letter-spacing:.4px}
+  .mark{width:38px;height:38px;border-radius:10px;background:var(--accent);display:grid;place-items:center;flex:none}
+  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+  nav a{text-decoration:none;color:#dbe4ee;font-size:15px}
+  nav a:hover{color:#fff}
+  .call-top{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#1a1006;font-weight:800;text-decoration:none;padding:9px 14px;border-radius:999px;white-space:nowrap;font-size:15px}
+  .call-top:hover{background:#ff9d3d}
+  .call-top .short{display:none}
+  @media (max-width:820px){nav{display:none}}
+  @media (max-width:480px){.call-top .num{display:none}.call-top .short{display:inline}.brand{font-size:15px}.mark{width:34px;height:34px}}
+
+  .hero{background:linear-gradient(160deg,var(--ink) 0%,var(--ink-2) 70%,#273b52 100%);color:#fff;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;border-radius:50%;border:60px solid rgba(242,140,40,.12)}
+  .hero .wrap{padding-top:64px;padding-bottom:72px;position:relative;z-index:1}
+  .eyebrow{display:inline-block;background:rgba(242,140,40,.15);color:#ffc58a;border:1px solid rgba(242,140,40,.4);padding:4px 12px;border-radius:999px;font-size:14px;font-weight:600}
+  h1{font-size:clamp(2rem,5.4vw,3.4rem);line-height:1.1;margin:18px 0 16px;max-width:15ch}
+  h1 span{color:var(--accent)}
+  .lead{font-size:clamp(1.05rem,2.2vw,1.25rem);color:#d6e0ea;max-width:56ch;margin:0 0 28px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:12px;font-weight:800;text-decoration:none;font-size:17px}
+  .btn-primary{background:var(--accent);color:#1a1006}
+  .btn-primary:hover{background:#ff9d3d}
+  .btn-ghost{border:2px solid #8fa3b8;color:#fff}
+  .btn-ghost:hover{border-color:#fff}
+  .hero-points{display:flex;flex-wrap:wrap;gap:10px 26px;margin:34px 0 0;padding:0;list-style:none;color:#d6e0ea;font-size:15px}
+  .hero-points li{display:flex;align-items:center;gap:8px}
+
+  section{padding:72px 0}
+  h2{font-size:clamp(1.6rem,3.6vw,2.3rem);line-height:1.2;margin:0 0 12px}
+  .section-lead{color:var(--muted);max-width:62ch;margin:0 0 36px}
+
+  .quote-strip{background:var(--soft);border-bottom:1px solid var(--line)}
+  .quote-strip .wrap{padding-top:40px;padding-bottom:40px}
+  .owner-quote{margin:0;font-size:clamp(1.15rem,2.6vw,1.5rem);font-weight:700;line-height:1.4;max-width:46ch;border-left:5px solid var(--accent);padding-left:20px}
+  .owner-quote cite{display:block;margin-top:10px;font-style:normal;font-weight:500;font-size:15px;color:var(--muted)}
+
+  .grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .card h3{margin:14px 0 8px;font-size:1.25rem}
+  .card p{margin:0 0 12px;color:var(--muted)}
+  .card ul{margin:0;padding-left:20px;color:var(--text)}
+  .card li{margin:4px 0}
+  .icon{width:52px;height:52px;border-radius:12px;background:var(--ink);display:grid;place-items:center}
+
+  .how{background:var(--soft)}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+  .steps li{background:#fff;border-radius:var(--radius);padding:24px;border:1px solid var(--line);position:relative}
+  .steps li::before{counter-increment:s;content:counter(s);display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:var(--accent);color:#1a1006;font-weight:800;margin-bottom:12px}
+  .steps h3{margin:0 0 6px;font-size:1.1rem}
+  .steps p{margin:0;color:var(--muted)}
+
+  .why{display:grid;gap:36px;grid-template-columns:1fr}
+  @media (min-width:860px){.why{grid-template-columns:1.1fr .9fr;align-items:center}}
+  .checks{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  .checks li{display:flex;gap:12px;align-items:flex-start}
+  .checks svg{flex:none;margin-top:3px}
+  .panel{background:var(--ink);color:#fff;border-radius:var(--radius);padding:30px}
+  .panel h3{margin:0 0 6px}
+  .panel p{color:#c9d5e1;margin:0 0 18px}
+
+  .placeholder{border:2px dashed #9aa7b5;border-radius:var(--radius);padding:28px;text-align:center;color:var(--muted);background:#fafbfc}
+  .ph{background:#fff4e6;color:#7a4300;padding:1px 6px;border-radius:6px;font-size:.92em}
+
+  .contact{background:var(--ink);color:#fff}
+  .contact .section-lead{color:#c9d5e1}
+  .contact-grid{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .c-card{background:var(--ink-2);border:1px solid #31465d;border-radius:var(--radius);padding:24px}
+  .c-card h3{margin:0 0 6px;font-size:1.05rem;color:#ffc58a}
+  .c-card p{margin:0;color:#e3eaf2}
+  .c-card a{color:#fff;font-weight:800;font-size:1.3rem;text-decoration:none}
+  .c-card a:hover{text-decoration:underline}
+  .hours{margin:0;padding:0;list-style:none}
+  .hours li{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #31465d;padding:4px 0}
+
+  footer{background:#0d151f;color:#9fb0c2;font-size:14px;padding:28px 0 96px}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  @media (min-width:700px){footer{padding-bottom:28px}}
+
+  .mobile-bar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(13,21,31,.97);z-index:30}
+  .mobile-bar a{flex:1;text-align:center;padding:13px;border-radius:10px;font-weight:800;text-decoration:none}
+  .mobile-bar .m-call{background:var(--accent);color:#1a1006}
+  .mobile-bar .m-text{border:2px solid #8fa3b8;color:#fff}
+  @media (min-width:700px){.mobile-bar{display:none}}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Rowe's Auto and Home Repair (Rowe's Auto Service LLC). This is not Rowe's Auto and Home Repair (Rowe's Auto Service LLC)'s official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=rowe-s-auto-and-home-repair-rowe-s-auto-" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sample-note" role="note">Free sample design prepared for Rowe's Auto and Home Repair. Not the official website. Items marked <span class="ph">[like this]</span> are placeholders.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Rowe's Auto and Home Repair, back to top">
+      <span class="mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1a1006" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.5 2.5-2.4-.6-.6-2.4z"/></svg>
+      </span>
+      <span>Rowe's Auto &amp; Home Repair<small>MOBILE MECHANIC · HANDYMAN</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#how">How it works</a></li>
+        <li><a href="#why">Why Rowe's</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="call-top" href="tel:+12702024746" aria-label="Call (270) 202-4746">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+      <span class="num">(270) 202-4746</span><span class="short">Call</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <span class="eyebrow">Serving the Bowling Green, KY area</span>
+      <h1 id="hero-title">Car trouble or a fix-it list? <span>We come to you.</span></h1>
+      <p class="lead">Rowe's Auto and Home Repair is a mobile mechanic and handyman in one. Skip the tow truck and the five different phone calls: one call gets your vehicle and your home taken care of.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="tel:+12702024746">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.6a1 1 0 0 1-.25 1z"/></svg>
+          Call (270) 202-4746
+        </a>
+        <a class="btn btn-ghost" href="#services">See what we fix</a>
+      </div>
+      <ul class="hero-points">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f28c28" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Mobile: we come to you</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f28c28" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Auto repair + handyman work</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#f28c28" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>No tow truck needed</li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="quote-strip">
+    <div class="wrap">
+      <blockquote class="owner-quote">
+        &ldquo;Instead of calling 5 different people you can call one to fix all your problems.&rdquo;
+        <cite>The owner, Rowe's Auto and Home Repair</cite>
+      </blockquote>
+    </div>
+  </div>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">What we do</h2>
+      <p class="section-lead">We do it all. Just give us a call for your auto repair and handyman needs.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f28c28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M6 17l1.5-5h9L18 17M4 17v2h3v-2M17 17v2h3v-2"/><circle cx="8" cy="14.5" r=".6" fill="#f28c28"/><circle cx="16" cy="14.5" r=".6" fill="#f28c28"/><path d="M8 12l1-3h6l1 3"/></svg>
+          </div>
+          <h3>Mobile auto repair</h3>
+          <p>Mechanical repairs done where your vehicle is, at home or wherever it broke down, so you don't have to pay for a tow to a shop.</p>
+          <ul>
+            <li><span class="ph">[Your most common auto jobs, e.g. brakes]</span></li>
+            <li><span class="ph">[e.g. batteries &amp; starters]</span></li>
+            <li><span class="ph">[e.g. diagnostics]</span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f28c28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+          </div>
+          <h3>Handyman services</h3>
+          <p>The small and in-between jobs around the house that are hard to find someone for.</p>
+          <ul>
+            <li>Drywall repair</li>
+            <li>Door installation &amp; repair</li>
+            <li>Caulking</li>
+            <li><span class="ph">[Other jobs you take on]</span></li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f28c28" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M5 9h14"/><circle cx="12" cy="15" r="3"/><path d="M8 6h.01M11 6h.01"/></svg>
+          </div>
+          <h3>Appliance installation</h3>
+          <p>Get new appliances hooked up and running without the hassle.</p>
+          <ul>
+            <li>Washers &amp; dryers</li>
+            <li>Refrigerators, freezers &amp; ice makers</li>
+            <li>Dishwashers &amp; trash compactors</li>
+            <li>Ovens, microwaves &amp; range hoods</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" id="how" aria-labelledby="how-title">
+    <div class="wrap">
+      <h2 id="how-title">How it works</h2>
+      <p class="section-lead">No shop to get to. No juggling a mechanic and a handyman.</p>
+      <ol class="steps">
+        <li><h3>Give us a call</h3><p>Tell us what's wrong with the vehicle or what needs fixing at home: (270) 202-4746.</p></li>
+        <li><h3>We come to you</h3><p>We head to your home or wherever your vehicle is in the Bowling Green area.</p></li>
+        <li><h3>Problem fixed</h3><p>The work gets done on site, with no tow truck and no extra calls.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="why" aria-labelledby="why-title">
+    <div class="wrap why">
+      <div>
+        <h2 id="why-title">Why Rowe's?</h2>
+        <p class="section-lead">This business was started to help out the people that can't always pay for a tow truck to get to a shop.</p>
+        <ul class="checks">
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b85f0b" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><strong>Mobile service.</strong> We come to you to fix the problem.</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b85f0b" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><strong>One call, many jobs.</strong> A mobile mechanic and handyman, a jack of all trades.</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#b85f0b" stroke-width="3" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><span><strong>Local to Bowling Green.</strong> Serving Bowling Green and the surrounding area.</span></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Broke down? Don't call a tow truck yet.</h3>
+        <p>Give us a call first. We may be able to fix it right where it sits.</p>
+        <a class="btn btn-primary" href="tel:+12702024746">Call (270) 202-4746</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="how" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title">What customers say</h2>
+      <div class="placeholder">[Your reviews here: add real customer reviews, with permission, before launch]</div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Get in touch</h2>
+      <p class="section-lead">Call with what's going on and where you are in the Bowling Green area.</p>
+      <div class="contact-grid">
+        <div class="c-card">
+          <h3>Call</h3>
+          <p><a href="tel:+12702024746">(270) 202-4746</a></p>
+        </div>
+        <div class="c-card">
+          <h3>Service area</h3>
+          <p>Bowling Green, KY and surrounding areas</p>
+        </div>
+        <div class="c-card">
+          <h3>Hours</h3>
+          <ul class="hours">
+            <li><span>Mon&ndash;Fri</span><span class="ph">[Confirm hours]</span></li>
+            <li><span>Saturday</span><span class="ph">[Confirm hours]</span></li>
+            <li><span>Sunday</span><span class="ph">[Confirm hours]</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Rowe's Auto Service LLC · Rowe's Auto and Home Repair · Bowling Green, KY</span>
+    <span>Sample homepage design</span>
+  </div>
+</footer>
+
+<div class="mobile-bar" aria-label="Quick contact">
+  <a class="m-call" href="tel:+12702024746">Call now</a>
+  <a class="m-text" href="#services">Services</a>
+</div>
+</body>
+</html>
