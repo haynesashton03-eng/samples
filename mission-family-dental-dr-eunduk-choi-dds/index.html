@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mission Family Dental | Walla Walla Dentist | Dr. Eunduk Choi, DDS</title>
+<meta name="description" content="Mission Family Dental offers quality dental care for families and individuals in Walla Walla and its surrounding communities. Call (509) 526-7012.">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --ink:#16323f; --muted:#4a6270; --brand:#0d6b6b; --brand-dark:#0a5252;
+  --soft:#e8f3f2; --sand:#faf7f2; --line:#d7e3e2; --white:#fff; --accent:#c8742c;
+  --radius:14px; --max:1100px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:17px}
+img,svg{display:block}
+a{color:var(--brand)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+.skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:10px 14px;z-index:100}
+.skip:focus{left:8px;top:8px}
+
+/* sample notice */
+.sample{background:#fff4e6;color:#5b3a12;font-size:14px;text-align:center;padding:8px 16px;border-bottom:1px solid #f0d9b8}
+.sample strong{font-weight:700}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(6px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;letter-spacing:.2px}
+.logo-mark{width:38px;height:38px;border-radius:10px;background:var(--brand);display:grid;place-items:center;flex:none}
+.logo small{display:block;font-weight:500;color:var(--muted);font-size:12.5px;letter-spacing:.3px}
+nav.main{display:none;gap:22px}
+nav.main a{color:var(--ink);text-decoration:none;font-weight:500;font-size:15.5px}
+nav.main a:hover{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;text-decoration:none;border-radius:999px;padding:12px 20px;font-size:16px;border:2px solid transparent;transition:background .15s,color .15s}
+.btn-primary{background:var(--brand);color:#fff}
+.btn-primary:hover{background:var(--brand-dark)}
+.btn-ghost{border-color:var(--brand);color:var(--brand);background:#fff}
+.btn-ghost:hover{background:var(--soft)}
+.call-head{padding:10px 16px;font-size:15px}
+.call-head span{display:none}
+
+/* hero */
+.hero{background:linear-gradient(160deg,var(--soft) 0%,#f4faf9 55%,var(--sand) 100%);padding:48px 0 56px;overflow:hidden;position:relative}
+.hero .wrap{display:grid;gap:32px;align-items:center}
+.eyebrow{display:inline-block;font-size:13.5px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:var(--brand);margin-bottom:10px}
+h1{font-size:clamp(2rem,6vw,3.3rem);line-height:1.12;margin:0 0 14px;letter-spacing:-.5px}
+.lead{font-size:1.15rem;color:var(--muted);margin:0 0 26px;max-width:36ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hours-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 10px 30px -18px rgba(13,72,72,.45);max-width:420px}
+.hours-card h2{font-size:1.05rem;margin:0 0 12px;display:flex;align-items:center;gap:8px}
+.hours-card dl{margin:0;display:grid;grid-template-columns:1fr auto;gap:8px 16px}
+.hours-card dt{font-weight:600}
+.hours-card dd{margin:0;text-align:right;color:var(--muted)}
+.hours-card .closed{color:#8a4a12;font-weight:600}
+.hours-card hr{border:0;border-top:1px solid var(--line);margin:16px 0}
+.hours-card p{margin:0;font-size:15px;color:var(--muted)}
+.hero-shape{position:absolute;right:-120px;top:-120px;width:340px;height:340px;border-radius:50%;background:rgba(13,107,107,.07);pointer-events:none}
+
+/* sections */
+section{padding:60px 0}
+.sec-title{font-size:clamp(1.6rem,4vw,2.2rem);margin:0 0 8px;letter-spacing:-.3px}
+.sec-sub{color:var(--muted);margin:0 0 30px;max-width:60ch}
+.alt{background:var(--sand)}
+
+/* services */
+.grid{display:grid;gap:16px;grid-template-columns:1fr}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.card h3{margin:12px 0 6px;font-size:1.1rem}
+.card p{margin:0;color:var(--muted);font-size:15.5px}
+.icon{width:46px;height:46px;border-radius:12px;background:var(--soft);display:grid;place-items:center}
+.ph{display:inline-block;background:#fff4e6;color:#7a4a12;border:1px dashed #d9a866;border-radius:6px;padding:1px 7px;font-size:13px;font-weight:600}
+.ph-note{margin-top:18px;font-size:14.5px;color:var(--muted)}
+
+/* dentist */
+.doc{display:grid;gap:28px;align-items:start}
+.portrait{aspect-ratio:4/5;max-width:320px;width:100%;border-radius:var(--radius);background:linear-gradient(150deg,var(--brand) 0%,#145f73 100%);display:grid;place-items:center;color:#fff;text-align:center;padding:20px}
+.portrait .initials{font-size:4rem;font-weight:700;letter-spacing:2px;line-height:1}
+.portrait small{display:block;margin-top:10px;opacity:.9;font-size:14px}
+.doc h3{font-size:1.5rem;margin:0 0 4px}
+.doc .role{color:var(--brand);font-weight:600;margin:0 0 16px}
+.creds{list-style:none;padding:0;margin:20px 0 0;display:grid;gap:10px}
+.creds li{display:flex;gap:10px;align-items:flex-start;font-size:15.5px}
+.creds svg{flex:none;margin-top:3px}
+
+/* steps */
+.steps{counter-reset:s;display:grid;gap:16px;grid-template-columns:1fr}
+.step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 22px 70px;position:relative}
+.step::before{counter-increment:s;content:counter(s);position:absolute;left:20px;top:20px;width:34px;height:34px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;display:grid;place-items:center}
+.step h3{margin:0 0 4px;font-size:1.05rem}
+.step p{margin:0;color:var(--muted);font-size:15.5px}
+
+/* reviews */
+.reviews-ph{border:2px dashed #d9a866;background:#fffaf2;border-radius:var(--radius);padding:30px;text-align:center;color:#7a4a12;font-weight:600}
+
+/* visit */
+.visit{display:grid;gap:20px}
+.info{display:grid;gap:18px}
+.info-item{display:flex;gap:14px;align-items:flex-start}
+.info-item h3{margin:0 0 2px;font-size:1rem}
+.info-item p{margin:0;color:var(--muted)}
+.map-box{border-radius:var(--radius);background:repeating-linear-gradient(45deg,#e3efee 0 14px,#edf5f4 14px 28px);min-height:240px;display:grid;place-items:center;padding:24px;text-align:center;border:1px solid var(--line)}
+.map-box .pin{width:56px;height:56px;border-radius:50%;background:var(--brand);display:grid;place-items:center;margin:0 auto 12px;box-shadow:0 8px 20px -8px rgba(13,72,72,.7)}
+
+/* footer */
+footer{background:var(--ink);color:#d6e4e8;padding:36px 0 110px;font-size:15px}
+footer a{color:#fff}
+footer .cols{display:grid;gap:20px}
+footer .fine{margin-top:24px;border-top:1px solid rgba(255,255,255,.15);padding-top:16px;font-size:13.5px;color:#b5c7cd}
+
+/* mobile call bar */
+.mobile-bar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:10px;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line);box-shadow:0 -6px 18px -12px rgba(0,0,0,.35)}
+.mobile-bar .btn{flex:1;padding:13px 10px}
+
+@media (min-width:640px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .call-head span{display:inline}
+}
+@media (min-width:900px){
+  nav.main{display:flex}
+  .hero{padding:80px 0 88px}
+  .hero .wrap{grid-template-columns:1.25fr 1fr}
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .doc{grid-template-columns:320px 1fr;gap:48px}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .visit{grid-template-columns:1fr 1.1fr;gap:40px;align-items:stretch}
+  footer{padding-bottom:36px}
+  footer .cols{grid-template-columns:2fr 1fr 1fr}
+  .mobile-bar{display:none}
+  section{padding:80px 0}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Mission Family Dental (Dr. Eunduk Choi, DDS). This is not Mission Family Dental (Dr. Eunduk Choi, DDS)'s official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=mission-family-dental-dr-eunduk-choi-dds" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sample" role="note"><strong>Sample design</strong> prepared for Mission Family Dental by Ashton Haynes, web developer. This is not the practice's official website. <a href="{{GET_STARTED_URL}}">Like it? Get started</a></div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Mission Family Dental, home">
+      <span class="logo-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3c-2.5 0-4 2-4 4.5 0 2 1 3.5 1.5 5.5.6 2.6.8 8 3 8 1.8 0 1.6-5 4.5-5s2.7 5 4.5 5c2.2 0 2.4-5.4 3-8 .5-2 1.5-3.5 1.5-5.5C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></svg>
+      </span>
+      <span>Mission Family Dental<small>Eunduk Choi, DDS</small></span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#dentist">Our Dentist</a>
+      <a href="#new-patients">New Patients</a>
+      <a href="#visit">Hours &amp; Location</a>
+    </nav>
+    <a class="btn btn-primary call-head" href="tel:+15095267012" aria-label="Call Mission Family Dental at (509) 526-7012">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>(509) 526-7012</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="hero-shape" aria-hidden="true"></div>
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Walla Walla Dentist</span>
+        <h1 id="hero-title">Welcome to Mission Family Dental</h1>
+        <p class="lead">We offer quality dental care for families and individuals in Walla Walla and its surrounding communities.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+15095267012">Call (509) 526-7012</a>
+          <a class="btn btn-ghost" href="#dentist">Meet Dr. Choi</a>
+        </div>
+      </div>
+      <aside class="hours-card" aria-labelledby="hours-title">
+        <h2 id="hours-title">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          Office Hours
+        </h2>
+        <dl>
+          <dt>Monday – Thursday</dt><dd>8:00 am – 5:00 pm</dd>
+          <dt>Friday – Sunday</dt><dd class="closed">Closed</dd>
+        </dl>
+        <hr>
+        <p>Call during normal business hours to schedule an appointment.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="services-title">Dental care for the whole family</h2>
+      <p class="sec-sub">Quality dental care for families and individuals, all in one Walla Walla office.</p>
+      <div class="grid">
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L19 8l-3.8 3.3L16.4 16 12 13.4 7.6 16l1.2-4.7L5 8l5.1-.4z"/></svg></div>
+          <h3>Cleanings &amp; Check-ups</h3>
+          <p><span class="ph">[Confirm service &amp; add 1–2 sentences]</span></p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8v8M8 12h8"/></svg></div>
+          <h3>Fillings</h3>
+          <p><span class="ph">[Confirm service &amp; add 1–2 sentences]</span></p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9l3-5h10l3 5-8 11z"/><path d="M4 9h16"/></svg></div>
+          <h3>Crowns</h3>
+          <p><span class="ph">[Confirm service &amp; add 1–2 sentences]</span></p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M8 7c0 3 8 3 8 6s-8 3-8 6"/></svg></div>
+          <h3>Root Canals</h3>
+          <p><span class="ph">[Confirm service &amp; add 1–2 sentences]</span></p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14c2 3 5 4 8 4s6-1 8-4"/><path d="M6 10h.01M18 10h.01"/></svg></div>
+          <h3>Veneers</h3>
+          <p><span class="ph">[Confirm service &amp; add 1–2 sentences]</span></p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M5 12h14"/></svg></div>
+          <h3><span class="ph">[Add another service]</span></h3>
+          <p><span class="ph">[Description]</span></p>
+        </article>
+      </div>
+      <p class="ph-note">Placeholder services are taken from a third-party directory listing. Please confirm the list of services you offer.</p>
+    </div>
+  </section>
+
+  <!-- DENTIST -->
+  <section id="dentist" class="alt" aria-labelledby="dentist-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="dentist-title">Meet Our Dentist</h2>
+      <p class="sec-sub">Personal care from a dentist who keeps learning.</p>
+      <div class="doc">
+        <div class="portrait" role="img" aria-label="Photo placeholder for Dr. Eunduk Choi">
+          <div><span class="initials" aria-hidden="true">EC</span><small>[Your photo of Dr. Choi here]</small></div>
+        </div>
+        <div>
+          <h3>Dr. Eunduk Choi, DDS</h3>
+          <p class="role">General &amp; Family Dentistry</p>
+          <p>Dr. Choi graduated from Loma Linda University School of Dentistry. She is a member of Omicron Kappa Upsilon National Dental Honor Society and was awarded the Ben W. Oesterling award for “Outstanding Ability in Removable Prosthetics” as well as being recognized by the American Academy of Implant Dentistry (AAID) for excellence in implant dentistry knowledge.</p>
+          <p>Dr. Choi is an active member in the American Dental Association and its state and local chapters, the Washington State Dental Association and the Walla Walla Valley Dental Society. She also holds membership in the Academy of General Dentistry and values it for the outstanding professional continuing education opportunities it provides.</p>
+          <ul class="creds" aria-label="Highlights">
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Loma Linda University School of Dentistry graduate</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Member, Omicron Kappa Upsilon National Dental Honor Society</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>Member, Washington State Dental Association &amp; Walla Walla Valley Dental Society</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEW PATIENTS -->
+  <section id="new-patients" aria-labelledby="np-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="np-title">Make an appointment</h2>
+      <p class="sec-sub">Booking is simple. Here's how to get started.</p>
+      <div class="steps">
+        <div class="step">
+          <h3>Call our office</h3>
+          <p>Call <a href="tel:+15095267012">(509) 526-7012</a> during normal business hours, Monday to Thursday, 8:00 am to 5:00 pm.</p>
+        </div>
+        <div class="step">
+          <h3>Fill out your forms</h3>
+          <p><span class="ph">[Link to downloadable or online patient forms]</span></p>
+        </div>
+        <div class="step">
+          <h3>Bring your insurance info</h3>
+          <p><span class="ph">[Insurance plans &amp; payment options you accept]</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="alt" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="reviews-title">What our patients say</h2>
+      <p class="sec-sub">Real reviews from your patients can go here, with their permission.</p>
+      <div class="reviews-ph">[Your reviews here]</div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <h2 class="sec-title" id="visit-title">Hours &amp; location</h2>
+      <p class="sec-sub">Serving Walla Walla and its surrounding communities.</p>
+      <div class="visit">
+        <div class="info">
+          <div class="info-item">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+            <div><h3>Address</h3><p>614 E Alder St #3<br>Walla Walla, WA 99362</p></div>
+          </div>
+          <div class="info-item">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div><h3>Phone</h3><p><a href="tel:+15095267012">(509) 526-7012</a></p></div>
+          </div>
+          <div class="info-item">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div>
+            <div><h3>General inquiries</h3><p><a href="mailto:info.mfdental@gmail.com">info.mfdental@gmail.com</a></p></div>
+          </div>
+          <div class="info-item">
+            <div class="icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#0d6b6b" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <div><h3>Office hours</h3><p>Monday – Thursday: 8:00 am – 5:00 pm<br>Friday – Sunday: Closed</p></div>
+          </div>
+        </div>
+        <div class="map-box">
+          <div>
+            <div class="pin" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></div>
+            <p style="margin:0 0 14px;font-weight:600">614 E Alder St #3, Walla Walla</p>
+            <a class="btn btn-primary" href="https://maps.google.com/?q=614+E+Alder+St+%233,+Walla+Walla,+WA+99362" target="_blank" rel="noopener">Get directions<span style="position:absolute;left:-9999px"> (opens in a new tab)</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <strong style="color:#fff;font-size:1.1rem">Mission Family Dental</strong>
+        <p style="margin:6px 0 0">Dr. Eunduk Choi, DDS<br>Quality dental care for families and individuals in Walla Walla and its surrounding communities.</p>
+      </div>
+      <div>
+        <strong style="color:#fff">Contact</strong>
+        <p style="margin:6px 0 0">614 E Alder St #3<br>Walla Walla, WA 99362<br><a href="tel:+15095267012">(509) 526-7012</a></p>
+      </div>
+      <div>
+        <strong style="color:#fff">Hours</strong>
+        <p style="margin:6px 0 0">Mon – Thu: 8:00 am – 5:00 pm<br>Fri – Sun: Closed</p>
+      </div>
+    </div>
+    <p class="fine">© <span id="yr">2026</span> Mission Family Dental. Sample homepage design. Not the practice's official website.</p>
+  </div>
+</footer>
+
+<div class="mobile-bar" aria-label="Quick contact">
+  <a class="btn btn-primary" href="tel:+15095267012">Tap to call</a>
+  <a class="btn btn-ghost" href="#visit">Hours &amp; map</a>
+</div>
+</body>
+</html>
