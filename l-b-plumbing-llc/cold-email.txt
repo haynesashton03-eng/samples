@@ -1,0 +1,11 @@
+Subject: A sample homepage for L&B Plumbing
+
+Hi Brian and Laura,
+
+I'm Ashton Haynes, a web developer in Manassas Park, Virginia, working with small businesses across the US, with an IT security background (B.A.S. in Information Management, Security & Network Assurance, Palm Beach State College).
+
+Your site, landbplumbing.com, doesn't list business hours, and your services sit in one long list. I made a free sample homepage that groups them, with tap-to-call on phones: {{PREVIEW_URL}}. No obligation.
+
+If you like it, I can turn it into your real site at landbplumbing.com, from $750. You can also get started from the sample page.
+
+Would a quick call work?
