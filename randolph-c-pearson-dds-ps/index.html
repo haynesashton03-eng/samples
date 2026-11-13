@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Randolph C. Pearson, DDS, PS | Family Dentist in Walla Walla, WA</title>
+<meta name="description" content="Gentle family dentistry in downtown Walla Walla. Cleanings, fillings, crowns, implants, dentures, whitening and more. New patients welcome. Call (509) 525-2850.">
+<meta name="theme-color" content="#0f4c5c">
+<style>
+  :root{
+    --ink:#14232b; --muted:#4a5b63; --brand:#0f4c5c; --brand-dk:#0a3540;
+    --accent:#e3b448; --soft:#eef5f4; --line:#d6e3e1; --white:#fff;
+    --radius:14px; --max:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--white)}
+  h1,h2,h3{line-height:1.2;margin:0 0 .5em}
+  h1{font-size:clamp(2rem,5.5vw,3.25rem);letter-spacing:-.02em}
+  h2{font-size:clamp(1.6rem,3.5vw,2.2rem);letter-spacing:-.01em}
+  h3{font-size:1.1rem}
+  p{margin:0 0 1em}
+  a{color:var(--brand)}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--accent);color:var(--ink);padding:10px 14px;z-index:99}
+  .skip:focus{left:10px}
+  :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+  /* sample notice */
+  .notice{background:#fff7e0;color:#5a4300;font-size:.9rem;text-align:center;padding:8px 16px;border-bottom:1px solid #f0dfa6}
+  .notice a{color:#5a4300;font-weight:700}
+
+  /* header */
+  header.site{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:saturate(1.2) blur(6px)}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+  .brand svg{flex:none}
+  .brand strong{display:block;font-size:1.05rem;line-height:1.15}
+  .brand .tag{display:block;font-size:.8rem;color:var(--muted)}
+  nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+  nav a{text-decoration:none;color:var(--ink);font-weight:600;font-size:.95rem}
+  nav a:hover{color:var(--brand)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:var(--brand);color:#fff}
+  .btn-primary:hover{background:var(--brand-dk)}
+  .btn-accent{background:var(--accent);color:var(--ink)}
+  .btn-ghost{border-color:#fff;color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.12)}
+  .call-sm{white-space:nowrap}
+  @media (max-width:860px){ nav{display:none} }
+  @media (max-width:640px){ .call-sm .num{display:none} .brand strong{font-size:.95rem} }
+  @media (max-width:420px){ .brand .tag{display:none} .call-sm{padding:10px 14px} }
+
+  /* hero */
+  .hero{background:var(--brand);color:#fff;position:relative;overflow:hidden}
+  .hero::before,.hero::after{content:"";position:absolute;border-radius:50%;pointer-events:none}
+  .hero::before{width:520px;height:520px;right:-160px;top:-180px;background:#13606f}
+  .hero::after{width:260px;height:260px;right:120px;bottom:-140px;background:var(--accent);opacity:.9}
+  .hero .wrap{position:relative;z-index:1;padding-top:72px;padding-bottom:80px}
+  .eyebrow{display:inline-block;background:rgba(255,255,255,.14);padding:6px 14px;border-radius:999px;font-size:.85rem;font-weight:600;margin-bottom:18px}
+  .hero p.lead{font-size:1.15rem;max-width:36ch;color:#e3f0ef}
+  .hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .hero-facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin:34px 0 0;padding:0;list-style:none;font-size:.95rem;color:#d4e8e6}
+  .hero-facts li{display:flex;align-items:center;gap:8px}
+
+  section{padding:76px 0}
+  .section-intro{max-width:60ch;color:var(--muted);margin-bottom:36px}
+
+  /* services */
+  .grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .card .ic{width:46px;height:46px;border-radius:12px;background:var(--soft);display:grid;place-items:center;margin-bottom:14px;color:var(--brand)}
+  .card p{color:var(--muted);margin:0;font-size:.97rem}
+
+  /* comfort band */
+  .comfort{background:var(--soft)}
+  .split{display:grid;gap:40px;align-items:center;grid-template-columns:1fr}
+  @media (min-width:860px){ .split{grid-template-columns:1.1fr .9fr} }
+  .checks{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  .checks li{display:flex;gap:12px;align-items:flex-start}
+  .checks svg{flex:none;margin-top:3px;color:var(--brand)}
+  .shape-panel{aspect-ratio:1/1;max-width:400px;width:100%;margin:0 auto;border-radius:28px;background:var(--brand);position:relative;overflow:hidden}
+  .shape-panel span{position:absolute;border-radius:50%}
+  .shape-panel .a{width:60%;height:60%;left:-10%;bottom:-10%;background:var(--accent)}
+  .shape-panel .b{width:45%;height:45%;right:8%;top:10%;background:#13606f}
+  .shape-panel svg{position:absolute;inset:0;margin:auto;width:42%;height:42%;color:#fff}
+
+  /* placeholder */
+  .placeholder{border:2px dashed #b9c9c6;border-radius:var(--radius);padding:36px 24px;text-align:center;color:var(--muted);background:#fbfdfd}
+  .placeholder strong{color:var(--ink)}
+
+  /* visit */
+  .visit .grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+  table.hours{width:100%;border-collapse:collapse;font-size:1rem}
+  table.hours th,table.hours td{padding:9px 0;border-bottom:1px solid var(--line);text-align:left}
+  table.hours td{text-align:right}
+  table.hours tr.closed td{color:var(--muted)}
+  address{font-style:normal}
+  .big-phone{font-size:1.6rem;font-weight:800;text-decoration:none;color:var(--brand)}
+
+  /* cta band */
+  .cta-band{background:var(--brand-dk);color:#fff;text-align:center}
+  .cta-band p{color:#cfe3e1;max-width:52ch;margin:0 auto 24px}
+  .cta-band .ctas{display:flex;flex-wrap:wrap;gap:12px;justify-content:center}
+
+  footer{background:#0b1d22;color:#b7c8c6;font-size:.9rem;padding:34px 0}
+  footer a{color:#fff}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:12px 30px;justify-content:space-between}
+
+  /* mobile sticky call bar */
+  .mobile-call{display:none}
+  @media (max-width:640px){
+    .mobile-call{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+    body{padding-bottom:76px}
+    section{padding:56px 0}
+    .hero .wrap{padding-top:52px;padding-bottom:64px}
+    .hero::after{display:none}
+  }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .btn{transition:none} .btn:hover{transform:none} }
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Randolph C. Pearson, DDS, PS. This is not Randolph C. Pearson, DDS, PS's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=randolph-c-pearson-dds-ps" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to main content</a>
+
+<div class="notice" role="note">
+  Sample homepage made for Randolph C. Pearson, DDS, PS. Free, no obligation. Items in [brackets] are placeholders.
+  <a href="{{GET_STARTED_URL}}">Make it your real site →</a>
+</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Randolph C. Pearson, DDS, PS home">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="11" fill="#0f4c5c"/><path d="M13 12c2.6-1.6 4.6-.6 7 .4 2.4-1 4.4-2 7-.4 2.8 1.8 2.4 6.6 1.2 10-1 2.8-1.3 7-3 7.6-1.9.6-2.1-4.6-5.2-4.6s-3.3 5.2-5.2 4.6c-1.7-.6-2-4.8-3-7.6-1.2-3.4-1.6-8.2 1.2-10z" fill="#fff"/></svg>
+      <span><strong>Randolph C. Pearson, DDS, PS</strong><span class="tag">Family Dentistry · Walla Walla</span></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#comfort">Your Visit</a></li>
+        <li><a href="#visit">Hours &amp; Location</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary call-sm" href="tel:+15095252850" aria-label="Call (509) 525-2850">Call<span class="num">&nbsp;(509) 525-2850</span></a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <span class="eyebrow">New patients welcome</span>
+      <h1 id="hero-title">Gentle dentistry for your whole family, in downtown Walla Walla.</h1>
+      <p class="lead">Checkups, cleanings, crowns, implants, dentures and whitening, all from Dr. Randolph Pearson and his team on West Poplar Street.</p>
+      <div class="ctas">
+        <a class="btn btn-accent" href="tel:+15095252850">Call to book: (509) 525-2850</a>
+        <a class="btn btn-ghost" href="#visit">Hours &amp; directions</a>
+      </div>
+      <ul class="hero-facts">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>121 W Poplar St, Ste C</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Mon–Thu, from 8 AM</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">Dental care under one roof</h2>
+      <p class="section-intro">From a child's first checkup to replacing a missing tooth, most of what your family needs is handled right here. <em>[Practice to confirm the final list of services.]</em></p>
+      <div class="grid">
+        <article class="card">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Checkups &amp; cleanings</h3>
+          <p>Exams, X-rays, professional cleanings, fluoride and sealants to keep small problems small.</p>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 12h16M12 4v16"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Fillings &amp; repairs</h3>
+          <p>Tooth-colored composite fillings, bonding and repair of broken teeth or lost fillings.</p>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 9l3-5h8l3 5-7 11z"/><path d="M5 9h14"/></svg></div>
+          <h3>Crowns &amp; bridges</h3>
+          <p>Porcelain crowns and bridges that restore strength and a natural look.</p>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M8 3h8l-1 7H9z"/><path d="M12 10v11M9 14h6M9 18h6"/></svg></div>
+          <h3>Implants &amp; dentures</h3>
+          <p>Options for replacing one tooth or many, including dental implants and dentures.</p>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Cosmetic dentistry</h3>
+          <p>Teeth whitening, porcelain veneers and clear aligners for a smile you're happy to show.</p>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+          <h3>Gum &amp; root care</h3>
+          <p>Gum disease treatment, deep cleanings, root canals and extractions when they're needed.</p>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="7" r="3"/><circle cx="17" cy="9" r="2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M14 20c0-2.2 1.3-4 3-4s3 1.8 3 4"/></svg></div>
+          <h3>Children's dentistry</h3>
+          <p>Friendly first visits and checkups for kids, so good habits start early.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="comfort" id="comfort" aria-labelledby="comfort-title">
+    <div class="wrap split">
+      <div>
+        <h2 id="comfort-title">A calm, unhurried visit</h2>
+        <p class="section-intro">Nervous about the dentist? You're not alone. Our focus is gentle care, clear explanations and no surprises.</p>
+        <ul class="checks">
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Gentle techniques</strong> for cleanings, fillings and other treatment.</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Nitrous oxide on request</strong> to help you relax. <em>[Practice to confirm]</em></span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Care for all ages</strong>, from kids to grandparents.</span></li>
+          <li><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><strong>Insurance &amp; payment:</strong> [List accepted insurance plans, payment methods and financing options here.]</span></li>
+        </ul>
+      </div>
+      <div class="shape-panel" aria-hidden="true">
+        <span class="a"></span><span class="b"></span>
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.2 3.6c2-1.2 3.6-.4 5.8.4 2.2-.8 3.8-1.6 5.8-.4 2.4 1.5 2 5.6 1 8.4-.9 2.4-1.1 6.4-2.6 7-1.6.5-1.8-4-4.2-4s-2.6 4.5-4.2 4c-1.5-.6-1.7-4.6-2.6-7-1-2.8-1.4-6.9 1-8.4z"/></svg>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title">What patients say</h2>
+      <div class="placeholder">
+        <p><strong>[Your reviews here]</strong></p>
+        <p>We'll add real reviews from your patients, quoted with their permission.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit comfort" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <h2 id="visit-title">Hours &amp; location</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Office hours</h3>
+          <table class="hours">
+            <caption class="sr-only" style="position:absolute;left:-9999px">Weekly office hours</caption>
+            <tbody>
+              <tr><th scope="row">Monday</th><td>8:00 AM – 5:00 PM</td></tr>
+              <tr><th scope="row">Tuesday</th><td>8:00 AM – 5:00 PM</td></tr>
+              <tr><th scope="row">Wednesday</th><td>8:00 AM – 1:00 PM</td></tr>
+              <tr><th scope="row">Thursday</th><td>8:00 AM – 5:00 PM</td></tr>
+              <tr class="closed"><th scope="row">Friday – Sunday</th><td>Closed</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card">
+          <h3>Find us</h3>
+          <address>
+            Randolph C. Pearson, DDS, PS<br>
+            121 W Poplar St, Suite C<br>
+            Walla Walla, WA 99362
+          </address>
+          <p style="margin-top:14px"><a href="https://www.openstreetmap.org/search?query=121%20W%20Poplar%20St%2C%20Walla%20Walla%2C%20WA%2099362" rel="noopener">Get directions →</a></p>
+          <p style="margin:0">Parking: [Add parking details]</p>
+        </div>
+        <div class="card">
+          <h3>Call us</h3>
+          <p><a class="big-phone" href="tel:+15095252850">(509) 525-2850</a></p>
+          <p>Fax: (509) 529-6545</p>
+          <p style="margin:0">Dental emergency? Call during office hours and we'll do our best to see you quickly. <em>[Practice to confirm after-hours instructions]</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="wrap">
+      <h2 id="cta-title">Ready for your next checkup?</h2>
+      <p>New patients are welcome. Give us a call and we'll find a time that works for you.</p>
+      <div class="ctas">
+        <a class="btn btn-accent" href="tel:+15095252850">Call (509) 525-2850</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr">2026</span> Randolph C. Pearson, DDS, PS · 121 W Poplar St, Ste C, Walla Walla, WA 99362</div>
+    <div><a href="tel:+15095252850">(509) 525-2850</a></div>
+  </div>
+</footer>
+
+<a class="btn btn-primary mobile-call" href="tel:+15095252850">📞 Call (509) 525-2850</a>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
