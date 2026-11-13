@@ -1,0 +1,13 @@
+Subject: A free sample homepage for Margarita Restaurant
+
+Hi,
+
+I'm Ashton Haynes, a local web developer in Manassas Park, Manassas, and Prince William County, Virginia, with an IT security background (B.A.S. in Information Management, Security & Network Assurance (IT forensics), Palm Beach State College).
+
+I made a free sample homepage for Margarita Restaurant: {{PREVIEW_URL}}. On phones, Call, Order and Directions stay pinned to the bottom of the screen, and your pupusas, lomo saltado and pollo entero are right on the first page.
+
+One small thing I noticed: your Menu and Order Online buttons go to the same page, so there's no menu to just browse.
+
+No obligation. If you like it, I can turn it into your live site. Just reply, book a quick call, or get started from the sample page.
+
+Would a quick call this week work for you?
