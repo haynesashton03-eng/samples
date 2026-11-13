@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Absolute Lawn Care | Lawn Care &amp; Yard Work in Twin Falls, Idaho</title>
+<meta name="description" content="Absolute Lawn Care offers lawn mowing, edging, trimming, spring and fall clean-up, shrub grooming, weed and feed, sprinkler repair and snow removal in Twin Falls, Idaho. Free estimates. Call (208) 316-2623.">
+<meta name="theme-color" content="#1f5130">
+<style>
+  :root{
+    --green-900:#143820; --green-800:#1f5130; --green-700:#2a6b3f; --green-100:#e6f1e8;
+    --lime:#b8e07a; --sand:#f7f4ec; --ink:#1b2420; --muted:#4a5650; --white:#fff;
+    --radius:14px; --max:1100px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:1.0625rem}
+  a{color:var(--green-700)}
+  img,svg{max-width:100%}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--white);padding:10px 14px;z-index:100}
+  .skip:focus{left:10px;top:10px}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+  :focus-visible{outline:3px solid #f2b705;outline-offset:2px}
+
+  /* sample notice */
+  .sample-bar{background:#fff7d6;color:#4a3b00;font-size:.9rem;text-align:center;padding:8px 16px;border-bottom:1px solid #eadb9c}
+  .sample-bar a{color:#4a3b00;font-weight:600}
+
+  /* header */
+  header.site{position:sticky;top:0;z-index:50;background:var(--green-900);color:var(--white)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;color:var(--white);text-decoration:none;font-weight:800;letter-spacing:.2px;font-size:1.15rem}
+  .brand svg{flex:none}
+  .nav ul{display:none;list-style:none;margin:0;padding:0;gap:22px}
+  .nav ul a{color:#dfeee2;text-decoration:none;font-weight:500}
+  .nav ul a:hover{color:var(--white);text-decoration:underline}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;line-height:1.2}
+  .btn-lime{background:var(--lime);color:var(--green-900)}
+  .btn-lime:hover{background:#cdec9f}
+  .btn-ghost{border-color:rgba(255,255,255,.7);color:var(--white)}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .btn-green{background:var(--green-800);color:var(--white)}
+  .btn-green:hover{background:var(--green-700)}
+  .call-sm{padding:9px 14px;font-size:.95rem;display:none}
+
+  /* hero */
+  .hero{background:linear-gradient(160deg,var(--green-800) 0%,var(--green-900) 70%);color:var(--white);position:relative;overflow:hidden}
+  .hero .wrap{position:relative;padding-top:56px;padding-bottom:72px}
+  .eyebrow{display:inline-block;background:rgba(184,224,122,.18);color:var(--lime);font-weight:700;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+  .hero h1{font-size:clamp(2rem,6vw,3.4rem);line-height:1.1;margin:16px 0 14px;max-width:16ch}
+  .hero p.lead{font-size:clamp(1.05rem,2.4vw,1.25rem);color:#d7e8da;max-width:52ch;margin:0 0 26px}
+  .hero-ctas{display:flex;flex-wrap:wrap;gap:12px}
+  .hero-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin:30px 0 0;padding:0;list-style:none;color:#d7e8da;font-size:.95rem}
+  .hero-facts li{display:flex;align-items:center;gap:8px}
+  .stripes{position:absolute;inset:auto 0 0 0;height:46px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 60px,rgba(255,255,255,0) 60px 120px)}
+
+  section{padding:64px 0}
+  h2{font-size:clamp(1.6rem,4vw,2.3rem);line-height:1.2;margin:0 0 10px;color:var(--green-900)}
+  .section-intro{color:var(--muted);max-width:60ch;margin:0 0 32px}
+
+  /* services */
+  .grid{display:grid;gap:16px;grid-template-columns:1fr}
+  .card{background:var(--white);border:1px solid #dfe7e1;border-radius:var(--radius);padding:22px;display:flex;gap:16px;align-items:flex-start}
+  .card h3{margin:0 0 4px;font-size:1.1rem;color:var(--green-900)}
+  .card p{margin:0;color:var(--muted);font-size:.98rem}
+  .icon{flex:none;width:48px;height:48px;border-radius:12px;background:var(--green-100);display:grid;place-items:center;color:var(--green-800)}
+  .season{background:var(--sand)}
+
+  /* about */
+  .about{background:var(--green-100)}
+  .about-inner{display:grid;gap:28px;align-items:center}
+  .quote{background:var(--white);border-left:6px solid var(--green-700);border-radius:var(--radius);padding:24px 26px;font-size:1.15rem;margin:0}
+  .quote p{margin:0 0 10px}
+  .quote footer{color:var(--muted);font-size:.95rem}
+
+  /* reviews placeholder */
+  .placeholder{border:2px dashed #b9c6bd;border-radius:var(--radius);padding:28px;text-align:center;color:var(--muted);background:#fafcfa}
+
+  /* hours / contact */
+  .contact-grid{display:grid;gap:24px}
+  .panel{background:var(--white);border:1px solid #dfe7e1;border-radius:var(--radius);padding:24px}
+  .panel h3{margin:0 0 12px;color:var(--green-900)}
+  table.hours{width:100%;border-collapse:collapse}
+  table.hours th,table.hours td{padding:9px 0;border-bottom:1px solid #edf1ee;text-align:left}
+  table.hours td{text-align:right}
+  .big-phone{font-size:1.6rem;font-weight:800;color:var(--green-800);text-decoration:none;display:inline-block;margin:4px 0 8px}
+  form .row{display:grid;gap:6px;margin-bottom:14px}
+  label{font-weight:600;font-size:.95rem}
+  input,select,textarea{font:inherit;padding:11px 12px;border:1.5px solid #9fb0a5;border-radius:10px;width:100%;background:var(--white);color:var(--ink)}
+  input:focus,select:focus,textarea:focus{border-color:var(--green-700);outline:none;box-shadow:0 0 0 3px rgba(42,107,63,.25)}
+  .form-note{font-size:.88rem;color:var(--muted);margin:10px 0 0}
+  #form-msg{margin-top:12px;font-weight:600;color:var(--green-800)}
+
+  footer.site{background:var(--green-900);color:#cfe1d3;padding:36px 0;font-size:.95rem}
+  footer.site a{color:var(--white)}
+  .foot{display:grid;gap:14px}
+
+  /* mobile call bar */
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:10px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,56,32,.97);box-shadow:0 -4px 16px rgba(0,0,0,.15)}
+  .callbar .btn{flex:1;padding:12px 10px}
+  body{padding-bottom:76px}
+
+  @media (min-width:700px){
+    .grid{grid-template-columns:repeat(2,1fr)}
+    .contact-grid{grid-template-columns:1fr 1fr}
+    .foot{grid-template-columns:2fr 1fr 1fr}
+  }
+  @media (min-width:960px){
+    .nav ul{display:flex}
+    .call-sm{display:inline-flex}
+    .grid.three{grid-template-columns:repeat(3,1fr)}
+    .about-inner{grid-template-columns:1.1fr 1fr}
+    .callbar{display:none}
+    body{padding-bottom:0}
+    section{padding:84px 0}
+  }
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Absolute Lawn Care. This is not Absolute Lawn Care's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=absolute-lawn-care" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sample-bar" role="note">
+  Sample homepage prepared for Absolute Lawn Care. Not the business's official site.
+  <a href="{{GET_STARTED_URL}}">Like it? Make it yours</a>
+</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Absolute Lawn Care, home">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="17" fill="#b8e07a"/><path d="M9 24c0-8 6-14 16-15-1 10-7 16-15 16" fill="#1f5130"/><path d="M10 25c3-5 7-9 12-12" stroke="#b8e07a" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+      Absolute Lawn Care
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#estimate">Free Estimate</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-lime call-sm" href="tel:+12083162623">Call (208) 316-2623</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <span class="eyebrow">Twin Falls, Idaho</span>
+      <h1 id="hero-title">Beautiful, clean yards in Twin Falls</h1>
+      <p class="lead">Mowing, edging, clean-ups, shrub grooming, sprinkler repair and snow removal from Absolute Lawn Care. Serving Twin Falls and surrounding areas.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-lime" href="#estimate">Get a free estimate</a>
+        <a class="btn btn-ghost" href="tel:+12083162623">Call (208) 316-2623</a>
+      </div>
+      <ul class="hero-facts">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#b8e07a" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Free estimates</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#b8e07a" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Open Saturday mornings</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#b8e07a" d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Lawn care in summer, snow removal in winter</li>
+      </ul>
+    </div>
+    <div class="stripes" aria-hidden="true"></div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">Lawn &amp; yard services</h2>
+      <p class="section-intro">Everything your yard needs, from the first spring clean-up to the last snowfall.</p>
+      <div class="grid three">
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M3 20h18v2H3zM5 18c0-4 1-8 2-11l1 .3C7 10 6.5 14 6.5 18zm5 0c0-5 .5-10 2-14l1 .3c-1.3 4-1.5 9-1.5 13.7zm5 0c0-3.5.8-7 2.3-9.6l.9.5C16.8 11.4 16.5 15 16.5 18z"/></svg></div>
+          <div><h3>Lawn mowing</h3><p>Regular mowing to keep your lawn neat and healthy all season.</p></div>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M2 17h20v2H2zm2-3h2v3H4zm4 0h2v3H8zm4 0h2v3h-2zm4 0h2v3h-2zM3 11h18v2H3z"/></svg></div>
+          <div><h3>Edging, weed eating &amp; trimming</h3><p>Crisp edges along walks and beds, and trimming where the mower can't reach.</p></div>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8 6 6 9.5 6 13a6 6 0 0 0 12 0c0-3.5-2-7-6-11zm-1 17.9A5 5 0 0 1 7 15h2a3 3 0 0 0 2 2.8z"/></svg></div>
+          <div><h3>Weeding</h3><p>Weeds pulled from beds and borders so your plants have room to grow.</p></div>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6" fill="currentColor"/><rect x="11" y="14" width="2" height="8" fill="currentColor"/></svg></div>
+          <div><h3>Shrub &amp; bush grooming</h3><p>Shaping and tidying shrubs and bushes for a clean, finished look.</p></div>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M5 3h10l1 3h3v2h-2l-1.5 13h-11L3 8H1V6h3zm2.2 5 1.2 11h7.2l1.2-11z"/></svg></div>
+          <div><h3>Weed and feed treatment</h3><p>Feed your grass and fight weeds in one treatment.</p></div>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M11 14h2v8h-2zM12 2a1 1 0 0 1 1 1v3h-2V3a1 1 0 0 1 1-1zM4.2 6.6l1.4-1.4 2.2 2.2-1.4 1.4zm12.4.8 2.2-2.2 1.4 1.4-2.2 2.2zM8 10h8l-1 4H9z"/></svg></div>
+          <div><h3>Home sprinkler repair</h3><p>Broken heads and watering problems fixed so your lawn gets what it needs.</p></div>
+        </article>
+      </div>
+
+      <div class="grid" style="margin-top:16px">
+        <article class="card season">
+          <div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M17 8C8 10 5.9 16.2 3.8 21.3l1.9.7 1-2.3c.5.2 1 .3 1.3.3C19 20 22 3 22 3c-1 2-8 2.3-13 3.3S2 11.5 2 13.5s1.8 3.8 1.8 3.8C7 8 17 8 17 8z"/></svg></div>
+          <div><h3>Spring &amp; fall clean-up</h3><p>Leaves, debris and winter mess cleared so your yard starts and ends each season looking its best.</p></div>
+        </article>
+        <article class="card season">
+          <div class="icon" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path fill="currentColor" d="M11 1h2v22h-2zM2.3 6.5l1-1.7 18.4 10.7-1 1.7zm0 11 18.4-10.7 1 1.7L3.3 19.2zM9 3l3 2 3-2 .8 1.3L12 7 8.2 4.3zm0 18 3-2 3 2 .8-1.3L12 17l-3.8 2.7z"/></svg></div>
+          <div><h3>Snow removal</h3><p>When winter hits Twin Falls, call for help clearing snow.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-title">
+    <div class="wrap about-inner">
+      <div>
+        <h2 id="about-title">Meet Butch</h2>
+        <p>Absolute Lawn Care is run by Butch, who has over 12 years of professional landscaping experience.</p>
+        <p>Every job starts with a free estimate, so you know what to expect before any work begins.</p>
+        <a class="btn btn-green" href="#estimate">Request your free estimate</a>
+      </div>
+      <blockquote class="quote">
+        <p>&ldquo;I started Absolute Lawncare because I am passionate about beautiful, clean yards. I want your yard to look its best.&rdquo;</p>
+        <footer>Butch, owner</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title">What customers say</h2>
+      <div class="placeholder">
+        <p><strong>[Your reviews here]</strong></p>
+        <p>Placeholder: we'll add real reviews from your customers, with their permission, or link to your review profiles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="season" id="hours" aria-labelledby="hours-title">
+    <div class="wrap contact-grid">
+      <div class="panel">
+        <h3 id="hours-title">Hours</h3>
+        <table class="hours">
+          <caption class="sr-only">Business hours</caption>
+          <tbody>
+            <tr><th scope="row">Monday – Friday</th><td>8:00 am – 5:00 pm</td></tr>
+            <tr><th scope="row">Saturday</th><td>8:00 am – 1:00 pm</td></tr>
+            <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+          </tbody>
+        </table>
+        <p class="form-note">Hours as listed publicly. Please confirm before publishing.</p>
+      </div>
+      <div class="panel">
+        <h3>Call or text</h3>
+        <a class="big-phone" href="tel:+12083162623">(208) 316-2623</a>
+        <p style="margin:0 0 6px">Serving Twin Falls, Idaho and surrounding areas.</p>
+        <p style="margin:0">Email: <span>[Your business email]</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="estimate" aria-labelledby="estimate-title">
+    <div class="wrap contact-grid">
+      <div>
+        <h2 id="estimate-title">Get a free estimate</h2>
+        <p class="section-intro">Tell us a little about your yard and what you need. Butch will get back to you, or call <a href="tel:+12083162623">(208) 316-2623</a> to talk now.</p>
+      </div>
+      <form class="panel" id="estimate-form" novalidate>
+        <div class="row"><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+        <div class="row"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+        <div class="row"><label for="street">Street address (in Twin Falls or nearby)</label><input id="street" name="street" autocomplete="street-address"></div>
+        <div class="row"><label for="service">Service needed</label>
+          <select id="service" name="service">
+            <option>Lawn mowing</option>
+            <option>Edging, weed eating &amp; trimming</option>
+            <option>Spring or fall clean-up</option>
+            <option>Weeding</option>
+            <option>Shrub &amp; bush grooming</option>
+            <option>Weed and feed treatment</option>
+            <option>Home sprinkler repair</option>
+            <option>Snow removal</option>
+            <option>Something else</option>
+          </select>
+        </div>
+        <div class="row"><label for="msg">Anything else we should know?</label><textarea id="msg" name="message" rows="3"></textarea></div>
+        <button class="btn btn-green" type="submit">Request free estimate</button>
+        <p class="form-note">Sample form: nothing is sent yet. On the live site this will go straight to your inbox.</p>
+        <p id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap foot">
+    <div><strong style="color:#fff">Absolute Lawn Care</strong><br>Lawn care, yard work and snow removal in Twin Falls, Idaho.</div>
+    <div><a href="tel:+12083162623">(208) 316-2623</a><br>Mon–Fri 8–5, Sat 8–1</div>
+    <div>&copy; <span id="yr">2026</span> Absolute Lawn Care</div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-lime" href="tel:+12083162623">Call now</a>
+  <a class="btn btn-ghost" href="#estimate">Free estimate</a>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  document.getElementById('estimate-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var msg = document.getElementById('form-msg');
+    if (!this.name.value.trim() || !this.phone.value.trim()) {
+      msg.textContent = 'Please add your name and phone number.';
+      (this.name.value.trim() ? this.phone : this.name).focus();
+      return;
+    }
+    msg.textContent = 'Thanks! This is a sample, so nothing was sent. On the live site, Butch would get your request right away.';
+    this.reset();
+  });
+</script>
+</body>
+</html>
