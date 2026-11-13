@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Creative Minds Learning Center | Child Care in Elizabeth City, NC</title>
+<meta name="description" content="Creative Minds Learning Center (formerly Tender Years Child Care Center) offers child care in Elizabeth City, North Carolina. Call (252) 335-5833 to ask about enrollment.">
+<meta name="theme-color" content="#1f5f8b">
+<style>
+  :root{
+    --ink:#1d2433; --muted:#4a5468; --bg:#fffaf3; --card:#ffffff;
+    --blue:#1f5f8b; --blue-dk:#174a6d; --sun:#ffc94a; --coral:#e8604c; --leaf:#3f9b6b; --sky:#d9eefc; --cream:#fff1d6;
+    --radius:18px; --shadow:0 6px 24px rgba(29,36,51,.08);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+  img,svg{display:block;max-width:100%}
+  a{color:var(--blue)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--coral);outline-offset:3px;border-radius:6px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+  .skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 14px;z-index:100}
+  .skip:focus{left:10px;top:10px}
+  .ph{background:#fff3b0;border:1px dashed #b38600;color:#5c4400;padding:0 .35em;border-radius:5px;font-weight:600;font-size:.92em}
+  .sample-bar{background:var(--ink);color:#fff;font-size:.85rem;text-align:center;padding:8px 16px}
+  .sample-bar a{color:var(--sun)}
+
+  /* Header */
+  header.site{background:#fff;border-bottom:1px solid #efe6d6;position:sticky;top:0;z-index:20}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;line-height:1.15}
+  .brand small{display:block;font-weight:500;color:var(--muted);font-size:.75rem}
+  .mark{width:42px;height:42px;flex:none}
+  .nav ul{display:none;list-style:none;margin:0;padding:0;gap:22px}
+  .nav ul a{text-decoration:none;color:var(--ink);font-weight:600}
+  .nav ul a:hover{color:var(--blue)}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;min-height:48px}
+  .btn-primary{background:var(--blue);color:#fff}
+  .btn-primary:hover{background:var(--blue-dk)}
+  .btn-ghost{background:#fff;color:var(--blue);border-color:var(--blue)}
+  .btn-ghost:hover{background:var(--sky)}
+  .nav .btn{padding:10px 16px;min-height:44px;font-size:.95rem;display:none}
+  @media(min-width:760px){.nav .btn{display:inline-flex}}
+  @media(min-width:860px){.nav ul{display:flex}}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--sky),var(--bg));padding:56px 0 72px}
+  .hero-grid{display:grid;gap:36px;align-items:center}
+  .eyebrow{display:inline-block;background:#fff;color:var(--blue-dk);font-weight:700;font-size:.85rem;padding:6px 12px;border-radius:999px;box-shadow:var(--shadow)}
+  h1{font-size:clamp(2rem,5.5vw,3.3rem);line-height:1.1;margin:16px 0 14px;letter-spacing:-.01em}
+  h1 .hl{color:var(--coral)}
+  .lead{font-size:1.15rem;color:var(--muted);max-width:36em;margin:0 0 26px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .quick{display:flex;flex-wrap:wrap;gap:10px 22px;margin:26px 0 0;padding:0;list-style:none;color:var(--muted);font-size:.95rem}
+  .quick li{display:flex;align-items:center;gap:8px}
+  .quick svg{width:20px;height:20px;color:var(--leaf);flex:none}
+  .art{max-width:440px;margin:0 auto;width:100%}
+  @media(min-width:860px){.hero-grid{grid-template-columns:1.15fr .85fr}.hero{padding:80px 0 96px}}
+
+  section{padding:64px 0}
+  h2{font-size:clamp(1.6rem,3.5vw,2.3rem);line-height:1.2;margin:0 0 12px}
+  .section-intro{color:var(--muted);max-width:40em;margin:0 0 34px}
+  .center{text-align:center}
+  .center .section-intro{margin-left:auto;margin-right:auto}
+
+  /* Programs */
+  .cards{display:grid;gap:18px;grid-template-columns:1fr}
+  @media(min-width:620px){.cards{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:960px){.cards{grid-template-columns:repeat(4,1fr)}}
+  .card{background:var(--card);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow);border-top:6px solid var(--c,var(--blue))}
+  .card h3{margin:14px 0 6px;font-size:1.15rem}
+  .card p{margin:0;color:var(--muted);font-size:.97rem}
+  .icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;background:var(--bg-i,var(--sky));color:var(--c,var(--blue))}
+  .icon svg{width:28px;height:28px}
+
+  /* Philosophy */
+  .philo{background:var(--cream)}
+  .philo-grid{display:grid;gap:30px;align-items:center}
+  @media(min-width:860px){.philo-grid{grid-template-columns:1fr 1fr}}
+  blockquote{margin:0;background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border-left:6px solid var(--sun);font-size:1.1rem}
+  blockquote p{margin:0 0 12px}
+  blockquote p:last-child{margin:0}
+  .dev{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:18px 0 0}
+  .dev li{background:#fff;border-radius:999px;padding:8px 16px;font-weight:600;font-size:.95rem;box-shadow:var(--shadow)}
+
+  /* Features */
+  .feat{display:grid;gap:14px;grid-template-columns:1fr;list-style:none;padding:0;margin:0}
+  @media(min-width:560px){.feat{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:900px){.feat{grid-template-columns:repeat(3,1fr)}}
+  .feat li{display:flex;gap:14px;align-items:flex-start;background:#fff;border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+  .feat svg{width:26px;height:26px;color:var(--leaf);flex:none;margin-top:2px}
+  .feat strong{display:block}
+  .feat span{color:var(--muted);font-size:.95rem}
+
+  /* Day */
+  .day{background:var(--blue);color:#fff}
+  .day h2{color:#fff}
+  .day .section-intro{color:#dbe9f5}
+  .timeline{list-style:none;padding:0;margin:0;display:grid;gap:14px}
+  @media(min-width:760px){.timeline{grid-template-columns:repeat(4,1fr)}}
+  .timeline li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:var(--radius);padding:20px}
+  .timeline b{display:block;color:var(--sun);font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+  .timeline h3{margin:6px 0;font-size:1.1rem}
+  .timeline p{margin:0;color:#e6eff8;font-size:.95rem}
+
+  /* Reviews placeholder */
+  .reviews-box{background:#fff;border:2px dashed #c9b98f;border-radius:var(--radius);padding:30px;text-align:center;color:var(--muted)}
+
+  /* Visit / contact */
+  .visit-grid{display:grid;gap:22px}
+  @media(min-width:860px){.visit-grid{grid-template-columns:1fr 1fr}}
+  .panel{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow)}
+  .panel h3{margin:0 0 14px}
+  dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:12px 18px}
+  dt{font-weight:700}
+  dd{margin:0;color:var(--muted)}
+  .big-phone{font-size:1.6rem;font-weight:800;text-decoration:none;color:var(--blue);display:inline-block;margin:4px 0 14px}
+  form{display:grid;gap:14px}
+  label{font-weight:600;display:block;margin-bottom:4px}
+  input,select,textarea{width:100%;font:inherit;padding:12px 14px;border:1.5px solid #b9c2d0;border-radius:10px;background:#fff;color:var(--ink)}
+  input:focus,select:focus,textarea:focus{outline:3px solid var(--sky);border-color:var(--blue)}
+  .form-note{font-size:.85rem;color:var(--muted);margin:0}
+  .two{display:grid;gap:14px}
+  @media(min-width:520px){.two{grid-template-columns:1fr 1fr}}
+  button.btn{cursor:pointer;font:inherit;font-weight:700}
+
+  footer{background:var(--ink);color:#cfd6e3;padding:40px 0 90px;font-size:.95rem}
+  footer a{color:#fff}
+  .foot-grid{display:grid;gap:20px}
+  @media(min-width:760px){.foot-grid{grid-template-columns:2fr 1fr 1fr}footer{padding-bottom:40px}}
+  footer h3{color:#fff;font-size:1rem;margin:0 0 8px}
+
+  /* Mobile call bar */
+  .callbar{position:fixed;left:0;right:0;bottom:0;display:flex;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:#fff;box-shadow:0 -4px 18px rgba(0,0,0,.12);z-index:30}
+  .callbar .btn{flex:1;padding:10px}
+  @media(min-width:760px){.callbar{display:none}}
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Creative Minds Learning Center LLC (formerly Tender Years Child Care Center). This is not Creative Minds Learning Center LLC (formerly Tender Years Child Care Center)'s official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=creative-minds-learning-center-llc-forme" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to main content</a>
+
+<div class="sample-bar" role="note">Sample homepage concept prepared for Creative Minds Learning Center. Items <span class="ph">highlighted like this</span> are placeholders to confirm or replace.</div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Creative Minds Learning Center, home">
+      <svg class="mark" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#ffc94a"/><circle cx="17" cy="20" r="7" fill="#e8604c"/><circle cx="31" cy="20" r="7" fill="#1f5f8b"/><circle cx="24" cy="31" r="7" fill="#3f9b6b"/></svg>
+      <span>Creative Minds<br>Learning Center<small>formerly Tender Years Child Care Center</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#programs">Programs</a></li>
+        <li><a href="#approach">Our Approach</a></li>
+        <li><a href="#day">A Day Here</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="tel:+12523355833">Call (252) 335-5833</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Child care in Elizabeth City, North Carolina</span>
+        <h1 id="hero-title">A place where every child feels <span class="hl">accepted, cared for</span> and ready to grow.</h1>
+        <p class="lead">Creative Minds Learning Center, formerly Tender Years Child Care Center, cares for infants, toddlers, preschoolers and school-age children right here in Elizabeth City.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#visit">Schedule a tour</a>
+          <a class="btn btn-ghost" href="tel:+12523355833">Call (252) 335-5833</a>
+        </div>
+        <ul class="quick">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Open <span class="ph">6:00 am – 6:00 pm (confirm)</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>1092 US Highway 17 S, Elizabeth City</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="10" r="2.3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.4 1-4 3-4s3 1.6 3 4"/></svg>Ages <span class="ph">6 weeks – 12 years (confirm)</span></li>
+        </ul>
+      </div>
+      <svg class="art" viewBox="0 0 400 340" role="img" aria-label="Illustration of colorful building blocks under a sun">
+        <circle cx="320" cy="70" r="46" fill="#ffc94a"/>
+        <g stroke="#ffc94a" stroke-width="6" stroke-linecap="round"><path d="M320 6v10M320 124v10M256 70h10M374 70h10M275 25l7 7M358 108l7 7M365 25l-7 7M282 108l-7 7"/></g>
+        <ellipse cx="200" cy="318" rx="180" ry="16" fill="#cfe6f6"/>
+        <rect x="60" y="210" width="100" height="100" rx="14" fill="#e8604c"/>
+        <text x="110" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="64" font-weight="800" fill="#fff">A</text>
+        <rect x="170" y="210" width="100" height="100" rx="14" fill="#1f5f8b"/>
+        <text x="220" y="280" text-anchor="middle" font-family="system-ui,sans-serif" font-size="64" font-weight="800" fill="#fff">B</text>
+        <rect x="115" y="100" width="100" height="100" rx="14" fill="#3f9b6b" transform="rotate(-6 165 150)"/>
+        <text x="165" y="172" text-anchor="middle" font-family="system-ui,sans-serif" font-size="64" font-weight="800" fill="#fff" transform="rotate(-6 165 150)">C</text>
+        <rect x="282" y="250" width="60" height="60" rx="10" fill="#ffc94a"/>
+        <circle cx="312" cy="280" r="14" fill="#fff"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="programs" aria-labelledby="programs-title">
+    <div class="wrap">
+      <h2 id="programs-title">Care for every stage</h2>
+      <p class="section-intro">From a baby's first months to school-age kids who need a safe place before and after school. <span class="ph">Confirm the programs you currently offer</span></p>
+      <div class="cards">
+        <article class="card" style="--c:#e8604c;--bg-i:#fde6e2">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="9" r="5"/><path d="M10 9h.01M14 9h.01M10.5 11.2c.9.6 2.1.6 3 0M6 21c1-3 3.3-5 6-5s5 2 6 5"/></svg></div>
+          <h3>Infants</h3>
+          <p>Gentle, attentive care for your littlest ones, starting <span class="ph">at 6 weeks</span>.</p>
+        </article>
+        <article class="card" style="--c:#1f5f8b;--bg-i:#d9eefc">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="12" width="8" height="8" rx="1.5"/><rect x="13" y="12" width="8" height="8" rx="1.5"/><rect x="8" y="4" width="8" height="8" rx="1.5"/></svg></div>
+          <h3>Toddlers</h3>
+          <p>Play, music and hands-on discovery as little ones learn to talk, move and share.</p>
+        </article>
+        <article class="card" style="--c:#3f9b6b;--bg-i:#dff2e7">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 5h7a3 3 0 0 1 3 3v12a2 2 0 0 0-2-2H4zM20 5h-4a2 2 0 0 0-2 2"/><path d="M20 5v13h-6"/></svg></div>
+          <h3>Preschool &amp; kindergarten</h3>
+          <p>Getting ready for school through early literacy, numbers, art and plenty of play.</p>
+        </article>
+        <article class="card" style="--c:#b8860b;--bg-i:#fff1d6">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10l8-5 8 5v10H4z"/><path d="M9 20v-5h6v5"/></svg></div>
+          <h3>Before &amp; after school</h3>
+          <p>A safe, friendly spot for school-age kids <span class="ph">up to age 12</span> at the start and end of the day.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="philo" id="approach" aria-labelledby="approach-title">
+    <div class="wrap philo-grid">
+      <div>
+        <h2 id="approach-title">Our approach</h2>
+        <p class="section-intro" style="margin-bottom:0">Every child is different. Our job is to give each one a warm, trusting place to learn and grow, together with children and adults from all walks of life.</p>
+        <ul class="dev" aria-label="Areas of development we focus on">
+          <li>Physical</li><li>Social</li><li>Emotional</li><li>Cognitive</li><li>Creative</li>
+        </ul>
+      </div>
+      <blockquote>
+        <p>“Children are unique, special and should feel accepted and cared for by people they can trust.”</p>
+        <p>“We believe that children learn from experiences with people of all ages, races, religious beliefs and physical abilities.”</p>
+        <p style="font-size:.85rem;color:var(--muted)"><span class="ph">Wording from your earlier Tender Years listing. Update it if it has changed.</span></p>
+      </blockquote>
+    </div>
+  </section>
+
+  <section aria-labelledby="feat-title">
+    <div class="wrap">
+      <h2 id="feat-title">What families can expect</h2>
+      <p class="section-intro"><span class="ph">Confirm each item below is still offered</span></p>
+      <ul class="feat">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Fenced playground</strong><span>Room to run, climb and play outdoors.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Meals provided</strong><span>Kids are fed during the day, so there's less to pack.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Video cameras</strong><span>An extra layer of safety throughout the center.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Library &amp; story time</strong><span>Books close at hand to build a love of reading.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Multipurpose room</strong><span>Space for indoor play, music and movement on rainy days.</span></div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg><div><strong>Tablets for learning</strong><span>Age-appropriate learning activities.</span></div></li>
+      </ul>
+      <p style="margin-top:22px;color:var(--muted)"><span class="ph">[Your NC child care license details here, worded the way you'd like them shown]</span></p>
+    </div>
+  </section>
+
+  <section class="day" id="day" aria-labelledby="day-title">
+    <div class="wrap">
+      <h2 id="day-title">A day at Creative Minds</h2>
+      <p class="section-intro">An example of how a day could be described. <span class="ph">Replace with your real schedule</span></p>
+      <ol class="timeline">
+        <li><b>Morning</b><h3>Warm welcome</h3><p>Drop-off, breakfast and free play while friends arrive.</p></li>
+        <li><b>Mid-morning</b><h3>Learning time</h3><p>Circle time, stories and hands-on activities for each age group.</p></li>
+        <li><b>Midday</b><h3>Lunch &amp; rest</h3><p>A meal together, then quiet time and naps.</p></li>
+        <li><b>Afternoon</b><h3>Play &amp; pick-up</h3><p>Outdoor play, snacks and after-school care until pick-up.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="reviews-title">
+    <div class="wrap center">
+      <h2 id="reviews-title">What parents say</h2>
+      <div class="reviews-box">
+        <p style="margin:0"><span class="ph">[Your reviews here]</span></p>
+        <p class="form-note" style="margin-top:8px">Only real reviews from your families, shared with their permission.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="visit" aria-labelledby="visit-title" style="background:var(--sky)">
+    <div class="wrap">
+      <h2 id="visit-title">Come see us</h2>
+      <p class="section-intro">The best way to know if we're the right fit is to visit. Call us or send a note and we'll set up a time.</p>
+      <div class="visit-grid">
+        <div class="panel">
+          <h3>Contact &amp; hours</h3>
+          <a class="big-phone" href="tel:+12523355833">(252) 335-5833</a>
+          <dl>
+            <dt>Address</dt>
+            <dd>1092 US Highway 17 S<br>Elizabeth City, NC 27909<br><a href="https://www.google.com/maps/search/?api=1&amp;query=1092+US+Highway+17+S+Elizabeth+City+NC+27909">Get directions</a></dd>
+            <dt>Hours</dt>
+            <dd><span class="ph">Monday – Friday, 6:00 am – 6:00 pm (confirm)</span></dd>
+            <dt>Ages</dt>
+            <dd><span class="ph">6 weeks – 12 years (confirm)</span></dd>
+            <dt>Email</dt>
+            <dd><span class="ph">[your email here]</span></dd>
+          </dl>
+        </div>
+        <div class="panel">
+          <h3>Request a tour</h3>
+          <form action="#" method="post" onsubmit="event.preventDefault();this.querySelector('[role=status]').textContent='Thanks! This is a sample form. On the live site, your message would go straight to the center.';">
+            <div class="two">
+              <div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+              <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+            </div>
+            <div><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email"></div>
+            <div class="two">
+              <div><label for="age">Child's age</label>
+                <select id="age" name="age"><option>Infant</option><option>Toddler</option><option>Preschool / Kindergarten</option><option>School age</option></select></div>
+              <div><label for="start">Hoped-for start date</label><input id="start" name="start" type="month"></div>
+            </div>
+            <div><label for="msg">Questions or notes</label><textarea id="msg" name="msg" rows="3"></textarea></div>
+            <button class="btn btn-primary" type="submit">Send request</button>
+            <p class="form-note" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div>
+      <h3>Creative Minds Learning Center LLC</h3>
+      <p style="margin:0">Formerly Tender Years Child Care Center.<br>Child care in Elizabeth City, North Carolina.</p>
+    </div>
+    <div>
+      <h3>Call</h3>
+      <p style="margin:0"><a href="tel:+12523355833">(252) 335-5833</a></p>
+    </div>
+    <div>
+      <h3>Visit</h3>
+      <p style="margin:0">1092 US Highway 17 S<br>Elizabeth City, NC 27909</p>
+    </div>
+  </div>
+  <div class="wrap"><p style="margin:24px 0 0;font-size:.85rem">&copy; <span id="y">2026</span> Creative Minds Learning Center LLC. Sample design concept.</p></div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-primary" href="tel:+12523355833">Call now</a>
+  <a class="btn btn-ghost" href="#visit">Book a tour</a>
+</div>
+<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
