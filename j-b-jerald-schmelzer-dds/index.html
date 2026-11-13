@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>J.B. Schmelzer, DDS | Family Dentist in Marion, Ohio</title>
+<meta name="description" content="J.B. (Jerald) Schmelzer, DDS: general and family dentistry at 520 E Center St, Marion, Ohio. Call (740) 387-9020 to schedule.">
+<style>
+:root{
+  --ink:#16302f;--muted:#4a5e5d;--bg:#ffffff;--soft:#eef6f5;--brand:#0f6e66;--brand-dark:#0a4f49;
+  --accent:#f2b84b;--line:#d5e3e1;--radius:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:17px}
+a{color:var(--brand-dark)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:10}
+.skip:focus{left:8px}
+.ph{background:#fff4d6;border:1px dashed #b98a1e;color:#5c4307;padding:0 .3em;border-radius:4px;font-size:.92em}
+.sample-bar{background:#1d2b2a;color:#e9f1f0;font-size:.85rem;text-align:center;padding:6px 12px}
+
+header{border-bottom:1px solid var(--line);background:#fff;position:sticky;top:0;z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:700;line-height:1.2}
+.logo small{display:block;font-weight:400;color:var(--muted);font-size:.8rem}
+.mark{width:40px;height:40px;border-radius:50%;background:var(--brand);display:grid;place-items:center;flex:none}
+.nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0}
+.nav ul a{text-decoration:none;color:var(--ink);font-weight:500}
+.nav ul a:hover{color:var(--brand)}
+.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;padding:12px 20px;border-radius:999px;border:2px solid var(--brand)}
+.btn:hover{background:var(--brand-dark);border-color:var(--brand-dark)}
+.btn.ghost{background:transparent;color:var(--brand-dark)}
+.btn.ghost:hover{background:var(--soft)}
+@media (max-width:760px){.nav ul{display:none}.nav .btn{padding:10px 14px;font-size:.95rem}}
+
+.hero{background:linear-gradient(160deg,var(--soft) 0%,#fff 70%);padding:64px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.eyebrow{color:var(--brand);font-weight:700;letter-spacing:.06em;text-transform:uppercase;font-size:.8rem;margin:0 0 10px}
+h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:0 0 16px}
+.lead{font-size:1.15rem;color:var(--muted);margin:0 0 26px;max-width:36em}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 10px 30px rgba(15,110,102,.08)}
+.hero-card h2{font-size:1.1rem;margin:0 0 12px}
+.hero-card dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:6px 14px}
+.hero-card dt{font-weight:600}
+.hero-card dd{margin:0;color:var(--muted)}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.hero{padding:40px 0}}
+
+section{padding:64px 0}
+section h2{font-size:clamp(1.6rem,3.5vw,2.1rem);margin:0 0 10px}
+.section-intro{color:var(--muted);margin:0 0 32px;max-width:40em}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{border:1px solid var(--line);border-radius:var(--radius);padding:22px;background:#fff}
+.card h3{margin:12px 0 6px;font-size:1.1rem}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.icon{width:44px;height:44px;border-radius:12px;background:var(--soft);display:grid;place-items:center}
+
+.alt{background:var(--soft)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+@media (max-width:760px){.two{grid-template-columns:1fr}}
+.checks{list-style:none;padding:0;margin:0}
+.checks li{padding:8px 0 8px 30px;position:relative}
+.checks li::before{content:"";position:absolute;left:0;top:14px;width:16px;height:9px;border-left:3px solid var(--brand);border-bottom:3px solid var(--brand);transform:rotate(-45deg)}
+
+table{width:100%;border-collapse:collapse;background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
+th,td{text-align:left;padding:11px 16px;border-bottom:1px solid var(--line)}
+tr:last-child th,tr:last-child td{border-bottom:0}
+th{font-weight:600;width:40%}
+
+.placeholder-box{border:2px dashed #b98a1e;background:#fffaf0;border-radius:var(--radius);padding:28px;text-align:center;color:#5c4307}
+
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+@media (max-width:760px){.contact-grid{grid-template-columns:1fr}}
+form{display:grid;gap:14px}
+label{font-weight:600;font-size:.95rem;display:block;margin-bottom:4px}
+input,textarea,select{width:100%;font:inherit;padding:11px 12px;border:1px solid #9fb5b2;border-radius:10px;background:#fff;color:var(--ink)}
+input:focus,textarea:focus,select:focus,a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.map{border-radius:var(--radius);background:repeating-linear-gradient(45deg,#e2efed 0 12px,#d8e9e6 12px 24px);min-height:220px;display:grid;place-items:center;text-align:center;padding:20px;color:var(--muted)}
+.note{font-size:.85rem;color:var(--muted)}
+
+footer{background:#16302f;color:#d6e4e2;padding:36px 0;font-size:.95rem}
+footer a{color:#fff}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+
+.callbar{display:none}
+@media (max-width:760px){
+  .callbar{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--brand);z-index:6}
+  .callbar a{flex:1;text-align:center;color:#fff;text-decoration:none;font-weight:600;padding:14px 8px}
+  .callbar a+a{border-left:1px solid rgba(255,255,255,.3)}
+  body{padding-bottom:52px}
+}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for J.B. (Jerald) Schmelzer, DDS. This is not J.B. (Jerald) Schmelzer, DDS's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=j-b-jerald-schmelzer-dds" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sample-bar">Sample homepage design prepared for J.B. Schmelzer, DDS. Highlighted items are placeholders to confirm.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="J.B. Schmelzer, DDS home">
+      <span class="mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M12 3c-2-1.3-4.6-1.3-6.2.2C4 4.8 4 7.6 4.8 10c.6 1.8.9 3.6 1.1 5.5.2 2.3.8 5.5 2.4 5.5 1.5 0 1.6-2.4 2-4.2.3-1.2.8-1.8 1.7-1.8s1.4.6 1.7 1.8c.4 1.8.5 4.2 2 4.2 1.6 0 2.2-3.2 2.4-5.5.2-1.9.5-3.7 1.1-5.5.8-2.4.8-5.2-1-6.8C16.6 1.7 14 1.7 12 3z"/></svg>
+      </span>
+      <span>J.B. Schmelzer, DDS<small>General Dentistry · Marion, Ohio</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#new-patients">New Patients</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn" href="tel:+17403879020">Call (740) 387-9020</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">Your dentist in Marion, Ohio</p>
+        <h1>Friendly, personal dental care from Dr. Jerald Schmelzer</h1>
+        <p class="lead">From routine cleanings and exams to fillings, crowns and dentures, Dr. Schmelzer's office on East Center Street looks after the smiles of Marion families.</p>
+        <div class="cta-row">
+          <a class="btn" href="tel:+17403879020">Call to schedule</a>
+          <a class="btn ghost" href="#contact">Request an appointment</a>
+        </div>
+      </div>
+      <aside class="hero-card" aria-labelledby="visit-h">
+        <h2 id="visit-h">Visit the office</h2>
+        <dl>
+          <dt>Address</dt><dd>520 E Center St<br>Marion, OH 43302</dd>
+          <dt>Phone</dt><dd><a href="tel:+17403879020">(740) 387-9020</a></dd>
+          <dt>Today</dt><dd>See <a href="#hours">office hours</a></dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Dental services</h2>
+      <p class="section-intro">General dentistry for the whole family. <span class="ph">[Confirm this list: taken from public directory listings]</span></p>
+      <div class="cards">
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f6e66" stroke-width="2"><circle cx="12" cy="12" r="8"/><path d="M8 12l3 3 5-6"/></svg></div>
+          <h3>Cleanings &amp; exams</h3>
+          <p>Regular checkups and professional cleanings to keep teeth and gums healthy.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f6e66" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="4"/><path d="M9 12h6"/></svg></div>
+          <h3>Fillings</h3>
+          <p>Treating cavities to restore the tooth and stop decay from spreading.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f6e66" stroke-width="2"><path d="M4 9l8-5 8 5v2H4z"/><path d="M6 11v7M12 11v7M18 11v7M4 20h16"/></svg></div>
+          <h3>Crowns &amp; bridges</h3>
+          <p>Restoring damaged teeth and replacing missing ones.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f6e66" stroke-width="2"><path d="M4 10c0-3 3.6-5 8-5s8 2 8 5-3.6 5-8 5-8-2-8-5z"/><path d="M8 10h8"/></svg></div>
+          <h3>Dentures</h3>
+          <p>Full and partial dentures for comfortable chewing and a natural smile.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f6e66" stroke-width="2"><path d="M12 3v18M3 12h18"/></svg></div>
+          <h3>Root canals &amp; extractions</h3>
+          <p>Relief for painful or infected teeth, and removal when a tooth can't be saved.</p>
+        </article>
+        <article class="card">
+          <div class="icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f6e66" stroke-width="2"><path d="M12 3l2.5 5.5L20 9l-4 4 1 6-5-3-5 3 1-6-4-4 5.5-.5z"/></svg></div>
+          <h3>Teeth whitening</h3>
+          <p>Brighten your smile with professional whitening.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="new-patients">
+    <div class="wrap two">
+      <div>
+        <h2>New patients</h2>
+        <p><span class="ph">[Confirm: are you currently accepting new patients? Public listings disagree.]</span></p>
+        <p>Your first visit is simple. Call the office and the team will help you find a time, answer your questions and let you know what to bring.</p>
+        <ul class="checks">
+          <li>Photo ID and your dental insurance card</li>
+          <li>A list of current medications</li>
+          <li>Any recent dental X-rays, if you have them</li>
+        </ul>
+      </div>
+      <div>
+        <h2>Insurance &amp; payment</h2>
+        <p>Not sure if your plan is accepted? Give us a call at <a href="tel:+17403879020">(740) 387-9020</a> and we'll check for you.</p>
+        <div class="placeholder-box">[List of insurance plans accepted and payment options]</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hours">
+    <div class="wrap two">
+      <div>
+        <h2>Office hours</h2>
+        <p class="note"><span class="ph">[Confirm hours: taken from a public directory listing]</span></p>
+        <table>
+          <caption class="note" style="text-align:left;padding-bottom:8px">Weekly schedule</caption>
+          <tbody>
+            <tr><th scope="row">Monday</th><td>8:00 am – 5:00 pm</td></tr>
+            <tr><th scope="row">Tuesday</th><td>8:00 am – 3:00 pm</td></tr>
+            <tr><th scope="row">Wednesday</th><td>8:00 am – 12:00 pm</td></tr>
+            <tr><th scope="row">Thursday</th><td>8:00 am – 3:00 pm</td></tr>
+            <tr><th scope="row">Friday</th><td>8:00 am – 3:00 pm</td></tr>
+            <tr><th scope="row">Saturday &amp; Sunday</th><td>Closed <span class="ph">[confirm]</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>About Dr. Schmelzer</h2>
+        <p>Dr. Jerald B. Schmelzer is a general dentist with a solo practice in Marion, Ohio.</p>
+        <p class="placeholder-box">[Dr. Schmelzer's story, education and approach to care, in the doctor's own words]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" aria-labelledby="reviews-h">
+    <div class="wrap">
+      <h2 id="reviews-h">What patients say</h2>
+      <div class="placeholder-box">[Your reviews here]</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact-grid">
+      <div>
+        <h2>Request an appointment</h2>
+        <p class="section-intro">Send a request and the office will call you back. For anything urgent, please call <a href="tel:+17403879020">(740) 387-9020</a>.</p>
+        <form action="#" method="post" onsubmit="event.preventDefault();this.querySelector('[role=status]').textContent='Thanks! This is a sample form; on the live site your request would go straight to the office.';">
+          <div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+          <div><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div><label for="reason">Reason for visit</label>
+            <select id="reason" name="reason">
+              <option>Cleaning &amp; exam</option><option>Tooth pain or problem</option><option>Crowns, bridges or dentures</option><option>Other</option>
+            </select></div>
+          <div><label for="msg">Message (optional)</label><textarea id="msg" name="message" rows="4"></textarea></div>
+          <button class="btn" type="submit">Send request</button>
+          <p class="note">Please don't include private health details in this form.</p>
+          <p role="status" class="note" aria-live="polite"></p>
+        </form>
+      </div>
+      <div>
+        <h2>Find us</h2>
+        <p>520 E Center St, Marion, OH 43302</p>
+        <div class="map">
+          <p>[Map embed goes here]<br><a href="https://www.google.com/maps/search/?api=1&amp;query=520+E+Center+St+Marion+OH+43302">Get directions</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong>J.B. Schmelzer, DDS</strong><br>520 E Center St, Marion, OH 43302<br><a href="tel:+17403879020">(740) 387-9020</a></div>
+    <div>General dentistry in Marion, Ohio</div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:+17403879020">Call now</a>
+  <a href="#contact">Request visit</a>
+</div>
+</body>
+</html>
