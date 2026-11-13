@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scarlett &amp; Sage Hair Salon | Culpeper, VA</title>
+<meta name="description" content="Scarlett & Sage Hair Salon in Culpeper, VA: custom cuts, lived-in color, bright blondes, dimensional brunettes, blended grays, hair extensions and bridal hair. Call (540) 277-3121.">
+<meta name="theme-color" content="#7a1f2b">
+<style>
+  :root{
+    --scarlet:#7a1f2b; --scarlet-dark:#5e1520; --sage:#5f7a63; --sage-light:#dfe7dc;
+    --cream:#faf6f1; --ink:#2a2422; --muted:#5c524e; --white:#fff;
+    --serif: "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    --sans: system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --radius:14px; --max:1100px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font:17px/1.6 var(--sans)}
+  img,svg{display:block;max-width:100%}
+  a{color:var(--scarlet)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--sage);outline-offset:3px}
+  h1,h2,h3{font-family:var(--serif);line-height:1.15;font-weight:600;margin:0 0 .5em}
+  h2{font-size:clamp(1.8rem,4vw,2.5rem)}
+  h3{font-size:1.25rem}
+  p{margin:0 0 1em}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  .skip{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:8px 14px;z-index:99}
+  .skip:focus{left:8px;top:8px}
+  .eyebrow{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:#455a49;font-weight:700;margin-bottom:.6em}
+  .btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;text-align:center;min-height:48px}
+  .btn-primary{background:var(--scarlet);color:#fff}
+  .btn-primary:hover{background:var(--scarlet-dark)}
+  .btn-ghost{border:2px solid currentColor;color:var(--ink)}
+  .btn-ghost:hover{background:rgba(0,0,0,.05)}
+
+  /* sample notice */
+  .notice{background:var(--ink);color:#f3ece6;font-size:.85rem;text-align:center;padding:8px 16px}
+  .notice a{color:#fff}
+
+  /* header */
+  header.site{background:var(--cream);border-bottom:1px solid #e9e0d7;position:sticky;top:0;z-index:10}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+  .logo{font-family:var(--serif);font-size:1.45rem;color:var(--ink);text-decoration:none;display:flex;align-items:center;gap:10px}
+  .logo .amp{color:var(--scarlet)}
+  nav.main ul{list-style:none;margin:0;padding:0;display:flex;gap:22px}
+  nav.main a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+  nav.main a:hover{color:var(--scarlet)}
+  .head-cta{display:flex;gap:10px;align-items:center}
+  .head-cta .btn{padding:10px 18px;min-height:44px}
+  .tel-link{font-weight:700;text-decoration:none;color:var(--ink);white-space:nowrap}
+  @media (max-width:860px){ nav.main,.tel-link{display:none} }
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--sage-light) 0%,var(--cream) 60%)}
+  .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:72px;padding-bottom:80px}
+  .hero h1{font-size:clamp(2.3rem,6vw,3.8rem)}
+  .hero h1 em{font-style:italic;color:var(--scarlet)}
+  .hero .lede{font-size:1.15rem;color:var(--muted);max-width:34em}
+  .hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+  .hero-art{aspect-ratio:1;max-width:400px;justify-self:center;width:100%}
+  .quick{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:28px;font-size:.95rem;color:var(--muted)}
+  .quick strong{color:var(--ink)}
+  @media (max-width:860px){
+    .hero .wrap{grid-template-columns:1fr;padding-top:44px;padding-bottom:52px}
+    .hero-art{max-width:230px;order:-1}
+  }
+
+  section{padding:76px 0}
+  @media (max-width:600px){ section{padding:54px 0} }
+  .center{text-align:center;max-width:680px;margin:0 auto 40px}
+
+  /* services */
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+  .card{background:var(--white);border-radius:var(--radius);padding:28px;border:1px solid #ece3da}
+  .card .ico{width:46px;height:46px;border-radius:50%;background:var(--sage-light);display:grid;place-items:center;margin-bottom:14px}
+  .card .ico svg{width:24px;height:24px;stroke:var(--scarlet)}
+  .card p{color:var(--muted);margin:0}
+  .placeholder{background:#fff7d6;border:2px dashed #b38b00;color:#5a4500;border-radius:10px;padding:14px 18px;font-weight:600}
+  .services-foot{margin-top:28px;text-align:center}
+
+  /* experience */
+  .experience{background:var(--scarlet);color:#fbeff0}
+  .experience h2{color:#fff}
+  .experience .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .experience .eyebrow{color:#e9c7cb}
+  .experience blockquote{margin:0;font-family:var(--serif);font-size:clamp(1.4rem,3vw,1.9rem);line-height:1.35;color:#fff}
+  .experience ul{padding-left:1.2em;margin:0}
+  .experience li{margin-bottom:.5em}
+  .experience a{color:#fff}
+  @media (max-width:760px){ .experience .wrap{grid-template-columns:1fr;gap:28px} }
+
+  /* team */
+  .team-list{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;list-style:none;padding:0;margin:0 0 24px}
+  .team-list li{background:var(--white);border:1px solid #ece3da;border-radius:999px;padding:8px 18px;font-weight:600}
+
+  /* reviews */
+  .reviews{background:var(--sage-light)}
+
+  /* visit */
+  .visit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+  table.hours{border-collapse:collapse;width:100%}
+  table.hours th,table.hours td{text-align:left;padding:10px 0;border-bottom:1px solid #e6dbd0}
+  table.hours td{text-align:right}
+  @media (max-width:760px){ .visit .wrap{grid-template-columns:1fr} }
+
+  footer{background:var(--ink);color:#d8cfc8;padding:36px 0 110px;font-size:.92rem}
+  footer a{color:#fff}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+
+  /* mobile action bar */
+  .mbar{position:fixed;left:0;right:0;bottom:0;display:none;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(250,246,241,.97);border-top:1px solid #e3d8cd;z-index:20}
+  .mbar .btn{flex:1;padding:12px}
+  @media (max-width:860px){ .mbar{display:flex} footer{padding-bottom:110px} }
+  @media (min-width:861px){ footer{padding-bottom:36px} }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} }
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Scarlett &amp; Sage Hair Salon. This is not Scarlett &amp; Sage Hair Salon's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=scarlett-sage-hair-salon" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="notice" role="note">
+  Sample homepage design prepared for Scarlett &amp; Sage. Not the official site.
+  <a href="{{GET_STARTED_URL}}">Like it? Get started</a>
+</div>
+
+<header class="site">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="Scarlett and Sage Hair Salon, home">
+      <svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#7a1f2b"/><path d="M16 25c0-8 3-13 8-16-1 7-4 13-8 16zm0 0c0-6-2-10-7-12 0 6 3 10 7 12z" fill="#dfe7dc"/></svg>
+      <span>Scarlett <span class="amp">&amp;</span> Sage</span>
+    </a>
+    <nav class="main" aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <div class="head-cta">
+      <a class="tel-link" href="tel:+15402773121">(540) 277-3121</a>
+      <a class="btn btn-primary" href="https://www.phorest.com/book/salons/scarlettsagehairsalon">Book now</a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title" style="padding:0">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Hair salon · Culpeper, Virginia</p>
+        <h1 id="hero-title">Beautiful hair is <em>an experience</em>, not just a service.</h1>
+        <p class="lede">Personal consultations and custom color and cuts, from lived-in color and bright blondes to dimensional brunettes, blended grays and complete transformations.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="https://www.phorest.com/book/salons/scarlettsagehairsalon">Book your appointment</a>
+          <a class="btn btn-ghost" href="tel:+15402773121">Call (540) 277-3121</a>
+        </div>
+        <div class="quick">
+          <span><strong>Mon–Fri</strong> 9am–8pm</span>
+          <span><strong>Sat–Sun</strong> 9am–5pm</span>
+          <span><strong>606 Sperryville Pike</strong>, Culpeper</span>
+        </div>
+      </div>
+      <svg class="hero-art" viewBox="0 0 400 400" role="img" aria-label="Decorative scarlet and sage circles with a leaf">
+        <circle cx="200" cy="200" r="190" fill="#7a1f2b"/>
+        <circle cx="270" cy="130" r="95" fill="#5f7a63" opacity=".9"/>
+        <circle cx="130" cy="285" r="70" fill="#faf6f1" opacity=".18"/>
+        <path d="M200 320c0-90 40-160 105-190-10 85-50 160-105 190zm0 0c0-70-25-120-90-145 2 70 35 120 90 145z" fill="#dfe7dc"/>
+        <path d="M200 320c20-60 50-120 95-175M200 320c-15-50-45-95-82-128" stroke="#5f7a63" stroke-width="3" fill="none"/>
+      </svg>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">What we do</p>
+        <h2 id="services-title">Services</h2>
+        <p>Every visit starts with a conversation about your hair, your routine and the look you want.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12"/></svg></div>
+          <h3>Cuts &amp; Styling</h3>
+          <p>Custom cuts designed around your face, texture and lifestyle.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 3c4 5 6 8 6 11a6 6 0 0 1-12 0c0-3 2-6 6-11z"/></svg></div>
+          <h3>Color</h3>
+          <p>Lived-in color, highlights and lowlights, bright blondes, dimensional brunettes and blended grays.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 3v18M10 3v18M15 3v18M20 3v18"/></svg></div>
+          <h3>Hair Extensions</h3>
+          <p>Add length, volume or both with extensions blended to match.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></div>
+          <h3>Bridal</h3>
+          <p>Bridal hair and makeup for you and your wedding party.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
+          <h3>Treatments</h3>
+          <p>Specialty treatments, including keratin, to keep hair healthy and manageable.</p>
+        </article>
+        <article class="card">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4"/></svg></div>
+          <h3>Transformations</h3>
+          <p>Ready for something completely different? We will plan it with you, step by step.</p>
+        </article>
+      </div>
+      <div class="services-foot">
+        <p class="placeholder">[Your service menu &amp; starting prices here]</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience" aria-labelledby="exp-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">The Scarlett &amp; Sage experience</p>
+        <h2 id="exp-title" class="sr-heading">A place to unwind and recharge</h2>
+        <blockquote>“A place where you can unwind, recharge, and leave feeling your absolute best.”</blockquote>
+      </div>
+      <div>
+        <ul>
+          <li>Personal consultations before every cut and color</li>
+          <li>Ongoing education for our stylists, so your look stays current</li>
+          <li>Clear communication between you and your stylist</li>
+          <li>Comforts from our concierge menu during your visit</li>
+        </ul>
+        <p style="margin-top:1.2em"><a href="https://www.scarlettandsage.com/newguest">New guest? Start here →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="team" aria-labelledby="team-title">
+    <div class="wrap">
+      <div class="center">
+        <p class="eyebrow">Our people</p>
+        <h2 id="team-title">Meet the team</h2>
+        <p>“What truly makes Scarlett &amp; Sage special is our people.” Owner Chelsea opened the salon in November 2019 to build a culture where stylists can learn, create and grow.</p>
+      </div>
+      <ul class="team-list" aria-label="Stylists">
+        <li>Chelsea</li><li>Janet</li><li>Amanda</li><li>Patti</li><li>Jamie</li><li>Jessica</li>
+        <li>Lex</li><li>Claire</li><li>Gabby</li><li>Ellie</li><li>Makaila</li>
+      </ul>
+      <p class="placeholder" style="text-align:center">[Stylist photos &amp; short bios here]</p>
+    </div>
+  </section>
+
+  <section class="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:24px">
+        <p class="eyebrow">Kind words</p>
+        <h2 id="reviews-title">What our guests say</h2>
+      </div>
+      <p class="placeholder" style="text-align:center;max-width:680px;margin:0 auto">[Your reviews here]</p>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Visit us</p>
+        <h2 id="visit-title">Hours &amp; location</h2>
+        <address style="font-style:normal">
+          <strong>Scarlett &amp; Sage Hair Salon</strong><br>
+          606 Sperryville Pike<br>
+          Culpeper, VA 22701<br>
+          <a href="tel:+15402773121">(540) 277-3121</a>
+        </address>
+        <p style="margin-top:1em"><a href="https://maps.google.com/?q=606+Sperryville+Pike,+Culpeper,+VA+22701">Get directions →</a></p>
+      </div>
+      <div class="card">
+        <table class="hours">
+          <caption class="eyebrow" style="text-align:left">Salon hours</caption>
+          <tbody>
+            <tr><th scope="row">Monday – Friday</th><td>9am – 8pm</td></tr>
+            <tr><th scope="row">Saturday – Sunday</th><td>9am – 5pm</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:18px 0 0"><a class="btn btn-primary" style="width:100%" href="https://www.phorest.com/book/salons/scarlettsagehairsalon">Book online</a></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p style="margin:0">© Scarlett &amp; Sage Hair Salon · Culpeper, Virginia</p>
+    <p style="margin:0"><a href="https://www.instagram.com/scarlett_andsage/">@scarlett_andsage</a> · <a href="https://www.scarlettandsage.com/policy">Policies &amp; FAQ</a></p>
+  </div>
+</footer>
+
+<div class="mbar" aria-label="Quick actions">
+  <a class="btn btn-ghost" href="tel:+15402773121">Call</a>
+  <a class="btn btn-primary" href="https://www.phorest.com/book/salons/scarlettsagehairsalon">Book</a>
+</div>
+</body>
+</html>
