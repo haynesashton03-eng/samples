@@ -1,0 +1,13 @@
+Subject: A free sample homepage for Plumbing-Pros
+
+Hi,
+
+I'm Ashton Haynes, a web developer in Manassas Park, Virginia. I work with small businesses across the US and have a background in IT security (B.A.S. in Information Management, Security & Network Assurance, Palm Beach State College).
+
+I made a free sample homepage for Plumbing-Pros: {{PREVIEW_URL}}
+
+On phones, a "Call now" button stays on screen, so someone with a leak can reach you in one tap. Your six services, from hydro scrubbing to tub and shower replacement, are easy to find and use your own wording.
+
+One small thing I noticed: your homepage mentions 24/7 emergency plumbing, but your listed hours are Mon-Sat 8 am-10 pm. It might be worth making those match.
+
+There's no obligation. Would you be open to a quick call?

@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plumbing-Pros | Plumbers in Valdosta, GA | (229) 561-8220</title>
+<meta name="description" content="Plumbing-Pros is a locally owned plumbing company in Valdosta, Georgia. Leak repair, clogged sewer lines, hydro scrubbing, repiping, water heaters and tub &amp; shower replacement. Call (229) 561-8220.">
+<meta name="theme-color" content="#0b3d63">
+<!--
+  SAMPLE HOMEPAGE: a design concept prepared for Plumbing-Pros. Not affiliated with or endorsed by the business.
+  Wording, services, hours and contact details come from their public website (theplumbingpros.co).
+  Anything in [square brackets] is a placeholder the owner needs to confirm or supply.
+-->
+<style>
+:root{
+  --navy:#0b3d63; --navy-2:#082c48; --blue:#1572b6; --sky:#e8f3fb;
+  --orange:#c2410c; --orange-h:#9a3412; --ink:#1b2430; --muted:#4a5a6a;
+  --line:#d9e3ec; --bg:#ffffff; --soft:#f5f8fb; --r:14px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:72px}
+@media (min-width:800px){body{padding-bottom:0}}
+a{color:var(--blue)}
+h1,h2,h3{line-height:1.2;margin:0 0 .5em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px}
+.skip:focus{left:12px;top:12px;background:#fff;padding:8px 12px;z-index:100}
+:focus-visible{outline:3px solid #f59e0b;outline-offset:2px}
+
+/* Sample banner */
+.sample{background:#fff7d6;color:#5b4500;font-size:.85rem;text-align:center;padding:6px 12px;border-bottom:1px solid #f0dc8a}
+
+/* Header */
+header{background:var(--navy);color:#fff;position:sticky;top:0;z-index:50}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;font-size:1.2rem;letter-spacing:.2px}
+.brand svg{flex:none}
+nav ul{display:none;list-style:none;margin:0;padding:0;gap:22px}
+nav a{color:#dbeafe;text-decoration:none;font-weight:600}
+nav a:hover{color:#fff}
+@media (min-width:900px){nav ul{display:flex}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:999px;padding:12px 22px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:background .15s}
+.btn-call{background:var(--orange);color:#fff}
+.btn-call:hover{background:var(--orange-h)}
+.btn-ghost{border-color:rgba(255,255,255,.7);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.hdr-call{display:none}
+@media (min-width:600px){.hdr-call{display:inline-flex}}
+
+/* Hero */
+.hero{background:linear-gradient(160deg,var(--navy) 0%,var(--navy-2) 60%,#0d4f80 100%);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-120px;bottom:-160px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.05)}
+.hero .eyebrow{display:inline-block;background:rgba(255,255,255,.12);border-radius:999px;padding:4px 14px;font-size:.9rem;font-weight:600;margin-bottom:16px}
+.hero h1{font-size:clamp(2rem,5.5vw,3.2rem);max-width:16ch}
+.hero p.lead{font-size:1.15rem;color:#d6e6f5;max-width:52ch;margin:0 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.hero .facts{display:flex;flex-wrap:wrap;gap:10px 24px;margin:32px 0 0;padding:0;list-style:none;color:#cfe2f3;font-size:.95rem}
+.hero .facts li{display:flex;align-items:center;gap:8px}
+
+/* Sections */
+section{padding:64px 0}
+.alt{background:var(--soft)}
+.sec-head{max-width:640px;margin-bottom:32px}
+.sec-head h2{font-size:clamp(1.6rem,3.5vw,2.2rem);color:var(--navy)}
+.sec-head p{color:var(--muted);margin:0}
+
+/* Services */
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column}
+.card .ic{width:52px;height:52px;border-radius:12px;background:var(--sky);display:grid;place-items:center;margin-bottom:14px}
+.card h3{font-size:1.2rem;color:var(--navy)}
+.card p{color:var(--muted);margin:0 0 14px;flex:1}
+.card a{font-weight:700;text-decoration:none}
+.card a:hover{text-decoration:underline}
+
+/* Why */
+.why{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.why div{border-left:4px solid var(--blue);padding:4px 0 4px 16px}
+.why h3{font-size:1.05rem;margin-bottom:4px}
+.why p{margin:0;color:var(--muted)}
+
+/* Area */
+.towns{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+.towns li{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-weight:600;color:var(--navy)}
+.towns li.home{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+/* Reviews placeholder */
+.ph{border:2px dashed #9fb3c6;border-radius:var(--r);padding:28px;text-align:center;color:var(--muted);background:#fff}
+
+/* Contact */
+.contact{display:grid;gap:24px;grid-template-columns:1fr}
+@media (min-width:800px){.contact{grid-template-columns:1fr 1fr}}
+.panel{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:28px}
+.panel h3{color:var(--navy)}
+dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:8px 16px}
+dt{font-weight:700}
+dd{margin:0}
+.big-phone{font-size:1.6rem;font-weight:800;color:var(--navy);text-decoration:none;display:inline-block;margin:4px 0 16px}
+form{display:grid;gap:14px}
+label{font-weight:600;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;font:inherit;padding:11px 12px;border:1px solid #9fb3c6;border-radius:10px;background:#fff;color:var(--ink)}
+textarea{min-height:110px;resize:vertical}
+.form-note{font-size:.85rem;color:var(--muted);margin:0}
+button.btn{cursor:pointer;font:inherit;font-weight:700}
+
+/* Footer */
+footer{background:var(--navy-2);color:#c4d6e6;padding:36px 0;font-size:.95rem}
+footer a{color:#fff}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px}
+
+/* Mobile call bar */
+.callbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:8px;padding:10px 12px;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.08)}
+.callbar a{flex:1;padding:13px 10px;font-size:1rem}
+.callbar .btn-text{background:var(--sky);color:var(--navy)}
+@media (min-width:800px){.callbar{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Plumbing-Pros. This is not Plumbing-Pros's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=plumbing-pros" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+<div class="sample" role="note">Sample homepage concept for Plumbing-Pros. Items in [brackets] are placeholders for the owner to confirm.</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="Plumbing-Pros home">
+      <svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="12" fill="#1572b6"/><path d="M12 5c-2.6 3.4-4 5.8-4 7.6A4 4 0 0 0 12 17a4 4 0 0 0 4-4.4C16 10.8 14.6 8.4 12 5z" fill="#fff"/></svg>
+      Plumbing-Pros
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#area">Service Area</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-call hdr-call" href="tel:+12295618220">Call (229) 561-8220</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-h">
+    <div class="wrap">
+      <span class="eyebrow">Locally owned &amp; operated in Valdosta, GA</span>
+      <h1 id="hero-h">Fast, reliable plumbing for Valdosta homes and businesses</h1>
+      <p class="lead">Leaks, clogged sewer lines, water heaters and full repipes, done right the first time with honest upfront pricing.</p>
+      <div class="cta">
+        <a class="btn btn-call" href="tel:+12295618220">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg>
+          Call (229) 561-8220
+        </a>
+        <a class="btn btn-ghost" href="#contact">Request service</a>
+      </div>
+      <ul class="facts">
+        <li>Mon&ndash;Sat 8:00 am &ndash; 10:00 pm</li>
+        <li>Sunday by appointment</li>
+        <li>Serving Valdosta &amp; South Georgia</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="svc-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="svc-h">Plumbing services</h2>
+        <p>From a dripping pipe to a full repipe, our licensed plumbers handle everything from simple repairs to complex plumbing systems.</p>
+      </div>
+      <div class="grid">
+        <article class="card">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1572b6" stroke-width="2" stroke-linecap="round"><path d="M12 3c-3 4-5 7-5 9.5a5 5 0 0 0 10 0C17 10 15 7 12 3z"/></svg></div>
+          <h3>Leak Repair</h3>
+          <p>We quickly locate and fix hidden or visible leaks, preventing water damage. Water leaks can cause serious damage fast, so don&rsquo;t wait to fix them.</p>
+          <a href="tel:+12295618220">Call about a leak &rarr;</a>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1572b6" stroke-width="2" stroke-linecap="round"><path d="M3 8h12a4 4 0 0 1 4 4v9"/><path d="M3 13h9a2 2 0 0 1 2 2v6"/><circle cx="8" cy="10.5" r=".5"/></svg></div>
+          <h3>Clogged Sewer Lines</h3>
+          <p>We remove blockages caused by grease, roots and debris before they turn into messy backups, foul odors or property damage.</p>
+          <a href="tel:+12295618220">Call about a clog &rarr;</a>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1572b6" stroke-width="2" stroke-linecap="round"><path d="M4 12h10"/><path d="M14 8v8"/><path d="M17 9l3-2M17 12h4M17 15l3 2"/></svg></div>
+          <h3>Hydro Scrubbing</h3>
+          <p>High-pressure water jets clear grease, sludge and buildup from your pipes. A deep, powerful clean for slow drains and recurring backups.</p>
+          <a href="tel:+12295618220">Ask about hydro scrubbing &rarr;</a>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1572b6" stroke-width="2" stroke-linecap="round"><path d="M3 6h7v6h11"/><path d="M3 18h18"/><path d="M10 12v6"/></svg></div>
+          <h3>Repipe &amp; Replumbs</h3>
+          <p>Low water pressure, frequent leaks or outdated pipes? We replace old, corroded or leaking pipes with durable new materials.</p>
+          <a href="tel:+12295618220">Ask about repiping &rarr;</a>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1572b6" stroke-width="2" stroke-linecap="round"><rect x="6" y="3" width="12" height="18" rx="3"/><path d="M12 10c-1.2 1.5-2 2.6-2 3.5a2 2 0 0 0 4 0c0-.9-.8-2-2-3.5z"/></svg></div>
+          <h3>Electric &amp; Gas Water Heaters</h3>
+          <p>Expert electric and gas water heater repair, installation and replacement, so you&rsquo;re not left without hot water.</p>
+          <a href="tel:+12295618220">Call about a water heater &rarr;</a>
+        </article>
+        <article class="card">
+          <div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="#1572b6" stroke-width="2" stroke-linecap="round"><path d="M3 12h18v3a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 12V5a2 2 0 0 1 4 0"/><path d="M7 19l-1 2M17 19l1 2"/></svg></div>
+          <h3>Bathtub &amp; Shower Replacement</h3>
+          <p>Outdated, damaged or leaking tub or shower? Upgrade your bathroom with expert replacement services.</p>
+          <a href="tel:+12295618220">Ask about a bathroom upgrade &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="alt" id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="why-h">Why Valdosta calls The Plumbing Pros</h2>
+        <p>We&rsquo;re a proud locally owned and operated company. Our team is dedicated to getting every job done right, with no shortcuts and no guesswork.</p>
+      </div>
+      <div class="why">
+        <div><h3>Upfront pricing</h3><p>Honest upfront pricing, so you know what to expect before work begins.</p></div>
+        <div><h3>Done right the first time</h3><p>Proven methods and reliable materials for long-lasting results.</p></div>
+        <div><h3>Licensed plumbers</h3><p>Highly skilled, licensed plumbers for everything from simple repairs to complex systems.</p></div>
+        <div><h3>Emergency repairs</h3><p>Burst pipe or no hot water? Call us. <span>[Confirm emergency hours: your homepage says 24/7, your listed hours say Mon&ndash;Sat 8&nbsp;am&ndash;10&nbsp;pm]</span></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="area" aria-labelledby="area-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="area-h">Proudly serving South Georgia</h2>
+        <p>Based in Valdosta, we serve homes and businesses across the surrounding area, including:</p>
+      </div>
+      <ul class="towns">
+        <li class="home">Valdosta</li><li>Adel</li><li>Hahira</li><li>Homerville</li><li>Lakeland</li><li>Lake Park</li><li>Quitman</li><li>Barney</li><li>Du Pont</li><li>Morven</li><li>Naylor</li><li>Pearson</li><li>Ray City</li><li>Statenville</li><li>Stockton</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="alt" id="reviews" aria-labelledby="rev-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="rev-h">What customers say</h2>
+      </div>
+      <div class="ph">[Your reviews here: we&rsquo;ll add real customer reviews you provide or link to your review profiles.]</div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="contact-h">Get your plumbing fixed</h2>
+        <p>Call for the fastest response, or send a request and we&rsquo;ll get back to you.</p>
+      </div>
+      <div class="contact">
+        <div class="panel">
+          <h3>Call or visit</h3>
+          <a class="big-phone" href="tel:+12295618220">(229) 561-8220</a>
+          <dl>
+            <dt>Hours</dt><dd>Mon&ndash;Sat 8:00 am &ndash; 10:00 pm<br>Sunday: appointment only</dd>
+            <dt>Email</dt><dd><a href="mailto:plumbing.pros@yahoo.com">plumbing.pros@yahoo.com</a></dd>
+            <dt>Address</dt><dd>4400 Holly Ln<br>Valdosta, GA 31602</dd>
+          </dl>
+        </div>
+        <div class="panel">
+          <h3>Request service</h3>
+          <!-- Sample form: not connected. Wire to a form service or their booking system before launch. -->
+          <form action="#" method="post" onsubmit="event.preventDefault();this.querySelector('.form-note').textContent='This is a sample form. Please call (229) 561-8220.';">
+            <div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" required></div>
+            <div><label for="phone">Phone</label><input id="phone" name="phone" type="tel" autocomplete="tel" required></div>
+            <div><label for="service">Service needed</label>
+              <select id="service" name="service">
+                <option>Leak repair</option><option>Clogged sewer line</option><option>Hydro scrubbing</option>
+                <option>Repipe / replumb</option><option>Water heater</option><option>Bathtub / shower replacement</option><option>Something else</option>
+              </select></div>
+            <div><label for="msg">What&rsquo;s going on?</label><textarea id="msg" name="message"></textarea></div>
+            <button class="btn btn-call" type="submit">Send request</button>
+            <p class="form-note" aria-live="polite">[Sample form: not yet connected]</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <div><strong style="color:#fff">Plumbing-Pros</strong><br>4400 Holly Ln, Valdosta, GA 31602<br><a href="tel:+12295618220">(229) 561-8220</a></div>
+    <div>Mon&ndash;Sat 8 am&ndash;10 pm &middot; Sun by appointment<br><small>Sample design concept &middot; &copy; Plumbing-Pros</small></div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-call" href="tel:+12295618220">Call now</a>
+  <a class="btn btn-text" href="#contact">Request service</a>
+</div>
+</body>
+</html>
