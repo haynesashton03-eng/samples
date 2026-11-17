@@ -1,0 +1,13 @@
+Subject: A sample homepage for A&M Cleaning Service
+
+Hi,
+
+I noticed your Nextdoor page doesn't link to am-cleaning-services.com, and it lists Saturday morning hours that your website doesn't show.
+
+I'm Ashton Haynes, a web developer based in Manassas Park, Virginia, working with small businesses across the US. My background is in IT security (B.A.S. in Information Management, Security & Network Assurance, IT forensics, Palm Beach State College).
+
+I made a free sample homepage for you, with your services and price ranges up front and a tap-to-call button on phones: {{PREVIEW_URL}}. No obligation.
+
+If you like it, I can turn it into your live site on am-cleaning-services.com, from $750. You can reply here, book a quick call, or get started from the sample page.
+
+Would a quick call this week work?
