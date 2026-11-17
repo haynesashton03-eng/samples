@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucky's of Texas | Hair Salon &amp; Barbershop in Kerrville, TX</title>
+<meta name="description" content="Lucky's of Texas: hair salon and barbershop at 1412 Medina Hwy, Kerrville, TX. Call (830) 896-3434.">
+<meta name="theme-color" content="#14322b">
+<style>
+  :root{
+    --ink:#1c1f1e; --muted:#4d5552; --bg:#faf7f1; --card:#ffffff;
+    --green:#14322b; --green-2:#1f4a3f; --gold:#d9a441; --gold-ink:#7a5410;
+    --line:#e6dfd2; --ph-bg:#fff4d6; --ph-ink:#6b4a00;
+    --radius:14px; --max:1080px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);padding-bottom:72px}
+  @media (min-width:760px){body{padding-bottom:0}}
+  a{color:var(--green-2)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 16px}
+  .skip{position:absolute;left:-999px;top:0;background:#fff;padding:8px 12px;z-index:50}
+  .skip:focus{left:8px;top:8px}
+  .ph{background:var(--ph-bg);color:var(--ph-ink);border:1px dashed #c99a2e;border-radius:6px;padding:0 6px;font-size:.92em;white-space:normal}
+
+  /* Header */
+  header.top{background:var(--green);color:#fff;position:sticky;top:0;z-index:20}
+  .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:64px}
+  .brand{display:flex;align-items:center;gap:10px;color:#fff;text-decoration:none;font-weight:800;letter-spacing:.3px;font-size:1.15rem}
+  .brand svg{flex:none}
+  nav ul{display:none;list-style:none;margin:0;padding:0;gap:22px}
+  nav a{color:#fff;text-decoration:none;font-weight:600}
+  nav a:hover{text-decoration:underline}
+  @media (min-width:760px){nav ul{display:flex}}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent}
+  .btn-gold{background:var(--gold);color:#1a1300}
+  .btn-gold:hover{background:#e6b55a}
+  .btn-ghost{border-color:#fff;color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .top .btn{min-height:40px;padding:0 16px;display:none}
+  @media (min-width:760px){.top .btn{display:inline-flex}}
+
+  /* Hero */
+  .hero{background:linear-gradient(160deg,var(--green) 0%,var(--green-2) 100%);color:#fff;position:relative;overflow:hidden}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:380px;height:380px;border-radius:50%;border:40px solid rgba(217,164,65,.18)}
+  .hero .wrap{padding-top:56px;padding-bottom:64px;position:relative;z-index:1}
+  .eyebrow{display:inline-block;font-size:.85rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold)}
+  .hero h1{font-size:clamp(2.1rem,6vw,3.4rem);line-height:1.1;margin:10px 0 14px;max-width:16ch}
+  .hero p.lead{font-size:1.15rem;max-width:42ch;margin:0 0 26px;color:#e7efe9}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px}
+  .hero-facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:30px;padding:0;list-style:none;color:#e7efe9;font-size:.98rem}
+  .hero-facts li{display:flex;align-items:center;gap:8px}
+
+  section{padding:64px 0}
+  h2{font-size:clamp(1.6rem,4vw,2.2rem);line-height:1.2;margin:0 0 10px;color:var(--green)}
+  .sub{color:var(--muted);margin:0 0 30px;max-width:60ch}
+
+  /* Two sides */
+  .sides{display:grid;gap:18px}
+  @media (min-width:760px){.sides{grid-template-columns:1fr 1fr}}
+  .side{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px;border-top:6px solid var(--gold)}
+  .side.barber{border-top-color:var(--green-2)}
+  .side h3{margin:12px 0 6px;font-size:1.35rem}
+  .side ul{margin:12px 0 0;padding-left:20px}
+  .side li{margin:4px 0}
+  .icon-badge{width:52px;height:52px;border-radius:12px;display:grid;place-items:center;background:#f3ead7}
+  .barber .icon-badge{background:#e3ece8}
+
+  /* Visit */
+  .visit{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .visit-grid{display:grid;gap:18px}
+  @media (min-width:760px){.visit-grid{grid-template-columns:repeat(3,1fr)}}
+  .info{background:var(--bg);border-radius:var(--radius);padding:24px;border:1px solid var(--line)}
+  .info h3{margin:0 0 8px;font-size:1.1rem;display:flex;align-items:center;gap:8px;color:var(--green)}
+  .info p{margin:0 0 12px}
+  .big-phone{font-size:1.5rem;font-weight:800;text-decoration:none;color:var(--green)}
+  table.hours{width:100%;border-collapse:collapse;font-size:.98rem}
+  table.hours th,table.hours td{padding:6px 0;border-bottom:1px solid var(--line);text-align:left}
+  table.hours td{text-align:right}
+
+  /* Reviews placeholder */
+  .reviews-box{border:2px dashed #c99a2e;background:var(--ph-bg);color:var(--ph-ink);border-radius:var(--radius);padding:32px;text-align:center;font-weight:600}
+
+  /* Final CTA */
+  .final{background:var(--green);color:#fff;text-align:center}
+  .final h2{color:#fff}
+  .final p{color:#e7efe9;margin:0 auto 24px;max-width:46ch}
+  .final .cta-row{justify-content:center}
+
+  footer{background:#0e2520;color:#cfdcd6;padding:28px 0;font-size:.92rem}
+  footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  footer a{color:#fff}
+
+  /* Mobile tap-to-call bar */
+  .callbar{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;gap:8px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(20,50,43,.97);box-shadow:0 -4px 16px rgba(0,0,0,.15)}
+  .callbar a{flex:1;min-height:50px}
+  @media (min-width:760px){.callbar{display:none}}
+
+  .sample-note{background:#222;color:#fff;font-size:.85rem;text-align:center;padding:6px 16px}
+  .sample-note strong{color:var(--gold)}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for Lucky's of Texas. This is not Lucky's of Texas's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=lucky-s-of-texas" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="sample-note" role="note"><strong>Sample design</strong> made for Lucky's of Texas. Highlighted items are placeholders for the owner to confirm.</div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Lucky's of Texas home">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="#d9a441"/><path d="M17 6l3.2 6.6 7.3 1-5.3 5.1 1.3 7.2L17 22.5l-6.5 3.4 1.3-7.2-5.3-5.1 7.3-1z" fill="#14322b"/></svg>
+      Lucky's of Texas
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#visit">Hours &amp; Location</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-gold" href="tel:+18308963434">Call (830) 896-3434</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap">
+      <span class="eyebrow">Kerrville, Texas</span>
+      <h1 id="hero-title">Hair salon and barbershop, under one roof.</h1>
+      <p class="lead">Cuts, color and styling on the salon side, and classic barbershop service on the other. Give us a call to set up your visit.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="tel:+18308963434">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.6a1 1 0 01-.25 1z"/></svg>
+          Call (830) 896-3434
+        </a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=1412+Medina+Hwy+Kerrville+TX+78028">Get directions</a>
+      </div>
+      <ul class="hero-facts">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d9a441" d="M12 2a7 7 0 00-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6a2.5 2.5 0 010 5.5z"/></svg>1412 Medina Hwy, Kerrville</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="#d9a441" d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 10.4l3.5 2.1-.8 1.3L11 13V7h2z"/></svg><span>Open <span class="ph">[confirm hours]</span></span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <h2 id="services-title">Two shops, one stop</h2>
+      <p class="sub">Whether you want a fresh color or a quick clean-up, there's a chair for you. <span class="ph">[Owner: replace the lists below with your exact services. Add prices only if you want them shown.]</span></p>
+      <div class="sides">
+        <article class="side">
+          <div class="icon-badge" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24"><path fill="#7a5410" d="M9.6 7.6a3.5 3.5 0 10-1.4 1.4L10.6 12l-2.4 3a3.5 3.5 0 101.4 1.4L12 13.4l7 8.6h3L13.4 12 22 2h-3l-7 8.6zM6.5 7.5a1.5 1.5 0 110-3 1.5 1.5 0 010 3zm0 12a1.5 1.5 0 110-3 1.5 1.5 0 010 3z"/></svg>
+          </div>
+          <h3>Hair Salon</h3>
+          <p>For women, men and kids.</p>
+          <ul>
+            <li>Haircuts and trims <span class="ph">[confirm]</span></li>
+            <li>Color and highlights <span class="ph">[confirm]</span></li>
+            <li>Styling and blowouts <span class="ph">[confirm]</span></li>
+          </ul>
+        </article>
+        <article class="side barber">
+          <div class="icon-badge" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24"><path fill="#1f4a3f" d="M3 4h4v16H3zm6 0h2v16H9zm4 0h1v16h-1zm3 0h2v16h-2zm4 0h1v16h-1z"/></svg>
+          </div>
+          <h3>Barbershop</h3>
+          <p>Classic cuts and grooming.</p>
+          <ul>
+            <li>Men's and boys' haircuts <span class="ph">[confirm]</span></li>
+            <li>Fades and tapers <span class="ph">[confirm]</span></li>
+            <li>Beard trims and shaves <span class="ph">[confirm]</span></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="visit" id="visit" aria-labelledby="visit-title">
+    <div class="wrap">
+      <h2 id="visit-title">Hours &amp; location</h2>
+      <p class="sub">On Medina Hwy in Kerrville. Call ahead for an appointment or to check if there's a chair open.</p>
+      <div class="visit-grid">
+        <div class="info">
+          <h3>Call us</h3>
+          <p><a class="big-phone" href="tel:+18308963434">(830) 896-3434</a></p>
+          <p>Tap the number on your phone to call.</p>
+        </div>
+        <div class="info">
+          <h3>Find us</h3>
+          <address style="font-style:normal">
+            <p>1412 Medina Hwy<br>Kerrville, TX 78028</p>
+          </address>
+          <p><a href="https://www.google.com/maps/search/?api=1&amp;query=1412+Medina+Hwy+Kerrville+TX+78028">Open in Maps →</a></p>
+        </div>
+        <div class="info">
+          <h3>Hours</h3>
+          <table class="hours">
+            <caption class="ph" style="caption-side:bottom;margin-top:10px;display:block">[Owner: confirm hours]</caption>
+            <tbody>
+              <tr><th scope="row">Mon – Fri</th><td>[hours]</td></tr>
+              <tr><th scope="row">Saturday</th><td>[hours]</td></tr>
+              <tr><th scope="row">Sunday</th><td>[hours]</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" aria-labelledby="reviews-title">
+    <div class="wrap">
+      <h2 id="reviews-title">What customers say</h2>
+      <div class="reviews-box">[Your reviews here: real customer reviews, added with your permission]</div>
+    </div>
+  </section>
+
+  <section class="final" aria-labelledby="final-title">
+    <div class="wrap">
+      <h2 id="final-title">Ready for a fresh cut?</h2>
+      <p>Give us a call and we'll get you in the chair.</p>
+      <div class="cta-row">
+        <a class="btn btn-gold" href="tel:+18308963434">Call (830) 896-3434</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=1412+Medina+Hwy+Kerrville+TX+78028">Get directions</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Lucky's of Texas · 1412 Medina Hwy, Kerrville, TX 78028 · <a href="tel:+18308963434">(830) 896-3434</a></span>
+    <span>Sample homepage, not the official site.</span>
+  </div>
+</footer>
+
+<div class="callbar" role="group" aria-label="Quick actions">
+  <a class="btn btn-gold" href="tel:+18308963434">Call now</a>
+  <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=1412+Medina+Hwy+Kerrville+TX+78028">Directions</a>
+</div>
+</body>
+</html>
