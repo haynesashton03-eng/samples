@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALC Albemarle Learning Center | Childcare in Elizabeth City, NC</title>
+<meta name="description" content="ALC Albemarle Learning Center in Elizabeth City, NC serves children 0 to 5 years of age with play-based, developmentally appropriate learning that prepares them for Kindergarten. Call 252-335-5551.">
+<style>
+  :root{
+    --ink:#1f2a37; --muted:#4b5563; --bg:#fffdf8; --card:#ffffff;
+    --green:#2f7d4f; --green-dk:#21603b; --sun:#f6c445; --coral:#e8735a; --sky:#5aa9d6; --lilac:#9b7fd1;
+    --soft-green:#e8f4ec; --soft-sun:#fff4d6; --soft-sky:#e6f2fa; --soft-coral:#fde9e4;
+    --radius:18px; --wrap:1120px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;font-size:1.0625rem}
+  h1,h2,h3{line-height:1.2;margin:0 0 .5em}
+  h1{font-size:clamp(2rem,6vw,3.4rem);letter-spacing:-.02em}
+  h2{font-size:clamp(1.6rem,4vw,2.3rem);letter-spacing:-.01em}
+  h3{font-size:1.2rem}
+  p{margin:0 0 1em}
+  a{color:var(--green-dk)}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 20px}
+  .skip{position:absolute;left:-999px;top:0;background:#000;color:#fff;padding:8px 12px;z-index:100}
+  .skip:focus{left:8px}
+  :focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:6px}
+
+  /* header */
+  header.top{position:sticky;top:0;z-index:50;background:rgba(255,253,248,.95);backdrop-filter:saturate(1.4) blur(6px);border-bottom:1px solid #efe8d8}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.05rem}
+  .brand small{display:block;font-weight:600;color:var(--muted);font-size:.78rem}
+  .mark{width:40px;height:40px;flex:none}
+  nav ul{list-style:none;display:flex;gap:22px;margin:0;padding:0}
+  nav a{text-decoration:none;color:var(--ink);font-weight:600}
+  nav a:hover{color:var(--green)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:var(--green);color:#fff}
+  .btn-primary:hover{background:var(--green-dk)}
+  .btn-ghost{border-color:var(--green);color:var(--green-dk);background:#fff}
+  .btn svg{width:18px;height:18px}
+  @media (max-width:860px){ nav{display:none} .bar .btn{padding:10px 14px} }
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;padding:64px 0 72px}
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+  .eyebrow{display:inline-block;background:var(--soft-sun);color:#7a5600;font-weight:700;font-size:.85rem;padding:6px 12px;border-radius:999px;margin-bottom:16px}
+  .hero p.lead{font-size:1.2rem;color:var(--muted);max-width:34em}
+  .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+  .facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;padding:0;list-style:none;color:var(--muted);font-weight:600;font-size:.95rem}
+  .facts li{display:flex;align-items:center;gap:8px}
+  .facts svg{width:20px;height:20px;color:var(--green)}
+  .art{width:100%;height:auto;max-width:460px;justify-self:center}
+  @media (max-width:860px){ .hero{padding:40px 0 48px} .hero-grid{grid-template-columns:1fr} .art{max-width:300px;order:-1} }
+
+  section{padding:72px 0}
+  .section-head{max-width:640px;margin-bottom:36px}
+  .section-head p{color:var(--muted)}
+
+  /* cards */
+  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{background:var(--card);border-radius:var(--radius);padding:28px;box-shadow:0 1px 2px rgba(0,0,0,.04),0 8px 24px rgba(31,42,55,.06)}
+  .card p{color:var(--muted);margin:0}
+  .icon{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;margin-bottom:16px}
+  .icon svg{width:28px;height:28px}
+  .i-green{background:var(--soft-green);color:var(--green)}
+  .i-sun{background:var(--soft-sun);color:#a87800}
+  .i-sky{background:var(--soft-sky);color:#2b74a0}
+  .i-coral{background:var(--soft-coral);color:#b8452c}
+  @media (max-width:860px){ .cards{grid-template-columns:1fr} }
+
+  /* philosophy */
+  .band{background:var(--soft-green)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .quote{font-size:clamp(1.5rem,3.5vw,2.1rem);font-weight:800;color:var(--green-dk);margin:0 0 .6em}
+  .chips{display:flex;flex-wrap:wrap;gap:10px;list-style:none;padding:0;margin:0}
+  .chips li{background:#fff;border-radius:999px;padding:8px 14px;font-weight:600;font-size:.95rem;border:1px solid #cfe5d7}
+  @media (max-width:860px){ .split{grid-template-columns:1fr;gap:28px} }
+
+  /* peek inside placeholder */
+  .peek{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .tile{aspect-ratio:1/1;border-radius:var(--radius);display:grid;place-items:center;text-align:center;font-weight:700;color:#fff;padding:12px;font-size:.95rem}
+  .t1{background:var(--sky)} .t2{background:var(--coral)} .t3{background:var(--lilac)} .t4{background:var(--green)}
+  @media (max-width:640px){ .peek{grid-template-columns:repeat(2,1fr)} }
+
+  /* hours + enroll */
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .hours-row{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px dashed #e5e7eb}
+  .hours-row:last-child{border-bottom:0}
+  .closed{columns:2;column-gap:24px;padding-left:1.1em;margin:.5em 0 0;color:var(--muted)}
+  .steps{counter-reset:s;list-style:none;padding:0;margin:0 0 20px}
+  .steps li{counter-increment:s;position:relative;padding:0 0 14px 46px}
+  .steps li::before{content:counter(s);position:absolute;left:0;top:-2px;width:32px;height:32px;border-radius:50%;background:var(--sun);color:#3d2c00;font-weight:800;display:grid;place-items:center}
+  .note{font-size:.9rem;color:var(--muted)}
+  .ph{background:#fff3c4;border:1px dashed #c99a00;color:#5c4400;border-radius:6px;padding:0 6px;font-weight:600;white-space:nowrap}
+  @media (max-width:860px){ .two{grid-template-columns:1fr} .closed{columns:1} }
+
+  /* reviews placeholder */
+  .ph-box{border:2px dashed #c99a00;background:#fffaf0;border-radius:var(--radius);padding:32px;text-align:center;color:#5c4400}
+
+  /* contact */
+  .contact{background:var(--ink);color:#f3f4f6}
+  .contact h2{color:#fff}
+  .contact a{color:#ffe08a}
+  .contact .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  .contact h3{color:var(--sun);font-size:1rem;text-transform:uppercase;letter-spacing:.06em}
+  .contact address{font-style:normal}
+  .contact .btn-primary{background:var(--sun);color:#3d2c00}
+  @media (max-width:860px){ .contact .grid{grid-template-columns:1fr} }
+  footer{background:#111827;color:#9ca3af;padding:22px 0;font-size:.9rem}
+
+  /* mobile call bar */
+  .callbar{display:none}
+  @media (max-width:640px){
+    .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+    body{padding-bottom:76px}
+  }
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto} .btn{transition:none} }
+</style>
+</head>
+<body>
+<div style="position:sticky;top:0;z-index:2147483647;background:#111;color:#fff;font:14px/1.4 system-ui,sans-serif;padding:8px 12px;text-align:center">Design sample prepared by Ashton Haynes Web Design for ALC Albemarle Learning Center. This is not ALC Albemarle Learning Center's official website. <a href="https://buy.stripe.com/8x27sDeIh3Aw4UxgQb8bS00?client_reference_id=alc-albemarle-learning-center" style="display:inline-block;margin:6px 0 0 8px;padding:6px 14px;border-radius:999px;background:#22c55e;color:#04210f;font-weight:700;text-decoration:none">Love it? Get this website, $750 &rarr;</a></div>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="brand" href="#top" aria-label="ALC Albemarle Learning Center, home">
+      <svg class="mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="20" fill="#2f7d4f"/><g fill="#f6c445"><circle cx="20" cy="12" r="5"/><circle cx="28" cy="20" r="5"/><circle cx="20" cy="28" r="5"/><circle cx="12" cy="20" r="5"/></g><circle cx="20" cy="20" r="4.5" fill="#e8735a"/></svg>
+      <span>ALC Albemarle Learning Center<small>Elizabeth City, NC</small></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#hours">Hours</a></li>
+        <li><a href="#enroll">Enroll</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-primary" href="tel:+12523355551">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      <span>252-335-5551</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+  <!-- HERO -->
+  <section class="hero" id="top" aria-labelledby="hero-title">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Childcare for ages 0 to 5 in Elizabeth City, NC</span>
+        <h1 id="hero-title">Where We Make Learning Fun!</h1>
+        <p class="lead">ALC Albemarle Learning Center provides developmentally appropriate learning experiences that prepare young children for school, and for continued success in Kindergarten.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#enroll">Start your application</a>
+          <a class="btn btn-ghost" href="tel:+12523355551">Call 252-335-5551</a>
+        </div>
+        <ul class="facts">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Mon–Fri from 7:00 a.m.</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>1400 North Road Street</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>Infants to age 5</li>
+        </ul>
+      </div>
+      <svg class="art" viewBox="0 0 400 360" role="img" aria-label="Illustration of colorful building blocks and a sun">
+        <circle cx="320" cy="70" r="46" fill="#f6c445"/>
+        <rect x="40" y="250" width="100" height="100" rx="14" fill="#5aa9d6"/>
+        <rect x="150" y="250" width="100" height="100" rx="14" fill="#e8735a"/>
+        <rect x="260" y="250" width="100" height="100" rx="14" fill="#9b7fd1"/>
+        <rect x="95" y="140" width="100" height="100" rx="14" fill="#2f7d4f"/>
+        <rect x="205" y="140" width="100" height="100" rx="14" fill="#f6c445"/>
+        <rect x="150" y="30" width="100" height="100" rx="14" fill="#5aa9d6" transform="rotate(-8 200 80)"/>
+        <g fill="#fff" font-family="system-ui,Arial,sans-serif" font-weight="800" font-size="56" text-anchor="middle">
+          <text x="90" y="320">A</text><text x="200" y="320">B</text><text x="310" y="320">C</text>
+          <text x="145" y="210">1</text><text x="255" y="210">2</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="about-title">Getting children ready for Kindergarten</h2>
+        <p>School readiness means that children are socially, emotionally, physically and cognitively prepared for continued success in Kindergarten. Your child will enjoy a variety of learning experiences, engaged in activities designed to help them develop and soar.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon i-sun"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 12h.01M15 12h.01M8 16s1.5 2 4 2 4-2 4-2"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h3>Ages 0 to 5</h3>
+          <p>The center serves children 0 to 5 years of age, from infancy right up to Kindergarten.</p>
+        </article>
+        <article class="card">
+          <div class="icon i-sky"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 7l10-4 10 4-10 4z"/><path d="M6 9v5c0 1.7 2.7 3 6 3s6-1.3 6-3V9"/></svg></div>
+          <h3>School readiness</h3>
+          <p>Developmentally appropriate learning experiences that prepare children socially, emotionally, physically and cognitively.</p>
+        </article>
+        <article class="card">
+          <div class="icon i-coral"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg></div>
+          <h3>Experienced staff</h3>
+          <p>A well experienced and well trained staff, excited about helping your child excel.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY -->
+  <section id="philosophy" class="band" aria-labelledby="phil-title">
+    <div class="wrap split">
+      <div>
+        <h2 id="phil-title">Our philosophy</h2>
+        <p class="quote">“Where all Flowers Bloom!”</p>
+        <p>At ALC, children learn through play, and every activity is meant to teach something. We want children of all abilities to grow, feel loved, and develop at their own pace.</p>
+        <p>Our approach follows a structured early-childhood curriculum and draws on Howard Gardner’s theory of multiple intelligences: the idea that every child learns in their own way.</p>
+      </div>
+      <div>
+        <h3>Every kind of learner</h3>
+        <ul class="chips" aria-label="Types of learners">
+          <li>Visual-spatial</li>
+          <li>Bodily-kinesthetic</li>
+          <li>Musical</li>
+          <li>Interpersonal</li>
+          <li>Intrapersonal</li>
+          <li>Linguistic</li>
+          <li>Logical-mathematical</li>
+          <li>Naturalist</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PEEK INSIDE -->
+  <section id="peek" aria-labelledby="peek-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="peek-title">Take a peek inside</h2>
+        <p>A photo gallery of classrooms and play areas goes here. <span class="ph">[Your own photos here]</span></p>
+      </div>
+      <div class="peek">
+        <div class="tile t1">[Classroom photo]</div>
+        <div class="tile t2">[Play area photo]</div>
+        <div class="tile t3">[Art &amp; music photo]</div>
+        <div class="tile t4">[Outdoor photo]</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOURS + ENROLL -->
+  <section id="hours" class="band" style="background:var(--soft-sky)" aria-labelledby="hours-title">
+    <div class="wrap two">
+      <article class="card">
+        <h2 id="hours-title">Operating hours</h2>
+        <div class="hours-row"><strong>Monday – Friday</strong><span>7:00 a.m. – <span class="ph">[5:30 or 6:00]</span> p.m.</span></div>
+        <div class="hours-row"><strong>Saturday – Sunday</strong><span>Closed</span></div>
+        <h3 style="margin-top:20px">Holiday closings</h3>
+        <ul class="closed">
+          <li>New Year’s Day</li>
+          <li>Dr. Martin Luther King Day</li>
+          <li>Easter (Friday and Monday)</li>
+          <li>Memorial Day</li>
+          <li>Independence Day</li>
+          <li>Labor Day</li>
+          <li>Thanksgiving (2½ days)</li>
+          <li>Christmas holiday break</li>
+        </ul>
+        <p class="note" style="margin-top:12px">Some closure dates may vary depending on the day of the week a holiday falls on.</p>
+      </article>
+
+      <article class="card" id="enroll" aria-labelledby="enroll-title">
+        <h2 id="enroll-title">Enroll your child</h2>
+        <ol class="steps">
+          <li><strong>Call or visit</strong> to ask about openings for your child’s age group.</li>
+          <li><strong>Download the application</strong> plus the required forms: Shaken Baby Syndrome form, Acknowledgement of Receipt of Handbook, NC Childcare Summary, Immunization form, Children’s medical form and Tobacco-free statement.</li>
+          <li><strong>Return your forms</strong> to the center. <span class="ph">[How to return forms]</span></li>
+        </ol>
+        <div class="cta-row" style="margin-top:0">
+          <a class="btn btn-primary" href="https://www.albemarlelearningcenter.com/childcare-application.html">Get the application forms</a>
+          <a class="btn btn-ghost" href="tel:+12523355551">Ask about openings</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- REVIEWS PLACEHOLDER -->
+  <section aria-labelledby="rev-title">
+    <div class="wrap">
+      <div class="section-head"><h2 id="rev-title">What families say</h2></div>
+      <div class="ph-box">
+        <p style="margin:0;font-weight:700">[Your reviews here]</p>
+        <p class="note" style="margin:.4em 0 0;color:#5c4400">Real quotes from ALC families, used with their permission.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <h2 id="contact-title">Come see us</h2>
+      <p style="max-width:40em;margin-bottom:32px">We’d love to meet you and your little one. Call us with any questions about enrolling your child.</p>
+      <div class="grid">
+        <div>
+          <h3>Call</h3>
+          <p><a href="tel:+12523355551" style="font-size:1.4rem;font-weight:800">252-335-5551</a></p>
+          <p>Email: <span class="ph">[email address]</span></p>
+        </div>
+        <div>
+          <h3>Visit</h3>
+          <address>ALC Albemarle Learning Center<br>1400 North Road Street<br>Elizabeth City, NC 27909</address>
+          <p style="margin-top:.6em"><a href="https://maps.google.com/?q=1400+North+Road+Street+Elizabeth+City+NC+27909">Get directions</a></p>
+        </div>
+        <div>
+          <h3>Mail</h3>
+          <address>P.O. Box 2333<br>Elizabeth City, NC 27906</address>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">© 2026 ALC Albemarle Learning Center · Elizabeth City, North Carolina · Sample homepage concept</div>
+</footer>
+
+<a class="btn btn-primary callbar" href="tel:+12523355551">Call ALC: 252-335-5551</a>
+</body>
+</html>
